@@ -121,8 +121,6 @@ let firebase;
 
 function getFirebase(app, auth, database) {
   if (!firebase) {
-    // TODO 
-    console.log(`in getFirebase, app: ${app}, auth: ${auth}, database: ${database}`)
     firebase = new Firebase(app, auth, database);
   }
 
