@@ -19,7 +19,7 @@ const AdminPageBase = () => (
 );
 
 const condition = authUser =>
-  authUser && !!authUser.roles[ROLES.ADMIN];
+  authUser && !!authUser.roles[ROLES.ADMIN]; // TODO decide if role-based, permission based access
 
 const AdminPage = compose(
   withEmailVerification,

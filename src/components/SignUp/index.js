@@ -42,6 +42,7 @@ class SignUpFormBase extends Component {
     this.props.firebase
       .doCreateUserWithEmailAndPassword(email, passwordOne)
       .then(authUser => {
+        // TODO -> firebase.user correct? or change for firestore
         // Create a user in your Firebase realtime database
         return this.props.firebase.user(authUser.user.uid).set({
           username,
@@ -50,13 +51,17 @@ class SignUpFormBase extends Component {
         });
       })
       .then(() => {
+        // TODO remove console.log
+        console.log('sending email verification...')
         return this.props.firebase.doSendEmailVerification();
       })
       .then(() => {
         this.setState({ ...INITIAL_STATE });
+        // TODO -> navigate to dashboard
         navigate(ROUTES.HOME);
       })
       .catch(error => {
+        console.log('error in Sign Up index.js')
         if (error.code === ERROR_CODE_ACCOUNT_EXISTS) {
           error.message = ERROR_MSG_ACCOUNT_EXISTS;
         }

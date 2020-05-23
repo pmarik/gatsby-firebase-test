@@ -13,19 +13,20 @@ class Firebase {
 
     /* Helper */
 
-    this.serverValue = app.database.ServerValue;
+    // TODO figure out what ServerValue does for real time db and similar method for firestore
+    //this.serverValue = app.database.ServerValue;
     this.emailAuthProvider = app.auth.EmailAuthProvider;
 
     /* Firebase APIs */
 
     this.auth = app.auth();
-    this.db = app.database();
+    // this.db = app.database();
+    this.db = app.firestore();
 
     /* Social Sign In Method Provider */
-
-    this.googleProvider = new app.auth.GoogleAuthProvider();
-    this.facebookProvider = new app.auth.FacebookAuthProvider();
-    this.twitterProvider = new app.auth.TwitterAuthProvider();
+    // this.googleProvider = new app.auth.GoogleAuthProvider();
+    // this.facebookProvider = new app.auth.FacebookAuthProvider();
+    // this.twitterProvider = new app.auth.TwitterAuthProvider();
   }
 
   // *** Auth API ***
@@ -36,23 +37,29 @@ class Firebase {
   doSignInWithEmailAndPassword = (email, password) =>
     this.auth.signInWithEmailAndPassword(email, password);
 
-  doSignInWithGoogle = () =>
-    this.auth.signInWithPopup(this.googleProvider);
+  // doSignInWithGoogle = () =>
+  //   this.auth.signInWithPopup(this.googleProvider);
 
-  doSignInWithFacebook = () =>
-    this.auth.signInWithPopup(this.facebookProvider);
+  // doSignInWithFacebook = () =>
+  //   this.auth.signInWithPopup(this.facebookProvider);
 
-  doSignInWithTwitter = () =>
-    this.auth.signInWithPopup(this.twitterProvider);
+  // doSignInWithTwitter = () =>
+  //   this.auth.signInWithPopup(this.twitterProvider);
 
   doSignOut = () => this.auth.signOut();
 
   doPasswordReset = email => this.auth.sendPasswordResetEmail(email);
 
   doSendEmailVerification = () =>
+    // TODO updated email verify method...
+    /*
+          this.auth.currentUser.sendSignInLinkToEmail({  // look into this, seems more secure...
+  
     this.auth.currentUser.sendEmailVerification({
       url: process.env.GATSBY_CONFIRMATION_EMAIL_REDIRECT,
     })
+    */
+    this.auth.currentUser.sendEmailVerification()
       .then(() => {{
         console.log('email verification sent...')
       }})

@@ -26,7 +26,12 @@ const AccountPageBase = () => (
   </Fragment>
 );
 
-const condition = authUser => !!authUser;
+
+ // TODO decide permission based, or role based access. 
+ /*
+  In current form (authuser => !!authUser) if does broad auth check to see if user is not null
+ */
+const condition = authUser => !!authUser; 
 
 const AccountPage = compose(
   withEmailVerification,

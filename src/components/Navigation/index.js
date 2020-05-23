@@ -24,6 +24,7 @@ const NavigationAuth = ({ authUser }) => (
       <Link to={ROUTES.LANDING}>Landing</Link>
     </li>
     <li>
+      {/* TODO route to dashboard instead */}
       <Link to={ROUTES.HOME}>Home</Link>
     </li>
     <li>
