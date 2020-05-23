@@ -74,9 +74,11 @@ class Firebase {
     this.auth.onAuthStateChanged(authUser => {
       if (authUser) {
         this.user(authUser.uid)
-          .once('value')
+          // TODO updated .once('value') to .get() firestore equivalent
+          .get()
           .then(snapshot => {
-            const dbUser = snapshot.val();
+            // TODO updated .val() to .data() firestore equivalent
+            const dbUser = snapshot.data();
 
             // default empty roles
             if (!dbUser.roles) {

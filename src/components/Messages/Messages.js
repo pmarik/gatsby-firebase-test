@@ -42,7 +42,7 @@ class Messages extends Component {
       .orderByChild('createdAt')
       .limitToLast(this.state.limit)
       .on('value', snapshot => {
-        const messageObject = snapshot.val();
+        const messageObject = snapshot.data();
 
         if (messageObject) {
           const messageList = Object.keys(messageObject).map(key => ({
