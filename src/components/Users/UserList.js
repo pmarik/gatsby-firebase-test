@@ -37,14 +37,16 @@ class UserList extends Component {
       // TODO updated to firebase calls
       this.props.firebase.users().get()
         .then( snapshot => {
-          const usersObject = snapshot.data();
+          console.log('snapshot in userslist: ', snapshot);
+          // const usersObject = snapshot.data();
+          // console.log('firebase usersList users snapshot.data(): ', usersObject)
 
-          console.log('firebase usersList users snapshot.data(): ', usersObject)
+          const usersList = snapshot.docs.map(doc => doc.data());
 
-          const usersList = Object.keys(usersObject).map(key => ({
-            ...usersObject[key],
-            uid: key,
-          }));
+          // const usersList = Object.keys(usersObject).map(key => ({
+          //   ...usersObject[key],
+          //   uid: key,
+          // }));
 
           this.setState({
             users: usersList,
