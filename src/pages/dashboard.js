@@ -1,9 +1,7 @@
 import React from 'react';
 import { compose } from 'recompose';
-import Projects from '../components/projects/Projects';
 import Layout from '../components/layout';
 import Link from 'gatsby';
-import { Router } from "@reach/router";
 import {
   withAuthorization,
   withEmailVerification,
@@ -15,12 +13,6 @@ const DashboardPageBase = () => (
   <div>
     <h1>Dashboard Page</h1>
     <p>User dashboard</p>
-    <Link to="projects">view projects</Link>
-
-    {/* TODO: fix dynamic routing for dashboard */}
-    <Router>
-        <Projects path="projects" />
-    </Router>
 
     {/* <Messages /> */}
   </div>
