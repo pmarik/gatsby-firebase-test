@@ -60,9 +60,9 @@ class Messages extends Component {
       });
   };
 
-  componentWillUnmount() {
-    this.props.firebase.messages().off();
-  }
+  // componentWillUnmount() {
+  //   this.props.firebase.messages().off();
+  // }
 
   onChangeText = event => {
     this.setState({ text: event.target.value });
