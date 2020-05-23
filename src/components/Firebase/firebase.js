@@ -79,6 +79,7 @@ class Firebase {
           .then(snapshot => {
             // TODO updated .val() to .data() firestore equivalent
             const dbUser = snapshot.data();
+            console.log('firebase.js snapshot data of dbUser: ', dbUser)
 
             // default empty roles
             if (!dbUser.roles) {
@@ -107,7 +108,7 @@ class Firebase {
   user = uid => this.db.doc(`users/${uid}`);
 
   // users = () => this.db.ref('users');
-  users = () => this.db.doc('users');
+  users = () => this.db.collection('users');
 
   // *** Message API ***
 
