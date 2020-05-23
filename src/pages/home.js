@@ -6,14 +6,15 @@ import {
   withAuthorization,
   withEmailVerification,
 } from '../components/Session';
-import Messages from '../components/Messages';
+// TODO messages is another document, 
+//import Messages from '../components/Messages';
 
 const HomePageBase = () => (
   <div>
     <h1>Home Page</h1>
     <p>The Home Page is accessible by every signed in user.</p>
 
-    <Messages />
+    {/* <Messages /> */}
   </div>
 );
 

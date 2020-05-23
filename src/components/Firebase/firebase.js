@@ -111,9 +111,9 @@ class Firebase {
 
   // *** Message API ***
 
-  message = uid => this.db.doc(`messages/${uid}`);
+  // message = uid => this.db.doc(`messages/${uid}`);
 
-  messages = () => this.db.doc('messages');
+  // messages = () => this.db.doc('messages');
 }
 
 let firebase;
