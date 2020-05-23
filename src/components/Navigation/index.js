@@ -52,7 +52,16 @@ const NavigationNonAuth = () => (
       <Link to='/about'>About</Link>
     </li>
     <li>
-      <Link to='/portfolio'>Portfolio</Link>
+      <Link to='/blog'>Blog</Link>
+    </li>
+    <li>
+      <Link to='/store'>Store</Link>'
+    </li>
+    <li>
+      <Link to='/contact'>Contact</Link>
+    </li>
+    <li>
+      <Link to='/cart'>Your Cart</Link>
     </li>
     <li>
       <Link to={ROUTES.SIGN_IN}>Sign In</Link>

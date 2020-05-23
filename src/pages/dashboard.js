@@ -1,7 +1,8 @@
 import React from 'react';
 import { compose } from 'recompose';
-
+import Projects from '../components/projects/Projects';
 import Layout from '../components/layout';
+import Link from 'gatsby';
 import {
   withAuthorization,
   withEmailVerification,
@@ -13,6 +14,9 @@ const DashboardPageBase = () => (
   <div>
     <h1>Dashboard Page</h1>
     <p>User dashboard</p>
+    <Link to="./projects">view projects</Link>
+
+    <Projects path="projects" />
 
     {/* <Messages /> */}
   </div>
