@@ -7,18 +7,19 @@ const SIGN_IN_METHODS = [
     id: 'password',
     provider: null,
   },
-  {
-    id: 'google.com',
-    provider: 'googleProvider',
-  },
-  {
-    id: 'facebook.com',
-    provider: 'facebookProvider',
-  },
-  {
-    id: 'twitter.com',
-    provider: 'twitterProvider',
-  },
+  // TODO cancel social logins
+  // {
+  //   id: 'google.com',
+  //   provider: 'googleProvider',
+  // },
+  // {
+  //   id: 'facebook.com',
+  //   provider: 'facebookProvider',
+  // },
+  // {
+  //   id: 'twitter.com',
+  //   provider: 'twitterProvider',
+  // },
 ];
 
 class LoginManagement extends Component {
@@ -58,12 +59,12 @@ class LoginManagement extends Component {
       .catch(error => this.setState({ error }));
   };
 
-  onSocialLoginLink = provider => {
-    this.props.firebase.auth.currentUser
-      .linkWithPopup(this.props.firebase[provider])
-      .then(this.fetchSignInMethods)
-      .catch(error => this.setState({ error }));
-  };
+  // onSocialLoginLink = provider => {
+  //   this.props.firebase.auth.currentUser
+  //     .linkWithPopup(this.props.firebase[provider])
+  //     .then(this.fetchSignInMethods)
+  //     .catch(error => this.setState({ error }));
+  // };
 
   onDefaultLoginLink = password => {
     const credential = this.props.firebase.emailAuthProvider.credential(
@@ -108,13 +109,15 @@ class LoginManagement extends Component {
                     onUnlink={this.onUnlink}
                   />
                 ) : (
-                  <SocialLoginToggle
-                    onlyOneLeft={onlyOneLeft}
-                    isEnabled={isEnabled}
-                    signInMethod={signInMethod}
-                    onLink={this.onSocialLoginLink}
-                    onUnlink={this.onUnlink}
-                  />
+                  // <SocialLoginToggle
+                  //   onlyOneLeft={onlyOneLeft}
+                  //   isEnabled={isEnabled}
+                  //   signInMethod={signInMethod}
+                  //   onLink={this.onSocialLoginLink}
+                  //   onUnlink={this.onUnlink}
+                  // />
+                  // TODO
+                  <>no social logins available</>
                 )}
               </li>
             );
@@ -126,29 +129,29 @@ class LoginManagement extends Component {
   }
 }
 
-const SocialLoginToggle = ({
-  onlyOneLeft,
-  isEnabled,
-  signInMethod,
-  onLink,
-  onUnlink,
-}) =>
-  isEnabled ? (
-    <button
-      type="button"
-      onClick={() => onUnlink(signInMethod.id)}
-      disabled={onlyOneLeft}
-    >
-      Deactivate {signInMethod.id}
-    </button>
-  ) : (
-    <button
-      type="button"
-      onClick={() => onLink(signInMethod.provider)}
-    >
-      Link {signInMethod.id}
-    </button>
-  );
+// const SocialLoginToggle = ({
+//   onlyOneLeft,
+//   isEnabled,
+//   signInMethod,
+//   onLink,
+//   onUnlink,
+// }) =>
+//   isEnabled ? (
+//     <button
+//       type="button"
+//       onClick={() => onUnlink(signInMethod.id)}
+//       disabled={onlyOneLeft}
+//     >
+//       Deactivate {signInMethod.id}
+//     </button>
+//   ) : (
+//     <button
+//       type="button"
+//       onClick={() => onLink(signInMethod.provider)}
+//     >
+//       Link {signInMethod.id}
+//     </button>
+//   );
 
 class DefaultLoginToggle extends Component {
   constructor(props) {

@@ -101,9 +101,11 @@ class Firebase {
 
   // *** User API ***
 
-  user = uid => this.db.ref(`users/${uid}`);
+  // user = uid => this.db.ref(`users/${uid}`);
+  user = uid => this.db.doc(`users/${uid}`);
 
-  users = () => this.db.ref('users');
+  // users = () => this.db.ref('users');
+  users = () => this.db.doc('users');
 
   // *** Message API ***
 
@@ -116,6 +118,8 @@ let firebase;
 
 function getFirebase(app, auth, database) {
   if (!firebase) {
+    // TODO 
+    console.log(`in getFirebase, app: ${app}, auth: ${auth}, database: ${database}`)
     firebase = new Firebase(app, auth, database);
   }
 
