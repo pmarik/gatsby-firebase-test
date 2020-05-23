@@ -25,7 +25,7 @@ const DashboardPageBase = () => (
 const condition = authUser => !!authUser;
 
 
-const DashbaordPage = compose(
+const DashboardPage = compose(
   withEmailVerification,
   withAuthorization(condition),
 )(DashboardPageBase);
