@@ -13,11 +13,13 @@ const withAuthentication = Component => {
       this.state = {
         authUser: null,
       };
-    }
+    } 
 
     firebaseInit = () => {
       if (this.props.firebase && !this._initFirebase) {
         this._initFirebase = true;
+
+        console.log('withauth firebase', this.props.firebase);
 
         this.listener = this.props.firebase.onAuthUserListener(
           authUser => {
