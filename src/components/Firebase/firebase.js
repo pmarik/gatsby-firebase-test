@@ -52,7 +52,11 @@ class Firebase {
   doSendEmailVerification = () =>
     this.auth.currentUser.sendEmailVerification({
       url: process.env.GATSBY_CONFIRMATION_EMAIL_REDIRECT,
-    });
+    })
+      .then(() => {{
+        console.log('email verification sent...')
+      }})
+      .catch(err => console.log('email verification failed to send: ', err));
 
   doPasswordUpdate = password =>
     this.auth.currentUser.updatePassword(password);
