@@ -3,6 +3,7 @@ import { compose } from 'recompose';
 import Projects from '../components/projects/Projects';
 import Layout from '../components/layout';
 import Link from 'gatsby';
+import { Router } from "@reach/router";
 import {
   withAuthorization,
   withEmailVerification,
@@ -16,7 +17,9 @@ const DashboardPageBase = () => (
     <p>User dashboard</p>
     <Link to="./projects">view projects</Link>
 
-    <Projects path="projects" />
+    <Router>
+        <Projects path="/dashboard/projects" />
+    </Router>
 
     {/* <Messages /> */}
   </div>
