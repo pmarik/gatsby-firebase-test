@@ -21,20 +21,20 @@ const Navigation = () => (
 const NavigationAuth = ({ authUser }) => (
   <ul>
     <li>
-      <Link to={ROUTES.LANDING}>Landing</Link>
+      <Link to={ROUTES.LANDING}>Public_Landing</Link>
     </li>
     <li>
-      <Link to={ROUTES.HOME}>Home</Link>
+      <Link to={ROUTES.HOME}>Private_App_Home</Link>
     </li>
     <li>
-      <Link to={ROUTES.DASHBOARD}>Dashboard</Link>
+      <Link to={ROUTES.DASHBOARD}>Private_Dashboard</Link>
     </li>
     <li>
-      <Link to={ROUTES.ACCOUNT}>Account</Link>
+      <Link to={ROUTES.ACCOUNT}>Private_Account</Link>
     </li>
     {!!authUser.roles[ROLES.ADMIN] && (
       <li>
-        <Link to={ROUTES.ADMIN}>Admin</Link>
+        <Link to={ROUTES.ADMIN}>Private_Permission_Admin</Link>
       </li>
     )}
     <li>
@@ -46,7 +46,13 @@ const NavigationAuth = ({ authUser }) => (
 const NavigationNonAuth = () => (
   <ul>
     <li>
-      <Link to={ROUTES.LANDING}>Landing</Link>
+      <Link to={ROUTES.LANDING}>Home</Link>
+    </li>
+    <li>
+      <Link to='/about'>About</Link>
+    </li>
+    <li>
+      <Link to='/portfolio'>Portfolio</Link>
     </li>
     <li>
       <Link to={ROUTES.SIGN_IN}>Sign In</Link>
