@@ -15,10 +15,11 @@ const DashboardPageBase = () => (
   <div>
     <h1>Dashboard Page</h1>
     <p>User dashboard</p>
-    <Link to="./projects">view projects</Link>
+    <Link to="projects">view projects</Link>
 
+    {/* TODO: fix dynamic routing for dashboard */}
     <Router>
-        <Projects path="/dashboard/projects" />
+        <Projects path="projects" />
     </Router>
 
     {/* <Messages /> */}
