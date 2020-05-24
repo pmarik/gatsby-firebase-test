@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Layout from '../components/layout';
+import LayoutPublic from '../components/layout-public';
 
 const CartPage = () => (
   <>
@@ -12,7 +12,7 @@ const CartPage = () => (
 );
 
 export default () => (
-  <Layout>
+  <LayoutPublic>
     <CartPage />
-  </Layout>
+  </LayoutPublic>
 );
