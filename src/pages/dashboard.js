@@ -15,7 +15,7 @@ const DashboardPageBase = () => (
   <div>
     <h1>Dashboard Page</h1>
     <p>User dashboard</p>
-    <Link to="/project">view projects</Link>
+    <Link to="/dashboard/project">view projects</Link>
 
     {/* <Messages /> */}
     <Router>
