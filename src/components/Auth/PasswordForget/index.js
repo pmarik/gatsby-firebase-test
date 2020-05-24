@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
+import { Link } from 'gatsby';
 
-import { withFirebase } from '../Firebase';
+import { withFirebase } from '../../Firebase';
+import * as ROUTES from '../../../constants/routes';
 
 const INITIAL_STATE = {
-  passwordOne: '',
-  passwordTwo: '',
+  email: '',
   error: null,
 };
 
-class PasswordChangeForm extends Component {
+class PasswordForgetForm extends Component {
   constructor(props) {
     super(props);
 
@@ -16,11 +17,13 @@ class PasswordChangeForm extends Component {
   }
 
   onSubmit = event => {
-    const { passwordOne } = this.state;
+    const { email } = this.state;
 
     this.props.firebase
-      .doPasswordUpdate(passwordOne)
+      .doPasswordReset(email)
       .then(() => {
+        // TODO
+        console.log('password reset')
         this.setState({ ...INITIAL_STATE });
       })
       .catch(error => {
@@ -35,26 +38,18 @@ class PasswordChangeForm extends Component {
   };
 
   render() {
-    const { passwordOne, passwordTwo, error } = this.state;
+    const { email, error } = this.state;
 
-    const isInvalid =
-      passwordOne !== passwordTwo || passwordOne === '';
+    const isInvalid = email === '';
 
     return (
       <form onSubmit={this.onSubmit}>
         <input
-          name="passwordOne"
-          value={passwordOne}
+          name="email"
+          value={email}
           onChange={this.onChange}
-          type="password"
-          placeholder="New Password"
-        />
-        <input
-          name="passwordTwo"
-          value={passwordTwo}
-          onChange={this.onChange}
-          type="password"
-          placeholder="Confirm New Password"
+          type="text"
+          placeholder="Email Address"
         />
         <button disabled={isInvalid} type="submit">
           Reset My Password
@@ -66,4 +61,12 @@ class PasswordChangeForm extends Component {
   }
 }
 
-export default withFirebase(PasswordChangeForm);
+const PasswordForgetLink = () => (
+  <p>
+    <Link to={ROUTES.PASSWORD_FORGET}>Forgot Password?</Link>
+  </p>
+);
+
+export default withFirebase(PasswordForgetForm);
+
+export { PasswordForgetLink };

@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import { Link } from 'gatsby';
 
-import { withFirebase } from '../Firebase';
-import * as ROUTES from '../../constants/routes';
+import { withFirebase } from '../../Firebase';
 
 const INITIAL_STATE = {
-  email: '',
+  passwordOne: '',
+  passwordTwo: '',
   error: null,
 };
 
-class PasswordForgetForm extends Component {
+class PasswordChangeForm extends Component {
   constructor(props) {
     super(props);
 
@@ -17,13 +16,11 @@ class PasswordForgetForm extends Component {
   }
 
   onSubmit = event => {
-    const { email } = this.state;
+    const { passwordOne } = this.state;
 
     this.props.firebase
-      .doPasswordReset(email)
+      .doPasswordUpdate(passwordOne)
       .then(() => {
-        // TODO
-        console.log('password reset')
         this.setState({ ...INITIAL_STATE });
       })
       .catch(error => {
@@ -38,18 +35,26 @@ class PasswordForgetForm extends Component {
   };
 
   render() {
-    const { email, error } = this.state;
+    const { passwordOne, passwordTwo, error } = this.state;
 
-    const isInvalid = email === '';
+    const isInvalid =
+      passwordOne !== passwordTwo || passwordOne === '';
 
     return (
       <form onSubmit={this.onSubmit}>
         <input
-          name="email"
-          value={email}
+          name="passwordOne"
+          value={passwordOne}
           onChange={this.onChange}
-          type="text"
-          placeholder="Email Address"
+          type="password"
+          placeholder="New Password"
+        />
+        <input
+          name="passwordTwo"
+          value={passwordTwo}
+          onChange={this.onChange}
+          type="password"
+          placeholder="Confirm New Password"
         />
         <button disabled={isInvalid} type="submit">
           Reset My Password
@@ -61,12 +66,4 @@ class PasswordForgetForm extends Component {
   }
 }
 
-const PasswordForgetLink = () => (
-  <p>
-    <Link to={ROUTES.PASSWORD_FORGET}>Forgot Password?</Link>
-  </p>
-);
-
-export default withFirebase(PasswordForgetForm);
-
-export { PasswordForgetLink };
+export default withFirebase(PasswordChangeForm);
