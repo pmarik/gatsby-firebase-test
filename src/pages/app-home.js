@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 import {
   withAuthorization,
   withEmailVerification,
-} from '../components/Session';
+} from '../components/Auth/Session';
 // TODO messages is another document, 
 //import Messages from '../components/Messages';
 

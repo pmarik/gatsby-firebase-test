@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 import { AuthUserContext } from '../Auth/Session';
-import SignOutButton from '../SignOut';
+import SignOutButton from '../Auth/SignOut';
 import * as ROUTES from '../../constants/routes';
 import * as ROLES from '../../constants/roles';
 

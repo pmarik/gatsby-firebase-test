@@ -6,10 +6,10 @@ import {
   AuthUserContext,
   withAuthorization,
   withEmailVerification,
-} from '../components/Session';
-import PasswordForgetForm from '../components/PasswordForget';
-import PasswordChangeForm from '../components/PasswordChange';
-import LoginManagement from '../components/LoginManagement';
+} from '../components/Auth/Session';
+import PasswordForgetForm from '../components/Auth/PasswordForget';
+import PasswordChangeForm from '../components/Auth/PasswordChange';
+import LoginManagement from '../components/Auth/LoginManagement';
 
 const AccountPageBase = () => (
   <Fragment>

@@ -2,8 +2,8 @@ import React from 'react';
 import { navigate } from 'gatsby';
 
 import AuthUserContext from './context';
-import { withFirebase } from '../Firebase';
-import * as ROUTES from '../../constants/routes';
+import { withFirebase } from '../../Firebase/context';
+import * as ROUTES from '../../../constants/routes';
 
 const withAuthorization = condition => Component => {
   class WithAuthorization extends React.Component {

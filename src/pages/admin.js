@@ -5,7 +5,7 @@ import Layout from '../components/layout';
 import {
   withAuthorization,
   withEmailVerification,
-} from '../components/Session';
+} from '../components/Auth/Session';
 import { UserList } from '../components/Users';
 import * as ROLES from '../constants/roles';
 
