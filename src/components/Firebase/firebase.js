@@ -79,7 +79,6 @@ class Firebase {
           .then(snapshot => {
             // TODO updated .val() to .data() firestore equivalent
             const dbUser = snapshot.data();
-            console.log('firebase.js snapshot data of dbUser: ', dbUser)
 
             // default empty roles
             if (!dbUser.roles) {

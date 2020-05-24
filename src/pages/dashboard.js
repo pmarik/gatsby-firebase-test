@@ -2,7 +2,7 @@ import React from 'react';
 import { compose } from 'recompose';
 import Layout from '../components/layout';
 import { Link } from 'gatsby';
-import Router from '@reach/router';
+import { Router } from '@reach/router';
 import {
   withAuthorization,
   withEmailVerification,
@@ -15,7 +15,7 @@ const DashboardPageBase = () => (
   <div>
     <h1>Dashboard Page</h1>
     <p>User dashboard</p>
-    <Link to="/project">view project</Link>
+    <Link to="/project">view projects</Link>
 
     {/* <Messages /> */}
     <Router>
