@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Layout from '../components/layout';
+import LayoutPublic from '../components/layout-public';
 
 const ContactPage = () => (
   <>
@@ -12,7 +12,7 @@ const ContactPage = () => (
 );
 
 export default () => (
-  <Layout>
+  <LayoutPublic>
     <ContactPage />
-  </Layout>
+  </LayoutPublic>
 );
