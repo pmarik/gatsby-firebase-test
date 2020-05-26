@@ -1,7 +1,6 @@
 import React from 'react'
-import ProjectsList from './ProjectsList'
 
-const Projects = ({ project }) => {
+const Project = () => {
     return (
         <div>
             <h1>i am individual project</h1>
@@ -9,4 +8,4 @@ const Projects = ({ project }) => {
     )
 }
 
-export default Projects;
+export default Project;
