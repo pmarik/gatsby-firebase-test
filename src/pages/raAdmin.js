@@ -25,7 +25,7 @@ const ReactAdminPage = compose(
 )(ReactAdminPageBase);
 
 export default () => (
-    <>
+    <Layout>
         <ReactAdminPage />
-    </>
+    </Layout>
 );
