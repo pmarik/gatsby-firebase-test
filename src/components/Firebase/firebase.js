@@ -1,3 +1,4 @@
+
 const config = {
   apiKey: process.env.GATSBY_API_KEY,
   authDomain: process.env.GATSBY_AUTH_DOMAIN,
@@ -6,6 +7,7 @@ const config = {
   storageBucket: process.env.GATSBY_STORAGE_BUCKET,
   messagingSenderId: process.env.GATSBY_MESSAGING_SENDER_ID,
 };
+
 
 class Firebase {
   constructor(app) {
@@ -110,6 +112,8 @@ class Firebase {
   users = () => this.db.collection('users');
 
   // *** Message API ***
+
+  projects = () => this.db.collection('projects')
 
   // message = uid => this.db.doc(`messages/${uid}`);
 

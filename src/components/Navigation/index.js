@@ -21,9 +21,6 @@ const Navigation = () => (
 const NavigationAuth = ({ authUser }) => (
   <ul>
     <li>
-      <Link to='/raAdmin'>Private_React-Admin</Link>
-    </li>
-    <li>
       <Link to={ROUTES.DASHBOARD}>Private_Dashboard</Link>
     </li>
     {!!authUser.roles[ROLES.ADMIN] && (
