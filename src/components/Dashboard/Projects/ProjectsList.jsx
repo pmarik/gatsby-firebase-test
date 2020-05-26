@@ -23,7 +23,7 @@ class ProjectsList extends Component {
       const projectName = this.state.projectName;
       const projectType = this.state.projectType;
 
-      this.props.firebase.db.collection('projects').doc(`${projectName}`).add({
+      this.props.firebase.db.collection('projects').set({
           projectName,
           projectType,
       })
@@ -120,21 +120,18 @@ class ProjectsList extends Component {
             </label>
             <button type="submit">add Project</button>
         </form>
-        {/* <ul>
+          <ul>
           {projects.map(project => (
             <li >
               <span>
-                <strong>PROJECT:</strong> {project}
+                <strong>PROJECT name:</strong> {project.projectName}
               </span>
-              {/* <span>
-                <strong>E-Mail:</strong> {user.email}
+                <span>
+                <strong>project type:</strong> {project.projectType}
               </span>
-              <span>
-                <strong>Username:</strong> {user.username}
-              </span> */}
-            {/* </li>
+            </li>
           ))}
-        </ul> */} 
+        </ul> 
       </div>
     );
   }
