@@ -14,6 +14,21 @@ class ProjectsList extends Component {
     };
   }
 
+  addProject = (projectName, projectType) => {
+      this.props.firebase.projects.set({
+          projectName,
+          projectType,
+      })
+        .then(() => {
+            console.log('project created');
+        })
+        .catch((error) => {
+            console.log('error making project', error);
+
+        })
+        
+  }
+
   firebaseInit = () => {
     if (this.props.firebase && !this._initFirebase) {
       this._initFirebase = true;
@@ -77,7 +92,9 @@ class ProjectsList extends Component {
         <h2>Projects list</h2>
         {loading && <div>Loading ...</div>}
 
-        <ul>
+        {!(projects.length > 0) && <p>No current projects, please add a project to begin</p>}
+
+        {/* <ul>
           {projects.map(project => (
             <li >
               <span>
@@ -89,9 +106,9 @@ class ProjectsList extends Component {
               <span>
                 <strong>Username:</strong> {user.username}
               </span> */}
-            </li>
+            {/* </li>
           ))}
-        </ul>
+        </ul> */} 
       </div>
     );
   }
