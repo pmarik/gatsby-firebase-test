@@ -2,7 +2,7 @@ import React from 'react'
 
 import {
     AuthUserContext,
-} from '../../Auth/Session/context';
+} from '../../Auth/Session';
 import PasswordChangeForm from '../../Auth/PasswordChange'
 
 const Projects = () => {
