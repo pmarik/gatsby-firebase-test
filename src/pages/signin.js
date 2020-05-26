@@ -15,7 +15,7 @@ const SignInPage = () => (
   <Fragment>
     <h1>SignIn</h1>
     <SignInForm />
-    <PasswordForgetLink />
+    <PasswordForgetForm />
     <SignUpLink />
   </Fragment>
 );
