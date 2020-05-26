@@ -7,6 +7,7 @@ import {
   withAuthorization,
   withEmailVerification,
 } from '../components/Auth/Session';
+import Project from '../components/Dashboard/Projects/Project';
 import Projects from '../components/Dashboard/Projects/Projects';
 import Clients from '../components/Dashboard/Clients/Clients';
 import Settings from '../components/Dashboard/Settings/Settings';
