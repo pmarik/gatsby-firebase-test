@@ -19,6 +19,10 @@ class ProjectsList extends Component {
   addProject = (e) => {
       e.preventDefault();
       console.log('submitted add project')
+
+      const projectName = this.state.projectName;
+      const projectType = this.state.projectType;
+      
       this.props.firebase.projects.set({
           projectName,
           projectType,
