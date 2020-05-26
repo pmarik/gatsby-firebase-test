@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React, { useState } from 'react';
 
 import Layout from '../components/layout';
 import SignInForm from '../components/Auth/SignIn';
@@ -11,14 +11,19 @@ import { SignUpLink } from '../components/Auth/SignUp';
 // import { PasswordForgetLink } from '../components/Auth/PasswordForget';
 import PasswordForgetForm from '../components/Auth/PasswordForget';
 
-const SignInPage = () => (
-  <Fragment>
+const SignInPage = () => {
+
+  const [toggle, setToggle] = useState(false);
+
+  return (
+  <>
     <h1>SignIn</h1>
     <SignInForm />
-    <PasswordForgetForm />
+    <button onClick={setToggle(true)}>forget password?</button>
+    {toggle && <PasswordForgetForm />}
     <SignUpLink />
-  </Fragment>
-);
+  </>
+)};
 
 export default () => (
   <Layout>
