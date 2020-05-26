@@ -26,9 +26,6 @@ const NavigationAuth = ({ authUser }) => (
     <li>
       <Link to={ROUTES.DASHBOARD}>Private_Dashboard</Link>
     </li>
-    <li>
-      <Link to={ROUTES.ACCOUNT}>Private_Account</Link>
-    </li>
     {!!authUser.roles[ROLES.ADMIN] && (
       <li>
         <Link to={ROUTES.ADMIN}>Private_Permission_Admin</Link>

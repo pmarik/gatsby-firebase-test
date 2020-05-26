@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-import Layout from '../components/layout';
+import LayoutPublic from '../components/layout-public';
 
 const LandingPage = () => (
   <Fragment>
@@ -12,7 +12,7 @@ const LandingPage = () => (
 );
 
 export default () => (
-  <Layout>
+  <LayoutPublic>
     <LandingPage />
-  </Layout>
+  </LayoutPublic>
 );
