@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import { navigate } from 'gatsby';
 import { withFirebase } from '../../Firebase';
 
 class ProjectsList extends Component {
@@ -29,6 +29,7 @@ class ProjectsList extends Component {
       })
         .then(() => {
             console.log('project created');
+            navigate(`/${projectName}`)
         })
         .catch((error) => {
             console.log('error making project', error);
@@ -50,51 +51,26 @@ class ProjectsList extends Component {
       this.setState({ loading: true });
       console.log('props firebase in projectslist', this.props.firebase);
 
-      // this.props.firebase.users().on('value', snapshot => {
-      //   const usersObject = snapshot.data();
-
-      //   const usersList = Object.keys(usersObject).map(key => ({
-      //     ...usersObject[key],
-      //     uid: key,
-      //   }));
-
-      //   this.setState({
-      //     users: usersList,
-      //     loading: false,
-      //   });
-      // });
 
       // TODO updated to firebase calls
-    //   this.props.firebase.projects().get()
-    //     .then( snapshot => {
-    //       console.log('snapshot in projectList: ', snapshot);
-
-      this.props.firebase.projects().onShapshot((docs) => {
-          docsList = []
-          docs.forEach(doc => {
-              docsList.push(doc.data.projectName)
-          })
-        console.log('current data', docsList);
-        projectsList = docsList;
-
-        this.setState({
-            projects: docsList,
-            loading: false,
-          })
-
-      })
+      this.props.firebase.projects().get()
+        .then( snapshot => {
+          console.log('snapshot in projectList: ', snapshot);
           // const usersObject = snapshot.data();
           // console.log('firebase usersList users snapshot.data(): ', usersObject)
 
-          //const projectsList = snapshot.docs.map(doc => doc.data());
+          const projectsList = snapshot.docs.map(doc => doc.data());
 
           // const usersList = Object.keys(usersObject).map(key => ({
           //   ...usersObject[key],
           //   uid: key,
           // }));
 
-      
-        // })
+          this.setState({
+            projects: projectsList,
+            loading: false,
+          })
+        })
     }
   };
 
