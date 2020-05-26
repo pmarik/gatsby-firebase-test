@@ -31,7 +31,9 @@ const DashboardPageBase = () => (
 
     {/* <Messages /> */}
     <Router>
-      <Projects path='/dashboard/project' />
+      <Projects path='/dashboard/projects'>
+        <Project path='/:projectId' />
+      </Projects>
       <Clients path='/dashboard/clients' />
       <Settings path='/dashboard/settings' />
     </Router>

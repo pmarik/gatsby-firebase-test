@@ -29,7 +29,7 @@ class ProjectsList extends Component {
       })
         .then(() => {
             console.log('project created');
-            navigate(`/${projectName}`)
+            navigate(`/dashboard/project/${projectName}`)
         })
         .catch((error) => {
             console.log('error making project', error);
