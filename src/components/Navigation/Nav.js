@@ -9,10 +9,7 @@ const Nav = () => {
                     <Link to='/'>Landing page</Link>
                 </li>
                 <li>
-                    <Link to='/cart'>Cart</Link>
-                </li>
-                <li>
-                    <Link to='/about'>About</Link>
+                    <Link to='/portfolio'>Portfolio</Link>
                 </li>
             </ul>
         </nav>

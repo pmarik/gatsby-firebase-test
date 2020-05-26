@@ -12,6 +12,7 @@
     "firebase": "^6.0.2",
     "gatsby": "^2.4.3",
     "react": "^16.8.6",
+    "react-admin": "^3.5.3",
     "react-dom": "^16.8.6",
     "recompose": "^0.30.0"
   }

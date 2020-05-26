@@ -2,17 +2,17 @@ import React from 'react';
 
 import LayoutPublic from '../components/layout-public';
 
-const CartPage = () => (
+const PortfolioPage = () => (
   <>
-    <h1>Cart</h1>
+    <h1>Portfolio page</h1>
     <p>
-      This is the cart page
+      This is the portfolio page
     </p>
   </>
 );
 
 export default () => (
   <LayoutPublic>
-    <CartPage />
+    <PortfolioPage />
   </LayoutPublic>
 );

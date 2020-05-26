@@ -9,6 +9,7 @@ import {
 } from '../components/Auth/Session';
 import Projects from '../components/Dashboard/Projects/Projects';
 import Clients from '../components/Dashboard/Clients/Clients';
+import Settings from '../components/Dashboard/Settings/Settings';
 // TODO messages is another document, 
 //import Messages from '../components/Messages';
 
@@ -16,13 +17,23 @@ const DashboardPageBase = () => (
   <div>
     <h1>Dashboard Page</h1>
     <p>User dashboard</p>
-    <Link to="/dashboard/project">view projects</Link>
-    <Link to="/dashboard/clients">view clients</Link>
+    <ul>
+      <li>
+        <Link to="/dashboard/project">view projects</Link>
+      </li>
+      <li>
+        <Link to="/dashboard/clients">view clients</Link>
+      </li>
+      <li>
+        <Link to='/dashboard/settings'>settings</Link>
+      </li>
+    </ul>
 
     {/* <Messages /> */}
     <Router>
       <Projects path='/dashboard/project' />
       <Clients path='/dashboard/clients' />
+      <Settings path='/dashboard/settings' />
     </Router>
   </div>
 );

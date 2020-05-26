@@ -24,9 +24,6 @@ const NavigationAuth = ({ authUser }) => (
       <Link to={ROUTES.LANDING}>Public_Landing</Link>
     </li>
     <li>
-      <Link to={ROUTES.HOME}>Private_App_Home</Link>
-    </li>
-    <li>
       <Link to={ROUTES.DASHBOARD}>Private_Dashboard</Link>
     </li>
     <li>
@@ -49,7 +46,7 @@ const NavigationNonAuth = () => (
       <Link to={ROUTES.LANDING}>Home</Link>
     </li>
     <li>
-      <Link to='/about'>About</Link>
+      <Link to='/portfolio'>Portfolio</Link>
     </li>
     <li>
       <Link to='/blog'>Blog</Link>
@@ -59,9 +56,6 @@ const NavigationNonAuth = () => (
     </li>
     <li>
       <Link to='/contact'>Contact</Link>
-    </li>
-    <li>
-      <Link to='/cart'>Your Cart</Link>
     </li>
     <li>
       <Link to={ROUTES.SIGN_IN}>Sign In</Link>
