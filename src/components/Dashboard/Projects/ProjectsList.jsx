@@ -65,24 +65,36 @@ class ProjectsList extends Component {
       // });
 
       // TODO updated to firebase calls
-      this.props.firebase.projects().get()
-        .then( snapshot => {
-          console.log('snapshot in projectList: ', snapshot);
+    //   this.props.firebase.projects().get()
+    //     .then( snapshot => {
+    //       console.log('snapshot in projectList: ', snapshot);
+
+      this.props.firebase.projects().onShapshot((docs) => {
+          docsList = []
+          docs.forEach(doc => {
+              docsList.push(doc.data.projectName)
+          })
+        console.log('current data', docsList);
+        projectsList = docsList;
+
+        this.setState({
+            projects: docsList,
+            loading: false,
+          })
+
+      })
           // const usersObject = snapshot.data();
           // console.log('firebase usersList users snapshot.data(): ', usersObject)
 
-          const projectsList = snapshot.docs.map(doc => doc.data());
+          //const projectsList = snapshot.docs.map(doc => doc.data());
 
           // const usersList = Object.keys(usersObject).map(key => ({
           //   ...usersObject[key],
           //   uid: key,
           // }));
 
-          this.setState({
-            projects: projectsList,
-            loading: false,
-          })
-        })
+      
+        // })
     }
   };
 
