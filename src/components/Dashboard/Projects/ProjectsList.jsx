@@ -11,8 +11,8 @@ class ProjectsList extends Component {
     this.state = {
       loading: false,
       projects: [],
-      propertyName: '',
-      propertyType: ''
+      projectName: '',
+      projectType: ''
     };
   }
 
@@ -107,11 +107,11 @@ class ProjectsList extends Component {
         <form onSubmit={this.addProject}>
             <label>
                 Project Name
-                <input type='text' name='projectName' value={this.state.propertyName} onChange={this.onChange}/>
+                <input type='text' name='projectName' value={this.state.projectName} onChange={this.onChange}/>
             </label>
             <label>
                 Project Type
-                <input type='text' name='projectType' value={this.state.propertyType} onChange={this.onChange}/>
+                <input type='text' name='projectType' value={this.state.projectType} onChange={this.onChange}/>
             </label>
             <button type="submit">add Project</button>
         </form>
