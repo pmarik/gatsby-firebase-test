@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 
 import {
     AuthUserContext,
@@ -6,16 +6,15 @@ import {
 import PasswordChangeForm from '../../Auth/PasswordChange'
 
 const Projects = () => {
+
+    const authUser = useContext(AuthUserContext);
+
     return (
-            <AuthUserContext.consumer>
-                {authUser => (
-                    <>
+            <>
                         <h3>I am the settings component</h3>
                         <h3>Account: {authUser.email} </h3>
                         <PasswordChangeForm />
-                    </>
-                )}
-            </AuthUserContext.consumer>
+            </>
     )
 }
 
