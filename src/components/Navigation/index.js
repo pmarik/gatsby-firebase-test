@@ -21,9 +21,6 @@ const Navigation = () => (
 const NavigationAuth = ({ authUser }) => (
   <ul>
     <li>
-      <Link to={ROUTES.LANDING}>Public_Landing</Link>
-    </li>
-    <li>
       <Link to={ROUTES.DASHBOARD}>Private_Dashboard</Link>
     </li>
     {!!authUser.roles[ROLES.ADMIN] && (
@@ -38,20 +35,21 @@ const NavigationAuth = ({ authUser }) => (
 );
 
 const NavigationNonAuth = () => (
-  <ul>
-    {/* <li>
-      <Link to={ROUTES.LANDING}>Home</Link>
-    </li>
-    <li>
-      <Link to='/portfolio'>Portfolio</Link>
-    </li>
-    <li>
-      <Link to='/contact'>Contact</Link>
-    </li> */}
-    <li>
-      <Link to={ROUTES.SIGN_IN}>Sign In</Link>
-    </li>
-  </ul>
+  // <ul>
+  //   <li>
+  //     <Link to={ROUTES.LANDING}>Home</Link>
+  //   </li>
+  //   <li>
+  //     <Link to='/portfolio'>Portfolio</Link>
+  //   </li>
+  //   <li>
+  //     <Link to='/contact'>Contact</Link>
+  //   </li>
+  //   <li>
+  //     <Link to={ROUTES.SIGN_IN}>Sign In</Link>
+  //   </li>
+  // </ul>
+  <></>
 );
 
 export default Navigation;

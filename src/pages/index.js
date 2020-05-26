@@ -4,7 +4,7 @@ import LayoutPublic from '../components/layout-public';
 
 const LandingPage = () => (
   <Fragment>
-    <h1>Landing</h1>
+    <h1>Home</h1>
     <p>
       Site Landing page public facing
     </p>
