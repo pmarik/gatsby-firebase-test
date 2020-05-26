@@ -14,12 +14,12 @@ import PasswordForgetForm from '../components/Auth/PasswordForget';
 const SignInPage = () => {
 
   const [toggle, setToggle] = useState(false);
-
+ 
   return (
   <>
     <h1>SignIn</h1>
     <SignInForm />
-    <button onClick={setToggle(true)}>forget password?</button>
+    <button onClick={() => setToggle(true)}>forget password?</button>
     {toggle && <PasswordForgetForm />}
     <SignUpLink />
   </>

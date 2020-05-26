@@ -61,12 +61,6 @@ class PasswordForgetForm extends Component {
   }
 }
 
-const PasswordForgetLink = () => (
-  <p>
-    <Link to={ROUTES.PASSWORD_FORGET}>Forgot Password?</Link>
-  </p>
-);
 
 export default withFirebase(PasswordForgetForm);
 
-export { PasswordForgetLink };
