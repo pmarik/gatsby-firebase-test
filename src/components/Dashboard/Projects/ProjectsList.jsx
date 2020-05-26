@@ -22,8 +22,8 @@ class ProjectsList extends Component {
 
       const projectName = this.state.projectName;
       const projectType = this.state.projectType;
-      
-      this.props.firebase.projects.set({
+
+      this.props.firebase.getDB().collection('projects').set({
           projectName,
           projectType,
       })
