@@ -23,7 +23,7 @@ class ProjectsList extends Component {
       const projectName = this.state.projectName;
       const projectType = this.state.projectType;
 
-      this.props.firebase.getDB().collection('projects').set({
+      this.props.firebase.firestore().collection('projects').set({
           projectName,
           projectType,
       })
@@ -48,6 +48,7 @@ class ProjectsList extends Component {
       this._initFirebase = true;
 
       this.setState({ loading: true });
+      console.log('props firebase in projectslist', this.props.firebase);
 
       // this.props.firebase.users().on('value', snapshot => {
       //   const usersObject = snapshot.data();
