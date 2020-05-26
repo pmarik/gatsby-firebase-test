@@ -11,10 +11,14 @@ class ProjectsList extends Component {
     this.state = {
       loading: false,
       projects: [],
+      propertyName: '',
+      propertyType: ''
     };
   }
 
-  addProject = (projectName, projectType) => {
+  addProject = (e) => {
+      e.preventDefault();
+      console.log('submitted add project')
       this.props.firebase.projects.set({
           projectName,
           projectType,
@@ -27,6 +31,13 @@ class ProjectsList extends Component {
 
         })
         
+  }
+
+  onChange = (e) => {
+    this.setState({
+        ...state,
+       [e.target.name]: e.target.value
+    })
   }
 
   firebaseInit = () => {
@@ -94,6 +105,17 @@ class ProjectsList extends Component {
 
         {!(projects.length > 0) && <p>No current projects, please add a project to begin</p>}
 
+        <form onSubmit={this.addProject}>
+            <label>
+                Project Name
+                <input type='text' name='projectName' value={this.state.propertyName} onChange={this.onChange}/>
+            </label>
+            <label>
+                Project Type
+                <input type='text' name='projectType' value={this.state.propertyType} onChange={this.onChange}/>
+            </label>
+            <button type="submit">add Project</button>
+        </form>
         {/* <ul>
           {projects.map(project => (
             <li >
