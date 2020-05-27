@@ -7,6 +7,7 @@ import {
   withAuthorization,
   withEmailVerification,
 } from '../components/Auth/Session';
+import Project from '../components/Dashboard/Projects/Project'
 import Projects from '../components/Dashboard/Projects/Projects';
 import Clients from '../components/Dashboard/Clients/Clients';
 import Settings from '../components/Dashboard/Settings/Settings';
@@ -19,7 +20,7 @@ const DashboardPageBase = () => (
     <p>User dashboard</p>
     <ul>
       <li>
-        <Link to="/dashboard/project">view projects</Link>
+        <Link to="/dashboard/projects">view projects</Link>
       </li>
       <li>
         <Link to="/dashboard/clients">view clients</Link>
@@ -31,7 +32,9 @@ const DashboardPageBase = () => (
 
     {/* <Messages /> */}
     <Router>
-      <Projects path='/dashboard/projects' />
+      <Projects path='/dashboard/projects'>
+        <Project path='/:projectId' />
+      </Projects>
       <Clients path='/dashboard/clients' />
       <Settings path='/dashboard/settings' />
     </Router>
