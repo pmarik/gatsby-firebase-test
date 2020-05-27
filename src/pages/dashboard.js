@@ -7,7 +7,6 @@ import {
   withAuthorization,
   withEmailVerification,
 } from '../components/Auth/Session';
-import Project from '../components/Dashboard/Projects/Project';
 import Projects from '../components/Dashboard/Projects/Projects';
 import Clients from '../components/Dashboard/Clients/Clients';
 import Settings from '../components/Dashboard/Settings/Settings';
@@ -33,7 +32,6 @@ const DashboardPageBase = () => (
     {/* <Messages /> */}
     <Router>
       <Projects path='/dashboard/projects' />
-      <Project path='dashboard/projects/:projectId' />
       <Clients path='/dashboard/clients' />
       <Settings path='/dashboard/settings' />
     </Router>
