@@ -1,6 +1,6 @@
 import React from 'react';
 
-import LayoutPublic from '../components/layout-public';
+import LayoutPublic from '../../components/layout/layout-public';
 
 const PortfolioPage = () => (
   <>

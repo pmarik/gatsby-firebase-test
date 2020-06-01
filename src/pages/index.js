@@ -1,14 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 
-import LayoutPublic from '../components/layout-public';
+import LayoutPublic from '../components/layout/layout-public';
 
 const LandingPage = () => (
-  <Fragment>
+  <>
     <h1>Home</h1>
     <p>
       Site Landing page public facing
     </p>
-  </Fragment>
+  </>
 );
 
 export default () => (

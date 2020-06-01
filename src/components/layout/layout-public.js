@@ -1,6 +1,7 @@
 import React from 'react';
-import Footer from '../components/footer/Footer'
-import Nav from '../components/Navigation/Nav';
+import Footer from '../footer/Footer'
+import Nav from '../Navigation/Nav';
+import './global.styles.scss';
 
 
 const LayoutPublic = ({ children }) => {

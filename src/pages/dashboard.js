@@ -1,6 +1,6 @@
 import React from 'react';
 import { compose } from 'recompose';
-import Layout from '../components/layout';
+import Layout from '../components/layout/layout';
 import { Link } from 'gatsby';
 import { Router } from '@reach/router';
 import {

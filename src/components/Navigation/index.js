@@ -23,11 +23,11 @@ const NavigationAuth = ({ authUser }) => (
     <li>
       <Link to={ROUTES.DASHBOARD}>Private_Dashboard</Link>
     </li>
-    {!!authUser.roles[ROLES.ADMIN] && (
+    {/* {!!authUser.roles[ROLES.ADMIN] && (
       <li>
         <Link to={ROUTES.ADMIN}>Private_Permission_Admin</Link>
       </li>
-    )}
+    )} */}
     <li>
       <SignOutButton />
     </li>
