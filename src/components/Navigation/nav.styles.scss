@@ -1,26 +1,37 @@
+header {
+    position: fixed;
+    width: 100%;
+    background: #ffffff;
+}
+
 nav {
-    outline: 1px solid orange;
     height: 3.25rem;
-    background: green;
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1344px;
     margin: 0 auto;
-    padding: 0 3rem;
+    padding: 0 4rem;
 
     ul{
         display: flex;
-        outline: 1px solid blue;
     }
 }
 
 .nav-links{
     li {
-        padding-right: 2em;
+        padding-right: 2.5em;
 
         &:last-of-type{
             padding: 0;
         }
+
+        &:hover{
+            opacity: 0.8;
+        }
     }
+}
+
+.active {
+    border-bottom: 2px solid #6DD5ED;
 }

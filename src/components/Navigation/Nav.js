@@ -8,22 +8,20 @@ const Nav = () => {
     return (
         <header>
             <nav>
-                <div>
-                    <img src={logo} alt="Marik Tech" style={{width: '250px'}}/>
-                </div>
+                <img src={logo} alt="Marik Tech" style={{width: '200px'}}/>
 
                 <ul className='nav-links'>
                     <li>
-                        <Link to='/'>Home</Link>
+                        <Link to='/' activeClassName="active" >Home</Link>
                     </li>
                     <li>
-                        <Link to='/portfolio'>Portfolio</Link>
+                        <Link to='/portfolio' activeClassName="active">Portfolio</Link>
                     </li>
                     <li>
-                        <Link to='/contact'>Contact</Link>
+                        <Link to='/contact' activeClassName="active" >Contact</Link>
                     </li>
                 </ul>
-            </nav>
+            </nav> 
         </header>
     )
 }

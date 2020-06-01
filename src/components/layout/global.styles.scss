@@ -40,16 +40,24 @@ h6 { font-size: 0.67rem; }
 /* Keep h1 margins consistent, even when nested */
 h1 { margin: 0.67em 0; }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6, label {
     font-family: 'Roboto', sans-serif;
+    color: #354762;
 }
 
-p, a {
+p, a, input, textarea {
     font-family: 'Nunito', sans-serif;
+    color: #524D4D;
+    font-size: 1.17rem;
 }
 
 a {
     text-decoration: none;
+    color: #354762;
+}
+
+input, textarea {
+  font-size: 1rem;
 }
 
 
@@ -109,7 +117,7 @@ img { border-style: none; }
 svg { overflow: hidden; }
 
 /* Default block display on HTML5 elements */
-article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+article, aside, figcaption, figure, footer, header, hgroup, main, section, div {
   display: block;
 }
 
@@ -128,6 +136,7 @@ li {
     text-decoration: none;
 }
 
-div {
-    display: block;
+.main-content-container {
+  width: 100%;
+  padding: 3.25rem 15%;
 }

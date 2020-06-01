@@ -1,0 +1,51 @@
+.footer {
+    min-height: 90vh;
+    background-image: url('../../assets/images/footer-background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5% 4rem 0 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-main{
+    width: 70%;
+    outline: 2px solid pink;
+}
+
+.footer-aside{
+    width: 30%;
+    outline: 2px solid blue;
+}
+
+.input-wrap{
+    width: 100%;
+    justify-content: flex;
+    margin-bottom: 20px;
+
+    label{
+        display: inline-flex;
+        flex-direction: column;
+        outline: 2px solid green;
+        width: 50%;
+    }
+
+    input {
+        height: 30px;
+        border-radius: 5px;
+        border: none;
+        width: 60%;
+    }
+}
+
+.textarea-wrap{
+    display: flex;
+    flex-direction: column;
+
+    textarea {
+        height: 200px;
+        width: 50%;
+        border-radius: 8px;
+        border: none;
+    }
+}
