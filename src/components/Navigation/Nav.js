@@ -1,10 +1,35 @@
-import React from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import { Link } from 'gatsby';
+import { GlobalDispatchContext } from '../../context/GlobalContextProvider';
 import './nav.styles.scss';
 import logo from '../../assets/images/logo-script.svg';
 
 
 const Nav = () => {
+
+    const dispatch = useContext(GlobalDispatchContext);
+    const [contactIsActive, toggleContactIsActive] = useState(false)
+
+    useEffect(() => {
+        if (window.location.hash == '#contact') toggleContactIsActive(true);
+    });
+
+    const toggleContact = (toggleValue) => {
+        dispatch({
+            type: 'TOGGLE_CONTACT',
+            payload: toggleValue,
+        })
+        toggleContactIsActive(toggleValue);
+    }
+
+    const contactClick = () => {
+        toggleContact(true);
+    }
+
+    const navClick = () => {
+        toggleContact(false);
+    }
+
     return (
         <header>
             <nav>
@@ -12,13 +37,13 @@ const Nav = () => {
 
                 <ul className='nav-links'>
                     <li>
-                        <Link to='/' activeClassName="active" >Home</Link>
+                        <Link to='/' activeClassName='active' className={`${contactIsActive && 'hideActive'}`} onClick={navClick}>Home</Link>
                     </li>
                     <li>
-                        <Link to='/portfolio' activeClassName="active">Portfolio</Link>
+                        <Link to='/portfolio' activeClassName='active' className={`${contactIsActive && 'hideActive'}`} onClick={navClick}>Portfolio</Link>
                     </li>
                     <li>
-                        <Link to='/contact' activeClassName="active" >Contact</Link>
+                        <a href="#contact" className={`${contactIsActive && "active"}`} onClick={contactClick}>Contact</a>
                     </li>
                 </ul>
             </nav> 

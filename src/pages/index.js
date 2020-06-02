@@ -1,17 +1,9 @@
 import React from 'react';
-
 import LayoutPublic from '../components/layout/layout-public';
+import LandingContent from '../components/Landing/LandingContent.component';
 
 const LandingPage = () => (
-  <main className="main-content-container">
-    <section className="hero-home-section">
-      <h1>Boost your online presence to the next level</h1>
-      <p>
-        I specialize in creating and enhancing websites and apps 
-        to grow your business
-      </p>
-    </section>
-  </main>
+  <LandingContent />
 );
 
 export default () => (
