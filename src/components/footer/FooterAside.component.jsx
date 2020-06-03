@@ -1,7 +1,10 @@
 import React from 'react';
+import { Link } from 'gatsby';
 import MailIcon from '../../assets/images/mail.inline.svg'
 import LocationIcon from '../../assets/images/location.inline.svg'
 import PhoneIcon from '../../assets/images/phone.inline.svg'
+import LinkedinIcon from '../../assets/images/linkedin.inline.svg';
+import GithubIcon from '../../assets/images/github.inline.svg';
 
 const FooterAside = () => {
     return (
@@ -31,11 +34,13 @@ const FooterAside = () => {
             </div>
 
             <div className="social-icons">
-
+                <LinkedinIcon />
+                <GithubIcon />
             </div>
 
             <div className="legal-info">
-
+                <Link to="/terms-of-service">Terms of Service</Link> | <Link to="privacy-policy">Privacy Policy</Link>
+                <p> © Marik Tech, LLC</p>
             </div>
            
         </aside>
