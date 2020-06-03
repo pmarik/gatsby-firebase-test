@@ -2,7 +2,7 @@ import React, { useEffect, useContext, useRef } from 'react';
 import { GlobalStateContext  } from '../../context/GlobalContextProvider';
 
 
-const FooterForm = () => {
+const FooterForm = ({ className }) => {
 
     const state = useContext(GlobalStateContext);
 
@@ -32,7 +32,6 @@ const FooterForm = () => {
     }
 
     return (
-        
         <form className="footer-form">
             <div className="input-wrap">
                 <label>
