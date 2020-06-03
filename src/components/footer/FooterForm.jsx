@@ -1,6 +1,6 @@
 import React, { useEffect, useContext, useRef } from 'react';
 import { GlobalStateContext  } from '../../context/GlobalContextProvider';
-
+import { ButtonSubmit } from '../Button/Button.component';
 
 const FooterForm = ({ className }) => {
 
@@ -31,8 +31,13 @@ const FooterForm = ({ className }) => {
         }
     }
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log('footer form submitted')
+    }
+
     return (
-        <form className="footer-form">
+        <form className="footer-form" onSubmit={handleSubmit}>
             <div className="input-wrap">
                 <label>
                     <span className="form-label-text">Name</span>
@@ -49,6 +54,8 @@ const FooterForm = ({ className }) => {
                 <span className="form-label-text">Message</span>
                 <textarea required ref={messageRef}  placeholder="type your message"/>
             </label>
+
+            <ButtonSubmit>SEND MESSAGE</ButtonSubmit>
         </form>
     )
 }

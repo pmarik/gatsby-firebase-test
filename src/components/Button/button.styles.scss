@@ -1,0 +1,50 @@
+.flag-btn-container{
+    width: 210px; 
+    height: 52px; 
+    position: relative; 
+    transition: fill 120ms ease-out;
+    margin-top: 3rem;
+    color: #ffffff;
+  
+    &:hover{
+      color: #354762;
+    }
+  }
+
+button.flag-btn-container{
+    background: transparent;
+    border: none;
+    height: 60px;
+}
+
+
+
+  .flag-btn-container svg,
+  .flag-btn{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: fill 500ms;
+  }
+  
+  .flag-btn-container:hover{
+  
+    cursor: pointer;
+  
+    svg #flg-btn-inside{
+      transition: fill 500ms;
+      fill: #ffffff !important;
+    }
+  }
+
+  .flag-btn{
+    padding-top: 1.45rem;
+    padding-right: 1.8rem;
+    vertical-align: middle;
+    z-index: 1;
+    font-weight: bold ;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+  } 
