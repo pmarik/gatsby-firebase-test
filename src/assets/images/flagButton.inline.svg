@@ -1,10 +1,9 @@
-<svg
-	viewBox="0 0 55.348747 16.26388">
+<svg viewBox="0 0 55.348747 16.26388">
 	<defs/>
-    <path
+    <path class="outlineColor"
 		d="M 0,8.13258 V 0 l 27.674376,0.002 27.67437,0.002 -0.478095,0.52016 c -2.138706,2.32678 -6.706337,7.43022 -6.710452,7.4976 -0.0027,0.0463 3.575278,4.13565 3.575278,4.13565 l 3.580429,4.07897 c 0,0 -12.446081,0.0275 -27.657955,0.0275 H 0 Z"
-		style="fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:0.07000433;stroke-opacity:1" />
-	<path id="flg-btn-inside"
+		style="fill-opacity:1;stroke:none;stroke-width:0.07000433;stroke-opacity:1" />
+	<path id="flg-btn-inside" class="innerColor"
 	    d="M 23.499602,15.16579 1.204289,15.14871 V 8.11893 1.08915 h 26.084569 c 25.422416,0 25.542988,0.0645 25.542988,0.0645 0,0 -4.478041,5.05907 -5.622548,6.24802 -0.282285,0.29325 -0.513248,0.56732 -0.513248,0.60904 0,0.0911 6.165111,7.20593 6.165111,7.20593 l -3.244767,-0.017 c -2.101812,-0.01 -13.854369,-0.0245 -26.116792,-0.0339 z"
-	    style="fill:#5ab5cc;stroke:none;stroke-width:0.07000434;stroke-opacity:1" />
-</svg>
+	    style="stroke:none;stroke-width:0.07000434;stroke-opacity:1" />
+</svg> 

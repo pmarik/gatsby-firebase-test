@@ -2,9 +2,11 @@
     width: 210px; 
     height: 52px; 
     position: relative; 
-    transition: fill 120ms ease-out;
+    transition: fill 350ms ease-in;
     margin-top: 3rem;
+    margin-right: 25px;
     color: #ffffff;
+    display: inline-block;
   
     &:hover{
       color: #354762;
@@ -26,16 +28,13 @@ button.flag-btn-container{
     position: absolute;
     top: 0;
     left: 0;
-    transition: fill 500ms;
+    transition: fill 350ms ease-in;
   }
   
   .flag-btn-container:hover{
-  
     cursor: pointer;
-  
     svg #flg-btn-inside{
-      transition: fill 500ms;
-      fill: #ffffff !important;
+      transition: fill 350ms ease-in;
     }
   }
 
@@ -47,4 +46,6 @@ button.flag-btn-container{
     font-weight: bold ;
     font-size: 0.8rem;
     letter-spacing: 2px;
+    text-align: center;
   } 
+

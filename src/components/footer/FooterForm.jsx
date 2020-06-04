@@ -55,7 +55,15 @@ const FooterForm = ({ className }) => {
                 <textarea required ref={messageRef}  placeholder="type your message"/>
             </label>
 
-            <ButtonSubmit>SEND MESSAGE</ButtonSubmit>
+            <ButtonSubmit
+                textColor="#ffffff"
+                outlineColor="#ffffff" 
+                fillColor="#5ab5cc"
+                hoverTextColor="#2193B0"
+                hoverFillColor="#ffffff"
+             >
+                SEND MESSAGE
+            </ButtonSubmit>
         </form>
     )
 }
