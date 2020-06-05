@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link, useStaticQuery, graphql } from 'gatsby';
+import { Link, useStaticQuery, graphql } from 'gatsby'; 
 import Img from 'gatsby-image';
 
 const ProjectsSection = () => {
@@ -31,7 +31,6 @@ const ProjectsSection = () => {
 
     return (
         <section id="projects" className="home-section featured-projects">
-            <div className="content-container">
                 <h2>Featured Projects</h2>
                 
                 <div className="project-wrap">
@@ -43,7 +42,7 @@ const ProjectsSection = () => {
                                             <Link to="/portfolio"><div class="centered"> View Project</div></Link>
                                             <Link to="/portfolio"><Img fluid={data.unaffiliatedSite.childImageSharp.fluid} alt="Unaffiliated Productions | Client Case" /></Link>	
                                     </div> 
-                                    <p><Link to="/portfolio">Live production site</Link> developed with accessibility and SEO in mind to drive views and establish credibility...</p>
+                                    <p><Link to="/portfolio" className="highlight">Live production site</Link> developed with accessibility and SEO in mind to drive views and establish credibility...</p>
                                 </div>
                                 
                             </section>
@@ -55,7 +54,7 @@ const ProjectsSection = () => {
                                         <Link to="/portfolio"><div className="centered"> View Project</div></Link>
                                         <Link to="/portfolio"><Img fluid={data.daymakerSite.childImageSharp.fluid} alt="Daymaker Touring | Client Case" /></Link>
                                     </div> 
-                                    <p><a href="./projects/case_daymaker.html">Ecommerce consultation</a> to improve the design and functionality of a Shopify store to increase conversions... </p>
+                                    <p><Link to="/portfolio" className="highlight">Ecommerce consultation</Link> to improve the design and functionality of a Shopify store to increase conversions... </p>
                                 </div>
                                 
                             </section>
@@ -67,14 +66,16 @@ const ProjectsSection = () => {
                                         <Link to="/portfolio"><div className="centered"> View Project</div></Link>
                                         <Link to="/portfolio"><Img fluid={data.kogoSite.childImageSharp.fluid} alt="Kogo Foods| Client Case" /></Link>
                                     </div>
-                                    <p><a href="./projects/kogo.html">Gatsby Ecommerce</a> static site built for speed with engaging interactions. Netlify CMS for easy content editing...</p> 
+                                    <p><Link to="/portfolio" className="highlight">Gatsby Ecommerce</Link> static site built for speed with Netlify CMS for easy content editing...</p> 
                                 </div>
                                 
                         </section>
                     
                     </div>
                 </div>
-            </div>
+
+                <Link to="/portfolio" className="highlight">View All Projects</Link>
+
         </section>
     )
 }

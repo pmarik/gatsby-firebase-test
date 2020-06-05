@@ -33,7 +33,7 @@ html, body, p, ol, ul, li, textarea, iframe, h1, h2, h3, h4, h5, h6 {
 h1 { font-size: 2.2rem; }
 h2 { font-size: 1.75em; }
 h3 { font-size: 1.5rem; }
-h4 { font-size: 1.00rem; }
+h4 { font-size: 1.25rem; }
 h5 { font-size: 0.83rem; }
 h6 { font-size: 0.67rem; }
 
@@ -155,5 +155,15 @@ li {
     margin: 0 auto;
     padding: 2% 10%;
     outline: 2px solid orange;
+  }
+}
+
+//a tag highlighting 
+a.highlight{
+  box-shadow: inset 0 -15px 0px -6px #79F7FF;
+  transition: 500ms;
+
+  &:hover{
+      background: #79F7FF;
   }
 }

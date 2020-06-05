@@ -2,6 +2,9 @@ import React from 'react'
 import './landingContent.styles.scss';
 import AboutSection from './AboutSection.component';
 import ProjectsSection from './ProjectsSection.component';
+import ServicesSection from './ServicesSection.component';
+import ProcessSection from './ProcessSection.component';
+import PricingSection from './PricingSection.component';
 
 const LandingContent = () => {
     return (  
@@ -9,14 +12,10 @@ const LandingContent = () => {
 
             <AboutSection />
             <ProjectsSection />
+            <ServicesSection />
+            <ProcessSection />
+            <PricingSection />
                
-                <section  id="services" className="home-section services">
-                    <div className="content-container">
-                        <h2>Services</h2>
-                        <div className="services-container">
-                        </div>
-                    </div>
-                </section>
         </main>
   )
 }
