@@ -38,7 +38,9 @@ h5 { font-size: 0.83rem; }
 h6 { font-size: 0.67rem; }
 
 /* Keep h1 margins consistent, even when nested */
-h1 { margin: 0.67em 0; }
+h1 { 
+  margin: 0.67em 0;
+ }
 
 h1, h2, h3, h4, h5, h6, label {
     font-family: 'Roboto', sans-serif;
@@ -49,6 +51,10 @@ p, a, input, textarea{
     font-family: 'Nunito', sans-serif;
     color: #524D4D;
     font-size: 1.17rem;
+}
+
+p{
+  line-height: 1.75;
 }
 
 a {

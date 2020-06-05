@@ -4,6 +4,11 @@
     border: 1px solid pink;
     width: 100%;
     padding-top: 3.25rem;
+    margin-bottom: 50px;
+
+    &:last-of-type{
+        margin-bottom: 0;
+    }
 
     &.hero{
         height: 43vh;
@@ -109,6 +114,11 @@
         margin-bottom: 25px;
     }
 
+    p{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
 }
 .features{
     display: flex;
@@ -129,9 +139,7 @@
 
         h4{
             margin-bottom: 20px;
-            // margin: 0 0 10px 30%;
-             position: relative;
-            // bottom: 10px;
+            position: relative;
             left: 2.75em;
             display: inline-block;
             width: 78%;
@@ -167,15 +175,38 @@
 .process {
     .content-container{
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
     }
 
     .process-text {
-        width: 45%;
+        //width: 45%;
+        h2, p{
+            margin-bottom: 45px;
+        }
     }
 
     .process-image{
-        width: 45%;
+        //width: 45%;
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .process-bubble{
+        margin-right: 55px;
+        display: inline-block;
+        position: relative;
+
+        &::before{
+            content: url('../../assets/images/processBubble.svg');
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            width: 60px;
+            z-index: -1;
+            top: -12px;
+        }
     }
 }
 
@@ -259,6 +290,23 @@
         position: absolute;
         left: 2.25em;
         top: 2em;
+    }
+
+    .process{
+        .content-container{
+            flex-direction: row;
+            justify-content: space-between;
+
+            .process-text{
+                width: 45%;
+                max-width: 600px;
+            }
+            .process-image{
+                width: 45%;
+                max-width: 45%;
+                margin: 0;
+            }
+        }
     }
 }
 

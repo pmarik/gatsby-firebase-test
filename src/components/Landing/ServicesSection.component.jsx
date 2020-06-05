@@ -8,7 +8,7 @@ const ServicesSection = () => {
 					<h2>Services</h2> 
 
 					<div class="service-description">
-						<p>Your site, your brand. Experience what a personalized online presence can do for your business. Put your creative dollars where they are most effective. I make your ideas a reality with the following focus:</p>
+						<p>Your site, your brand. Experience what a personalized online presence can do for your business. I make your ideas a reality with the following focus:</p>
 					</div>
 
 					<div class="features">
