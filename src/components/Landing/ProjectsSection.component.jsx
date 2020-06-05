@@ -35,7 +35,7 @@ const ProjectsSection = () => {
                 
                 <div className="project-wrap">
                     <div className="project-panels">  
-                            <section className="panel anim" id="anim-slow">
+                            <section className="panel">
                                 <div className="panel-content">
                                     <h4>Unaffiliated Productions</h4>
                                     <div class="sectionimg">
@@ -44,10 +44,9 @@ const ProjectsSection = () => {
                                     </div> 
                                     <p><Link to="/portfolio" className="highlight">Live production site</Link> developed with accessibility and SEO in mind to drive views and establish credibility...</p>
                                 </div>
-                                
                             </section>
 
-                            <section className="panel anim" id="anim-med">
+                            <section className="panel">
                                 <div className="panel-content">
                                     <h4>Daymaker Touring</h4>
                                     <div class="sectionimg">
@@ -59,7 +58,7 @@ const ProjectsSection = () => {
                                 
                             </section>
 
-                            <section className="panel anim" id="anim-fast">
+                            <section className="panel">
                                 <div className="panel-content">
                                     <h4>Kogo Foods</h4>
                                     <div className="sectionimg">
