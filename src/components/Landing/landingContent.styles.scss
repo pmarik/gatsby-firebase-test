@@ -4,7 +4,6 @@
     width: 100%;
     padding-top: 3.25rem;
     margin-bottom: 50px;
-    border: 2px solid purple;
 
     &:last-of-type{
         margin-bottom: 0;
@@ -177,6 +176,7 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        margin: 8% auto 8% auto;
     }
 
     .process-text {
@@ -245,9 +245,9 @@
 }
 
 .pricing-container{
-    border: 2px solid green;
     display: flex;
     align-items: center;
+    flex-direction: column;
 
     .pricing-box{
         border: 2px solid #6DD5ED;
@@ -256,18 +256,23 @@
         flex-direction: column;
         justify-content: space-evenly;
 
+        p{
+            padding: 0 12%;
+        }
+
         a{
             display: inline;
         }
     }
 
     .box-big{
-        width: 36%;
-        height: 400px;
+        width: 100%;
+        min-height: 475px;
+        box-shadow: -10px 0px 20px rgba(109, 213, 237, 0.25), 10px 0px 20px rgba(109, 213, 237, 0.25);
     }
     .box-small{
-        width: 32%;
-        height: 300px;
+        width: 100%;
+        min-height: 375px;
     }
 }
 
@@ -297,6 +302,12 @@
     .process{
         .process-header{
             font-size: 1rem;
+        }
+    }
+
+    .pricing-container{
+        .box-big, .box-small{
+            width: 80%;
         }
     }
 }
@@ -356,6 +367,18 @@
             .process-header{
                 margin: 0 auto 45px 0;
             }
+        }
+    }
+
+    .pricing-container{
+        flex-direction: row;
+
+        .box-big{
+            width: 36%;
+        }
+
+        .box-small{
+            width: 32%;
         }
     }
 

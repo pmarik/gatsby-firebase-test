@@ -160,7 +160,6 @@ li {
     max-width: 1344px;
     margin: 0 auto;
     padding: 2% 10%;
-    outline: 2px solid orange;
   }
 }
 
@@ -172,4 +171,19 @@ a.highlight{
   &:hover{
       background: #79F7FF;
   }
+}
+
+.money{
+  font-family: 'Nunito', 'sans-serif';
+  font-size: 1.65rem;
+  font-weight: bold;
+  color: #2193B0;
+}
+
+
+a.anchor{
+  display: block;
+  position: relative;
+  top: -6.25rem;
+  visibility: hidden;
 }

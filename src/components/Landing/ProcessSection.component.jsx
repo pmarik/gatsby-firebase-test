@@ -4,7 +4,7 @@ import PhoneGraphic from '../../assets/images/phoneProcess.inline.svg';
 
 const ProcessSection = () => {
     return (
-        <section  id="process" className="home-section process">
+        <section  id="process" className=" process">
 				<div class="content-container">
                     <div className="process-text">
                         <div className="process-header">
