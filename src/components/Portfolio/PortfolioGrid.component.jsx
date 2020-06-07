@@ -26,15 +26,15 @@ const PortfolioGrid = () => {
             </div>
 
             <div className="portfolio-img-preview">
-                <Link to="/portfolio"><Img fluid={data.daymakerSite.childImageSharp.fluid} alt="Daymaker Touring | Client Case" /></Link>	
+                <Link to="/portfolio/kogo-foods"><Img fluid={data.daymakerSite.childImageSharp.fluid} alt="Daymaker Touring | Client Case" /></Link>	
             </div>
 
             <div className="portfolio-img-preview">
-             <Link to="/portfolio"><Img fluid={data.daymakerSite.childImageSharp.fluid} alt="Daymaker Touring | Client Case" /></Link>	
+             <Link to="/portfolio/trade-tracker"><Img fluid={data.daymakerSite.childImageSharp.fluid} alt="Daymaker Touring | Client Case" /></Link>	
             </div>
 
             <div className="portfolio-img-preview">
-                <Link to="/portfolio"><Img fluid={data.daymakerSite.childImageSharp.fluid} alt="Daymaker Touring | Client Case" /></Link>	
+                <Link to="/portfolio/3d-viewer"><Img fluid={data.daymakerSite.childImageSharp.fluid} alt="Daymaker Touring | Client Case" /></Link>	
             </div>
         </div>
     )

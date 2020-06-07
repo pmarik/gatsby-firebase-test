@@ -6,7 +6,7 @@ import Img from 'gatsby-image';
 import { ShopifyCard, HtmlCard, CssCard, JsCard } from '../../components/TechnologyCards/TechnologyCards';
 import ReviewQuote from '../../components/reviewQuote/ReviewQuote.component';
 
-const ProjectDaymakerPage = () => {
+const ProjectPage = () => {
     const data = useStaticQuery(graphql`
         query {
             daymakerTemplate: file(relativePath: {eq: "assets/images/daymakerTemplate.png"}) {
@@ -44,8 +44,8 @@ const ProjectDaymakerPage = () => {
                 </div>
 
                 <ReviewQuote>
-                    <q>I recently contracted Paul at Marik Tech for website development and was thoroughly impressed with his ability to take an idea and translate it into a visually appealing and dynamic website. Mr. Marik was able to combine functionality with simplicity, especially when it came to setting up a CMS so I could manage my site. He made it effortless to edit content! In addition, he set me up with a secure way to accept payments through Stripe, so I was able to avoid the monthly costs associated with some other ecommerce platforms. I am extremely happy with his work and appreciate his professional etiquette and diligence.</q> 
-                    <p>Simon Roca - <i>Kogo Foods</i></p>
+                    <q>Working with Marik Tech was a perfect, easy solution for my small business. I built my own shopify website but certain items were very difficult to customize in the end. Paul was able to quickly diagnose web errors and within hours perform fixes that would have taken a full week of my time to research and implement. Marik Tech's professional services and flexibility has allowed me to focus on what I do best at Daymaker Touring rather than wasting countless hours in the rabit hole.</q> 
+                    <p>Giray Dadali - <i>Daymaker Touring LLC</i></p>
                 </ReviewQuote>
 
                 <span style={{display: 'flex', width: '100%', justifyContent: 'flex-end'}}>
@@ -58,7 +58,7 @@ const ProjectDaymakerPage = () => {
 
 export default () => (
   <LayoutPublic>
-    <ProjectDaymakerPage />
+    <ProjectPage />
   </LayoutPublic>
 );
  

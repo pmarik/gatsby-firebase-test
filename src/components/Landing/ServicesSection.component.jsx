@@ -14,7 +14,7 @@ const ServicesSection = () => {
 					<div class="features">
 						<section>
 							<span className="icon icon-code"></span>
-							<h4>Frontend Development</h4>
+							<h4>Web Development</h4>
 							<p>Whether you are looking to create your own site from the ground-up, or improve the site you currently have, I will work with you to bring your ideas to life.</p>
 						</section>
                         <section>

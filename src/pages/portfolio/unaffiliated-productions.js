@@ -3,10 +3,10 @@ import './portfolio.styles.scss';
 import LayoutPublic from '../../components/layout/layout-public';
 import { Link, useStaticQuery, graphql } from 'gatsby'; 
 import Img from 'gatsby-image';
-import { ShopifyCard, HtmlCard, CssCard, JsCard } from '../../components/TechnologyCards/TechnologyCards';
+import { NodeCard, HtmlCard, CssCard, JsCard, WebpackCard, GitCard } from '../../components/TechnologyCards/TechnologyCards';
 import ReviewQuote from '../../components/reviewQuote/ReviewQuote.component';
 
-const ProjectDaymakerPage = () => {
+const ProjectPage = () => {
     const data = useStaticQuery(graphql`
         query {
             unaffiliatedTemplate: file(relativePath: {eq: "assets/images/unaffiliatedTemplate.png"}) {
@@ -39,6 +39,9 @@ const ProjectDaymakerPage = () => {
                     <HtmlCard />
                     <CssCard />
                     <JsCard />
+                    <NodeCard />
+                    <WebpackCard />
+                    <GitCard />
                 </div>
 
                 <ReviewQuote>
@@ -47,7 +50,7 @@ const ProjectDaymakerPage = () => {
                 </ReviewQuote>
 
                 <span style={{display: 'flex', width: '100%', justifyContent: 'flex-end'}}>
-                    <Link to="/portfolio" className="highlight">View Next Project</Link>
+                    <Link to="/portfolio/kogo-foods" className="highlight">View Next Project</Link>
                 </span>
 
             </div>
@@ -56,7 +59,7 @@ const ProjectDaymakerPage = () => {
 
 export default () => (
   <LayoutPublic>
-    <ProjectDaymakerPage />
+    <ProjectPage />
   </LayoutPublic>
 );
  
