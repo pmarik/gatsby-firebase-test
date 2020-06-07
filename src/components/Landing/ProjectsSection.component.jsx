@@ -39,10 +39,10 @@ const ProjectsSection = () => {
                                 <div className="panel-content">
                                     <h4>Unaffiliated Productions</h4>
                                     <div class="sectionimg">
-                                            <Link to="/portfolio"><div class="centered"> View Project</div></Link>
-                                            <Link to="/portfolio"><Img fluid={data.unaffiliatedSite.childImageSharp.fluid} alt="Unaffiliated Productions | Client Case" /></Link>	
+                                            <Link to="/portfolio/unaffiliated-productions"><div class="centered"> View Project</div></Link>
+                                            <Link to="/portfolio/unaffiliated-productions"><Img fluid={data.unaffiliatedSite.childImageSharp.fluid} alt="Unaffiliated Productions | Client Case" /></Link>	
                                     </div> 
-                                    <p><Link to="/portfolio" className="highlight">Live production site</Link> developed with accessibility and SEO in mind to drive views and establish credibility...</p>
+                                    <p><Link to="/portfolio/unaffiliated-productions" className="highlight">Live production site</Link> developed with accessibility and SEO in mind to drive views and establish credibility...</p>
                                 </div>
                             </section>
 
@@ -50,10 +50,10 @@ const ProjectsSection = () => {
                                 <div className="panel-content">
                                     <h4>Daymaker Touring</h4>
                                     <div class="sectionimg">
-                                        <Link to="/portfolio"><div className="centered"> View Project</div></Link>
-                                        <Link to="/portfolio"><Img fluid={data.daymakerSite.childImageSharp.fluid} alt="Daymaker Touring | Client Case" /></Link>
+                                        <Link to="/portfolio/daymaker-touring"><div className="centered"> View Project</div></Link>
+                                        <Link to="/portfolio/daymaker-touring"><Img fluid={data.daymakerSite.childImageSharp.fluid} alt="Daymaker Touring | Client Case" /></Link>
                                     </div> 
-                                    <p><Link to="/portfolio" className="highlight">Ecommerce consultation</Link> to improve the design and functionality of a Shopify store to increase conversions... </p>
+                                    <p><Link to="/portfolio/daymaker-touring" className="highlight">Ecommerce consultation</Link> to improve the design and functionality of a Shopify store to increase conversions... </p>
                                 </div>
                                 
                             </section>

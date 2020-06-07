@@ -47,13 +47,13 @@ h1, h2, h3, h4, h5, h6, label {
     color: #354762;
 }
 
-p, a, input, textarea{
+p, a, input, textarea, q{
     font-family: 'Nunito', sans-serif;
     color: #524D4D;
     font-size: 1.17rem;
 }
 
-p{
+p, q{
   line-height: 1.75;
 }
 

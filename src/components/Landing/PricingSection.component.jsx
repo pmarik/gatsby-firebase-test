@@ -10,7 +10,7 @@ const PricingSection = () => {
                     <div className="pricing-container">
                         <div className="pricing-box box-small">
                             <h3>Small</h3>
-                            <p>Quick development and design changes to your exisitng website  to take it to the next level. Cost effective and efficient to meet your immediate needs.</p>
+                            <p>Quick development and design changes to your existing website  to take it to the next level. Cost effective and efficient to meet your immediate needs.</p>
                             <p><Link to="#contact" className="highlight">Choose Small project</Link></p>
                             <span className="money">$</span>
                         </div>

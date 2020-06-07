@@ -1,3 +1,59 @@
 .portfolio-section{
     padding-top: 3.25rem;
+    border: 1px solid pink;
+    position: relative;
+    padding-bottom: 65px;
+    h1{
+        position: relative;
+        padding-bottom: 25px;
+        &::after{
+            content: '';
+            height: 2px;
+            position: absolute;
+            right: 0;
+            bottom:0;
+            width: 100%;
+            background-image: linear-gradient(to left, #fafafa, #6DD5ED);
+        }
+    }
+
+    .portfolio-grid{
+        width: 100%;
+        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        grid-gap: 2%;
+        object-fit: cover;
+    }
+}
+
+.portfolio-section{
+    h2{
+        margin-bottom: 25px;
+    }
+    .project-img{
+        margin: 25px 0 25px 0;
+    }
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-top: 25px;
+    padding-bottom: 55px;
+}
+
+
+/**********************************
+    MEDIA QUERIES
+************************************/
+@media screen and (min-width: 972px){
+    .portfolio-section{
+        .project-img{
+            width: 50%;
+            float: right;
+            margin-left: 25px;
+        }
+    }
 }
