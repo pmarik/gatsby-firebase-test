@@ -5,7 +5,7 @@ const TermsPage = () => {
 
   return (
     <main className="page-container">
-        <div className="main-content-container">
+        <div className="content-container terms-policy">
             
             <h2>OVERVIEW</h2>
 

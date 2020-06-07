@@ -5,7 +5,7 @@ const PrivacyPage = () => {
 
   return (
   <main className="page-container">
-      <div className="main-content-container">
+      <div className="content-container terms-policy">
         <h2>SECTION 1 - WHAT DO WE DO WITH YOUR INFORMATION?</h2>
 
         <p>When you purchase something from our store, as part of the buying and selling process, we collect the personal information you give us such as your name, address and email address.
