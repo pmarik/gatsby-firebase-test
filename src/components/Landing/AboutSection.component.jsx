@@ -1,11 +1,33 @@
 import React from 'react'
 import Button from '../Button/Button.component';
+import { motion } from 'framer-motion';
+
+const containerVariants = {
+    initial: {
+        opacity: 0,
+        y: 25,
+    },
+    end: {
+        opacity: 1,
+        y: 0,
+        transition: {
+            type: 'tween', 
+            delay: 0.1,
+            duration: 0.5,
+        }
+    }
+}
 
 
 const AboutSection = () => {
     return (
         <section className="home-section hero">
-                    <div className="content-container">
+                    <motion.div 
+                      variants={containerVariants}
+                      initial="initial"
+                      animate="end"
+                      className="content-container">
+
                         <h1>Boost your online presence to the next level</h1>
                         <p>
                             I specialize in creating and enhancing websites and apps 
@@ -34,7 +56,7 @@ const AboutSection = () => {
                                 >
                                 SERVICES
                         </Button>
-                    </div>
+                    </motion.div>
                 </section>
     )
 }

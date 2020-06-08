@@ -12,16 +12,24 @@ nav {
     align-items: center;
     max-width: 1344px;
     margin: 0 auto;
-    padding: 0 4rem;
+    padding: 0 2rem;
+
+    img:hover{
+        cursor: pointer;
+    }
 
     ul{
         display: flex;
+    }
+
+    .logoBig{
+        display: none;
     }
 }
 
 .nav-links{
     li {
-        padding-right: 2.5em;
+        padding-right: 1.1em;
 
         &:last-of-type{
             padding: 0;
@@ -38,5 +46,30 @@ nav {
 
     &.hideActive{
         border-bottom: none;
+    }
+}
+
+@media screen and ( min-width: 378px){
+    .nav-links{
+        li{
+            padding-right: 1.75em;
+        }
+    }
+}
+
+@media screen and (min-width: 678px){
+    nav{
+       padding: 0 4rem;
+       .logoBig{
+           display: block;
+       }
+       .logoSmall{
+           display: none;
+       }
+    }
+    .nav-links{
+        li{
+            padding-right: 2.5em;
+        }
     }
 }

@@ -1,8 +1,9 @@
 import React, { useContext, useState, useEffect } from 'react';
-import { Link } from 'gatsby';
+import { Link, navigate } from 'gatsby';
 import { GlobalDispatchContext } from '../../context/GlobalContextProvider';
 import './nav.styles.scss';
 import logo from '../../assets/images/logo-script.svg';
+import logoSmall from '../../assets/images/logoSmall.svg';
 
 
 const Nav = () => {
@@ -30,11 +31,16 @@ const Nav = () => {
         toggleContact(false);
     }
 
+    const routeHome = () => {
+        navigate(`/`)
+    }
+
     return (
         <header>
             <nav>
-                <img src={logo} alt="Marik Tech" style={{width: '200px'}}/>
-
+                <img src={logo} onClick={routeHome} className="logoBig" alt="Marik Tech" style={{width: '200px'}}/>
+                <img src={logoSmall} onClick={routeHome} className="logoSmall" alt="Marik Tech" style={{width: '40px'}} />
+ 
                 <ul className='nav-links'>
                     <li>
                         <Link to='/' activeClassName='active' className={`${contactIsActive && 'hideActive'}`} onClick={navClick}>Home</Link>
