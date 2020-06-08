@@ -5,6 +5,8 @@ import { Link, useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { GatsbyCard, ReactCard, SassCard, NetlifyCard, GitCard } from '../../components/TechnologyCards/TechnologyCards';
 import ReviewQuote from '../../components/reviewQuote/ReviewQuote.component';
+import KogoScript from '../../assets/images/kogoScript.inline.svg';
+
 
 const ProjectPage = () => {
     const data = useStaticQuery(graphql`
@@ -30,6 +32,8 @@ const ProjectPage = () => {
                         <h2>JAMstack Ecommerce</h2>
                         <p><a className="highlight" href="https://kogofoods.com/" target="_blank" rel="noopener" rel="noreferrer" title="Visit Site">Kogo Foods</a> needed a striking web presence as a platform to sell their products online. This unique opportunity allowed me to fully create the brand identity and develop the site to back it up. This full stack project entailed logo design, prototyping and mockups, and finally a full production ecommerce site.</p>
 						<p>I chose to create this site using Gatsby with Netlify CMS. This provided the client with the flexibility and power associated with React to have immersive and engaging interations throughout the site. Netlify CMS enabled the ability to easily create new blog posts, update page text, and create products while abstracting away the complexity of code. This combination provided the client with more functionality than traditional ecommerce platforms, while avoiding all the fees associated with those frameworks.</p> 
+                        <KogoScript />
+                        <p>To integrate the final static files produced by Gatsby with the ability to accept payments required the use of lamda functions. These were hosted on Netlify and connected to the client's Stripe account to track orders and payments. Thanks to Stripe's React Elements I was able to create a custom checkout styled specifically for Kogo to better strengthen the brand. </p>
                     </div>
                 </section>
 

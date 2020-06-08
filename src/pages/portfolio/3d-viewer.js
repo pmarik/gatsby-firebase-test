@@ -45,7 +45,7 @@ const ProjectPage = () => {
 
 
                 <span style={{display: 'flex', width: '100%', justifyContent: 'flex-end'}}>
-                    <Link to="/portfolio/daymaker-touring" className="highlight">View Next Project</Link>
+                    <Link to="/portfolio/daymaker-touring" className="highlight no-review">View Next Project</Link>
                 </span>
 
             </div>
