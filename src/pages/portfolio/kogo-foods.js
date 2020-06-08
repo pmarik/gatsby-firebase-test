@@ -9,9 +9,9 @@ import ReviewQuote from '../../components/reviewQuote/ReviewQuote.component';
 const ProjectPage = () => {
     const data = useStaticQuery(graphql`
         query {
-            daymakerTemplate: file(relativePath: {eq: "assets/images/daymakerTemplate.png"}) {
+            kogoSite: file(relativePath: {eq: "assets/images/kogoPerspective.png"}) {
                 childImageSharp {
-                    fluid(maxWidth: 776) {
+                    fluid(maxWidth: 500) {
                     ...GatsbyImageSharpFluid
                     }
                 }
@@ -26,7 +26,7 @@ const ProjectPage = () => {
                 <section className='portfolio-section'>
                     <h1>Client Case: Kogo Foods</h1>
                     <div className="case-container">
-                        <Img className="project-img" fluid={data.daymakerTemplate.childImageSharp.fluid} alt="Daymaker Touring | Client Case" />
+                        <Img className="project-img" fluid={data.kogoSite.childImageSharp.fluid} alt="Daymaker Touring | Client Case" />
                         <h2>JAMstack Ecommerce</h2>
                         <p><a className="highlight" href="https://kogofoods.com/" target="_blank" rel="noopener" rel="noreferrer" title="Visit Site">Kogo Foods</a> needed a striking web presence as a platform to sell their products online. This unique opportunity allowed me to fully create the brand identity and develop the site to back it up. This full stack project entailed logo design, prototyping and mockups, and finally a full production ecommerce site.</p>
 						<p>I chose to create this site using Gatsby with Netlify CMS. This provided the client with the flexibility and power associated with React to have immersive and engaging interations throughout the site. Netlify CMS enabled the ability to easily create new blog posts, update page text, and create products while abstracting away the complexity of code. This combination provided the client with more functionality than traditional ecommerce platforms, while avoiding all the fees associated with those frameworks.</p> 

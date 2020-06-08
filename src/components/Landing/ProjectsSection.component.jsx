@@ -62,10 +62,10 @@ const ProjectsSection = () => {
                                 <div className="panel-content">
                                     <h4>Kogo Foods</h4>
                                     <div className="sectionimg">
-                                        <Link to="/portfolio"><div className="centered"> View Project</div></Link>
-                                        <Link to="/portfolio"><Img fluid={data.kogoSite.childImageSharp.fluid} alt="Kogo Foods| Client Case" /></Link>
+                                        <Link to="/portfolio/kogo-foods"><div className="centered"> View Project</div></Link>
+                                        <Link to="/portfolio/kogo-foods"><Img fluid={data.kogoSite.childImageSharp.fluid} alt="Kogo Foods| Client Case" /></Link>
                                     </div>
-                                    <p><Link to="/portfolio" className="highlight">Gatsby Ecommerce</Link> static site built for speed with Netlify CMS for easy content editing...</p> 
+                                    <p><Link to="/portfolio/kogo-foods" className="highlight">Gatsby Ecommerce</Link> static site built for speed with Netlify CMS for easy content editing...</p> 
                                 </div>
                                 
                         </section>
