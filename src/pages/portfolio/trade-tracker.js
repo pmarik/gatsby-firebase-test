@@ -4,6 +4,7 @@ import LayoutPublic from '../../components/layout/layout-public';
 import { Link, useStaticQuery, graphql } from 'gatsby'; 
 import Img from 'gatsby-image';
 import { ReactCard, JsCard, SassCard, GitCard, NodeCard } from '../../components/TechnologyCards/TechnologyCards';
+import SEO from '../../components/SEO.component';
 
 const ProjectPage = () => {
     const data = useStaticQuery(graphql`
@@ -35,6 +36,7 @@ const ProjectPage = () => {
 
     return (
         <main className="page-container">
+            <SEO title="Marik Tech | Portfolio - Trade Tracker" />
             <div className="content-container">
                 <section className='portfolio-section'>
                     <h1>Trade Tracker</h1>

@@ -1,10 +1,13 @@
 import React from 'react';
 import LayoutPublic from '../components/layout/layout-public';
+import SEO from '../components/SEO.component';
+
 
 const PrivacyPage = () => {
 
   return (
   <main className="page-container">
+    <SEO title="Marik Tech | Privacy Policy" />
       <div className="content-container terms-policy">
         <h2>SECTION 1 - WHAT DO WE DO WITH YOUR INFORMATION?</h2>
 

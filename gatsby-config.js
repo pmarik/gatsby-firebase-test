@@ -4,7 +4,10 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Marik Tech`,
+    title: `Marik Tech | Web Development`,
+    description: `Boost your business with enhanced web development and design solutions from Marik Tech.`,
+    url: "https://www.marik.tech",
+    image: "/images/ogDefaultImage.JPG"
   },
   plugins: [
     {
@@ -14,6 +17,7 @@ module.exports = {
         path: `${__dirname}/src`,
       },
     },
+    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-transformer-remark`,

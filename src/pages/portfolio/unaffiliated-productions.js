@@ -5,6 +5,7 @@ import { Link, useStaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { NodeCard, HtmlCard, CssCard, JsCard, WebpackCard, GitCard } from '../../components/TechnologyCards/TechnologyCards';
 import ReviewQuote from '../../components/reviewQuote/ReviewQuote.component';
+import SEO from '../../components/SEO.component';
 
 const ProjectPage = () => {
     const data = useStaticQuery(graphql`
@@ -22,6 +23,7 @@ const ProjectPage = () => {
 
     return (
         <main className="page-container">
+            <SEO title="Marik Tech | Portfolio - Unaffiliated Productions" />
             <div className="content-container">
                 <section className='portfolio-section'>
                     <h1>Client Case: Unaffiliated Productions</h1>

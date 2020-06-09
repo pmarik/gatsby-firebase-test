@@ -4,6 +4,7 @@ import LayoutPublic from '../../components/layout/layout-public';
 import { Link, useStaticQuery, graphql } from 'gatsby'; 
 import Img from 'gatsby-image';
 import { HtmlCard, CssCard, JsCard, ThreeCard } from '../../components/TechnologyCards/TechnologyCards';
+import SEO from '../../components/SEO.component';
 
 const ProjectPage = () => {
     const data = useStaticQuery(graphql`
@@ -21,6 +22,7 @@ const ProjectPage = () => {
 
     return (
         <main className="page-container">
+            <SEO title="Marik Tech | Portfolio - 3D Viewer" />
             <div className="content-container">
                 <section className='portfolio-section'>
                     <h1>Project: 3D Viewer</h1>

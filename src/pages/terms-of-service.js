@@ -1,10 +1,13 @@
 import React from 'react';
 import LayoutPublic from '../components/layout/layout-public';
+import SEO from '../components/SEO.component';
+
 
 const TermsPage = () => {
 
   return (
     <main className="page-container">
+      <SEO title="Marik Tech | Terms of Service" />
         <div className="content-container terms-policy">
             
             <h2>OVERVIEW</h2>

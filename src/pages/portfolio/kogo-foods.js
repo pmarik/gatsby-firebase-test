@@ -6,6 +6,7 @@ import Img from 'gatsby-image';
 import { GatsbyCard, ReactCard, SassCard, NetlifyCard, GitCard } from '../../components/TechnologyCards/TechnologyCards';
 import ReviewQuote from '../../components/reviewQuote/ReviewQuote.component';
 import KogoScript from '../../assets/images/kogoScript.inline.svg';
+import SEO from '../../components/SEO.component';
 
 
 const ProjectPage = () => {
@@ -24,6 +25,7 @@ const ProjectPage = () => {
 
     return (
         <main className="page-container">
+            <SEO title="Marik Tech | Portfolio - Kogo Foods" />
             <div className="content-container">
                 <section className='portfolio-section'>
                     <h1>Client Case: Kogo Foods</h1>
