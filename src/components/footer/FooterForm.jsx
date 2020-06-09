@@ -2,7 +2,7 @@ import React, { useEffect, useContext, useRef } from 'react';
 import { GlobalStateContext  } from '../../context/GlobalContextProvider';
 import { ButtonSubmit } from '../Button/Button.component';
 
-const FooterForm = ({ className }) => {
+const FooterForm = () => {
 
     const state = useContext(GlobalStateContext);
 

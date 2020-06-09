@@ -5,7 +5,6 @@ import './nav.styles.scss';
 import logo from '../../assets/images/logo-script.svg';
 import logoSmall from '../../assets/images/logoSmall.svg';
 
-
 const Nav = () => {
 
     const dispatch = useContext(GlobalDispatchContext);
@@ -13,7 +12,7 @@ const Nav = () => {
 
     useEffect(() => {
         if (window.location.hash == '#contact') toggleContactIsActive(true);
-    });
+    }, []);
 
     const toggleContact = (toggleValue) => {
         dispatch({
@@ -23,7 +22,7 @@ const Nav = () => {
         toggleContactIsActive(toggleValue);
     }
 
-    const contactClick = () => {
+    const contactClick = (e) => {
         toggleContact(true);
     }
 
@@ -46,10 +45,12 @@ const Nav = () => {
                         <Link to='/' activeClassName='active' className={`${contactIsActive && 'hideActive'}`} onClick={navClick}>Home</Link>
                     </li>
                     <li>
-                        <Link to='/portfolio' activeClassName='active' className={`${contactIsActive && 'hideActive'}`} onClick={navClick}>Portfolio</Link>
+                        <Link to='/portfolio' activeClassName='active' partiallyActive className={`${contactIsActive && 'hideActive'}`} onClick={navClick}>Portfolio</Link>
                     </li>
                     <li>
-                        <a href="#contact" className={`${contactIsActive && "active"}`} onClick={contactClick}>Contact</a>
+                        <a href="#contact" className={`${contactIsActive && "active"}`} onClick={contactClick}>
+                            Contact
+                        </a>
                     </li>
                 </ul>
             </nav> 

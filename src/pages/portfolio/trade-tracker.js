@@ -3,7 +3,7 @@ import './portfolio.styles.scss';
 import LayoutPublic from '../../components/layout/layout-public';
 import { Link, useStaticQuery, graphql } from 'gatsby'; 
 import Img from 'gatsby-image';
-import { ReactCard, HtmlCard, CssCard, JsCard, SassCard, GitCard, NodeCard } from '../../components/TechnologyCards/TechnologyCards';
+import { ReactCard, JsCard, SassCard, GitCard, NodeCard } from '../../components/TechnologyCards/TechnologyCards';
 
 const ProjectPage = () => {
     const data = useStaticQuery(graphql`
