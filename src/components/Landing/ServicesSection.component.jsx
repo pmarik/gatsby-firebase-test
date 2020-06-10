@@ -28,20 +28,37 @@ const StyledSpan = styled.span`
 	}
   }
 
-	${props => props.visibility &&
-		(
-			`animation-name: iconAnim;
-			 animation-duration: 0.8s;
-			 animation-fill-mode: forwards;
+  ${props => props.visibility &&
+	(
+		`animation-name: iconAnim;
+		 animation-duration: 0.8s;
+		 animation-fill-mode: forwards;
 
-			 -webkit-animation-name: iconAnim;
-			 -webkit-animation-duration: 0.8s;
-			 -webkit-animation-fill-mode: forwards;
-			`
-		) 
-	}
+		 -webkit-animation-name: iconAnim;
+		 -webkit-animation-duration: 0.8s;
+		 -webkit-animation-fill-mode: forwards;
 
-	@media screen and (min-width: 972px){
+		 &.delay1{
+			 animation-delay: 0.15;
+			-webkit-animation-delay: 0.15s;
+		 }
+
+		 &.delay2{
+			 animation-delay: 0.3s;
+			-webkit-animation-delay: 0.3s;
+
+		 }
+		 &.delay3{
+			 animation-delay: 0.45s;
+			 -webkit-animation-delay: 0.45s;
+		 }
+		`
+
+	) 
+}
+
+
+	@media screen and (max-width: 972px){
 		${props => props.visibility &&
 			(
 				`animation-name: iconAnim;
@@ -51,23 +68,7 @@ const StyledSpan = styled.span`
 				 -webkit-animation-name: iconAnim;
 				 -webkit-animation-duration: 0.8s;
 				 -webkit-animation-fill-mode: forwards;
-
-				 &.delay1{
-					 animation-delay: 0.15;
-					-webkit-animation-delay: 0.15s;
-				 }
-
-				 &.delay2{
-					 animation-delay: 0.3s;
-					-webkit-animation-delay: 0.3s;
-
-				 }
-				 &.delay3{
-					 animation-delay: 0.45s;
-					 -webkit-animation-delay: 0.45s;
-				 }
 				`
-
 			) 
 		}
 	}
