@@ -89,7 +89,6 @@ const ServicesSection = () => {
 						<section>
 							<VisibilitySensor
 								once
-								partialVisibility
 							>
 								{({ isVisible }) => (
 									<StyledSpan className='icon icon-code' visibility={isVisible}></StyledSpan>
