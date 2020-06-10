@@ -12,8 +12,8 @@ const containerVariants = {
         y: 0,
         transition: {
             type: 'tween', 
-            delay: 0.1,
-            duration: 0.5,
+            delay: 0.3,
+            duration: 0.8,
         }
     }
 }

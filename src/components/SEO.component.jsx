@@ -54,6 +54,7 @@ SEO.propTypes = {
   description: PropTypes.string,
   image: PropTypes.string,
   article: PropTypes.bool,
+  lang: PropTypes.string,
 }
 
 SEO.defaultProps = {

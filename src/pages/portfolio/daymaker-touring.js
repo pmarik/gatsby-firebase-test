@@ -24,7 +24,7 @@ const ProjectPage = () => {
     return (
         <main className="page-container">
             <SEO title="Marik Tech | Portfolio - Daymaker Touring" />
-            <div className="content-container">
+            <div className="content-container anim-start-0 fadeIn">
                 <section className='portfolio-section'>
                     <h1>Client Case: Daymaker Touring</h1>
                     <div className="case-container">

@@ -23,7 +23,7 @@ const ProjectPage = () => {
     return (
         <main className="page-container">
             <SEO title="Marik Tech | Portfolio - 3D Viewer" />
-            <div className="content-container">
+            <div className="content-container anim-start-0 fadeIn">
                 <section className='portfolio-section'>
                     <h1>Project: 3D Viewer</h1>
                     <div className="case-container">

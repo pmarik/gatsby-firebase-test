@@ -7,7 +7,7 @@ import SEO from '../../components/SEO.component';
 const PortfolioPage = () => (
   <main className="page-container">
     <SEO title="Marik Tech | Portfolio" />
-    <div className="content-container">
+    <div className="content-container anim-start-0 fadeIn">
       <section className='portfolio-section'>
         <h1>Portfolio</h1>
         <PortfolioGrid />

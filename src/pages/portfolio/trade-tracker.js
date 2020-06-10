@@ -37,7 +37,7 @@ const ProjectPage = () => {
     return (
         <main className="page-container">
             <SEO title="Marik Tech | Portfolio - Trade Tracker" />
-            <div className="content-container">
+            <div className="content-container anim-start-0 fadeIn">
                 <section className='portfolio-section'>
                     <h1>Trade Tracker</h1>
                     <div className="case-container">
