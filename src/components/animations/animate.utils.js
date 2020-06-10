@@ -32,7 +32,25 @@ export const containerVariants = {
     }
 }
 
-export const iconSpanVariants = {
+export const growInVariants = {
+    initial: {
+        opacity: 0,
+        scale: 0.1,
+    },
+    end: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+            type: 'spring',
+            stiffness: 30,
+            delay: 0.1,
+            duration: 0.3,
+
+        }
+    }
+}
+
+export const arrowVariant1 = {
     initial: {
         opacity: 0,
         scale: 0.1,
@@ -44,6 +62,24 @@ export const iconSpanVariants = {
             type: 'spring',
             stiffness: 100,
             delay: 0.1,
+            duration: 0.3,
+
+        }
+    }
+}
+
+export const arrowVariant2 = {
+    initial: {
+        opacity: 0,
+        scale: 0.1,
+    },
+    end: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+            type: 'spring',
+            stiffness: 100,
+            delay: 0.4,
             duration: 0.3,
 
         }
