@@ -28,7 +28,7 @@ const StyledSpan = styled.span`
 	}
   }
 
-	${props => props.visibility ?
+	${props => props.visibility &&
 		(
 			`animation-name: iconAnim;
 			 animation-duration: 0.8s;
@@ -38,8 +38,38 @@ const StyledSpan = styled.span`
 			 -webkit-animation-duration: 0.8s;
 			 -webkit-animation-fill-mode: forwards;
 			`
-		) :
-		''
+		) 
+	}
+
+	@media screen and (min-width: 972px){
+		${props => props.visibility &&
+			(
+				`animation-name: iconAnim;
+				 animation-duration: 0.8s;
+				 animation-fill-mode: forwards;
+	
+				 -webkit-animation-name: iconAnim;
+				 -webkit-animation-duration: 0.8s;
+				 -webkit-animation-fill-mode: forwards;
+
+				 &.delay1{
+					 animation-delay: 0.15;
+					-webkit-animation-delay: 0.15s;
+				 }
+
+				 &.delay2{
+					 animation-delay: 0.3s;
+					-webkit-animation-delay: 0.3s;
+
+				 }
+				 &.delay3{
+					 animation-delay: 0.45s;
+					 -webkit-animation-delay: 0.45s;
+				 }
+				`
+
+			) 
+		}
 	}
 
 `;
@@ -74,7 +104,7 @@ const ServicesSection = () => {
 									partialVisibility
 							>
 								{({ isVisible }) => (
-									<StyledSpan className='icon icon-screen' visibility={isVisible}></StyledSpan>
+									<StyledSpan className='icon icon-screen delay1' visibility={isVisible}></StyledSpan>
 								)}
 							</VisibilitySensor>
 							<h4>Design and Identity</h4>
@@ -86,7 +116,7 @@ const ServicesSection = () => {
 									partialVisibility
 							>
 								{({ isVisible }) => (
-									<StyledSpan className="icon icon-link" visibility={isVisible}></StyledSpan>
+									<StyledSpan className="icon icon-link delay2" visibility={isVisible}></StyledSpan>
 								)}
 							</VisibilitySensor>
 							<h4>SEO and Marketing</h4>
@@ -98,7 +128,7 @@ const ServicesSection = () => {
 										partialVisibility
 							>
 								{({ isVisible }) => (
-									<StyledSpan className="icon icon-settings" visibility={isVisible}></StyledSpan>
+									<StyledSpan className="icon icon-settings delay3" visibility={isVisible}></StyledSpan>
 								)}
 							</VisibilitySensor>
 							<h4>Site Performance and Speed</h4>
