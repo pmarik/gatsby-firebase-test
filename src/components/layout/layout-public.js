@@ -13,10 +13,12 @@ const LayoutPublic = ({ children }) => {
     const dispatch = useContext(GlobalDispatchContext);
 
     useEffect(() => {
-        if( window.location.hash !== '#contact'){
-            dispatch({
-                type: 'RESET_PRICING',
-            })
+        if(typeof window !== 'undefined'){
+            if( window.location.hash !== '#contact'){
+                dispatch({
+                    type: 'RESET_PRICING',
+                })
+            }
         }
     }, [window.location.hash])
 

@@ -6,7 +6,7 @@ export const wrapRootElement = ({ element }) => {
     return <GlobalContextProvider>{element}</GlobalContextProvider>
 }
 
-if(typeof window !== "undefined"){
+if(window && typeof window !== "undefined"){
     require("smooth-scroll")('a[href*="#"]')
 }
 
