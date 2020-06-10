@@ -5,6 +5,7 @@ export const GlobalDispatchContext = React.createContext();
 
 const initialState = {
     contactActive: false,
+    pricingText: '',
 }
 
 function reducer(state, action){
@@ -13,6 +14,20 @@ function reducer(state, action){
             return {
                 ...state,
                 contactActive: action.payload,
+            }
+        }
+        case "ADD_PRICING": {
+            return {
+                ...state,
+                contactActive: true,
+                pricingText: action.payload,
+            }
+        }
+        case "RESET_PRICING": {
+            return {
+                ...state,
+                contactActive: false,
+                pricingText: ''
             }
         }
         default:

@@ -51,7 +51,7 @@ const FooterForm = () => {
             </div>
 
             <label className='textarea-wrap'>
-                <span className="form-label-text">Message</span>
+                <span className="form-label-text">Message {state.pricingText && (<span className="pricing-text"> ({state.pricingText})</span>)}</span>
                 <textarea required ref={messageRef}  placeholder="type your message"/>
             </label>
 

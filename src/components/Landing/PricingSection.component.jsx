@@ -1,11 +1,20 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'gatsby';
+import { GlobalDispatchContext } from '../../context/GlobalContextProvider';
+
  
 
 const PricingSection = () => {
 
+    const dispatch = useContext(GlobalDispatchContext);
+
     const handlePricing = (pricing) => {
         console.log(pricing)
+
+        dispatch({
+            type: 'ADD_PRICING',
+            payload: pricing,
+        })
     }
 
     return (

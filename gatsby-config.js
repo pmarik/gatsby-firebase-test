@@ -7,7 +7,8 @@ module.exports = {
     title: `Marik Tech | Web Development`,
     description: `Boost your business with enhanced web development and design solutions from Marik Tech.`,
     url: "https://www.marik.tech",
-    image: "/images/ogDefaultImage.JPG"
+    image: "/images/ogDefaultImage.JPG",
+    keywords: "web development, web design, website developer near me, website developer, website developer for hire, website developer Salt Lake City UT, website developer for small business, online marketing, website help, freelance web developer, website consultation",
   },
   plugins: [
     {
