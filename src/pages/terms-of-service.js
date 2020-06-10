@@ -8,7 +8,7 @@ const TermsPage = () => {
   return (
     <main className="page-container">
       <SEO title="Marik Tech | Terms of Service" />
-        <div className="content-container terms-policy">
+        <div className="content-container terms-policy anim-start-0 fadeIn">
             
             <h2>OVERVIEW</h2>
 

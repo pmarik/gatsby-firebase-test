@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
 import { useLocation } from "@reach/router"
 import { useStaticQuery, graphql } from "gatsby"
+import favicon from '../../static/images/favicon.ico';
+
 
 const SEO = ({ title, description, image, article, lang }) => {
     const { pathname } = useLocation()
@@ -26,6 +28,11 @@ const SEO = ({ title, description, image, article, lang }) => {
 
     return (
         <Helmet title={seo.title} htmlAttributes={{lang,}} >
+           <link 
+              rel="icon"
+              href={favicon}
+          />
+
           <meta name="description" content={seo.description} />
           <meta name="image" content={seo.image} />
 
@@ -42,6 +49,41 @@ const SEO = ({ title, description, image, article, lang }) => {
           )}
 
           {seo.image && <meta property="og:image" content={seo.image} />}
+
+          <meta property="og:type" content="business.business" />
+
+          {/* <link
+                    rel="apple-touch-icon"
+                    sizes="180x180"
+                    href={`${withPrefix('/')}img/apple-touch-icon.png`}
+                />
+
+                <link
+                    rel="icon"
+                    type="image/png"
+                    href={`${withPrefix('/')}img/favicon-32x32.png`}
+                    sizes="32x32"
+                />
+
+                <link
+                    rel="icon"
+                    type="image/png"
+                    href={`${withPrefix('/')}img/favicon-16x16.png`}
+                    sizes="16x16"
+                />
+
+                <link rel="manifest" href={`${withPrefix('/')}assets/site.webmanifest`} />
+
+                <link
+                    rel="mask-icon"
+                    href={`${withPrefix('/')}img/safari-pinned-tab.svg`}
+                    color="#ff4400"
+                />
+
+                <meta name="theme-color" content="#fff" />
+                <meta name="msapplication-TileColor" content="#00a300"></meta> */}
+
+
 
         </Helmet>
       )

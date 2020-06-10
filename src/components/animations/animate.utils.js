@@ -43,9 +43,7 @@ export const growInVariants = {
         transition: {
             type: 'spring',
             stiffness: 30,
-            delay: 0.1,
             duration: 0.3,
-
         }
     }
 }

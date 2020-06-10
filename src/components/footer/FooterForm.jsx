@@ -37,22 +37,23 @@ const FooterForm = () => {
     }
 
     return (
-        <form className="footer-form" onSubmit={handleSubmit}>
+        <form name="Contact Form" method="POST" data-netlify="true" action="/thank-you" className="footer-form" onSubmit={handleSubmit}>
+            <input type="hidden" name="form-name" value="Contact Form" />
             <div className="input-wrap">
                 <label>
                     <span className="form-label-text">Name</span>
-                    <input required type="text" ref={nameRef} onKeyDown={firstKeyDown} placeholder="enter your name"/>
+                    <input required name="name" type="text" ref={nameRef} onKeyDown={firstKeyDown} placeholder="enter your name"/>
                 </label>
 
                 <label>
                     <span className="form-label-text">Email</span>
-                    <input required type="email" ref={emailRef} onKeyDown={secondKeyDown} placeholder="enter your email"/>
+                    <input required name="email" type="email" ref={emailRef} onKeyDown={secondKeyDown} placeholder="enter your email"/>
                 </label>
             </div>
 
             <label className='textarea-wrap'>
                 <span className="form-label-text">Message {state.pricingText && (<span className="pricing-text"> ({state.pricingText})</span>)}</span>
-                <textarea required ref={messageRef}  placeholder="type your message"/>
+                <textarea required name="message" ref={messageRef}  placeholder="type your message"/>
             </label>
 
             <ButtonSubmit

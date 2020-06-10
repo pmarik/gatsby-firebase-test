@@ -35,9 +35,15 @@ const FooterAside = () => {
             </div>
 
             <div className="social-icons">
-                <LinkedinIcon />
-                <GithubIcon />
-                <CodepenIcon />
+                <a href="https://www.linkedin.com/in/paul-marik-web-developer/" target="_blank" rel="noopener" rel="noreferrer">
+                    <LinkedinIcon />
+                </a>
+                <a href="https://github.com/pmarik" target="_blank" rel="noopener" rel="noreferrer">
+                    <GithubIcon />
+                </a>
+                <a href="https://codepen.io/codingforthefuture" target="_blank" rel="noopener" rel="noreferrer">
+                    <CodepenIcon />
+                </a>
             </div>
 
             <div className="legal-info">

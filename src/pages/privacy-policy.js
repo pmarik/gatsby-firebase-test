@@ -8,7 +8,7 @@ const PrivacyPage = () => {
   return (
   <main className="page-container">
     <SEO title="Marik Tech | Privacy Policy" />
-      <div className="content-container terms-policy">
+      <div className="content-container terms-policy anim-start-0 fadeIn">
         <h2>SECTION 1 - WHAT DO WE DO WITH YOUR INFORMATION?</h2>
 
         <p>When you purchase something from our store, as part of the buying and selling process, we collect the personal information you give us such as your name, address and email address.

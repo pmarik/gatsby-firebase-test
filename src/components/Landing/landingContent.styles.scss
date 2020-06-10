@@ -11,6 +11,7 @@
 
     &.hero{
         height: 43vh;
+        min-height: 750px;
         background-image: url('../../assets/images/curvy-bg3.svg');
         background-repeat: no-repeat;  
         background-size: 200vw;
@@ -365,7 +366,7 @@
             .arrow{
                 width: 10%;
                 display: hidden;
-                opacity: 0;
+                //opacity: 0;
             }
 
             .process-header{

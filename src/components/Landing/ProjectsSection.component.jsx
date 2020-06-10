@@ -54,7 +54,7 @@ const ProjectsSection = () => {
                                         <h4>Unaffiliated Productions</h4>
                                         <motion.div 
                                             whileHover={{ scale: 1.06 }}
-                                            class="sectionimg">
+                                            className="sectionimg">
                                                 <Link to="/portfolio/unaffiliated-productions"><div class="centered"> View Project</div></Link>
                                                 <Link to="/portfolio/unaffiliated-productions"><Img fluid={data.unaffiliatedSite.childImageSharp.fluid} alt="Unaffiliated Productions | Client Case" /></Link>	
                                         </motion.div> 
@@ -79,7 +79,7 @@ const ProjectsSection = () => {
                                         <h4>Daymaker Touring</h4>
                                         <motion.div 
                                             whileHover={{ scale: 1.06 }}
-                                            class="sectionimg">
+                                            className="sectionimg">
                                                 <Link to="/portfolio/daymaker-touring"><div className="centered"> View Project</div></Link>
                                                 <Link to="/portfolio/daymaker-touring"><Img fluid={data.daymakerSite.childImageSharp.fluid} alt="Daymaker Touring | Client Case" /></Link>
                                         </motion.div> 
@@ -105,7 +105,7 @@ const ProjectsSection = () => {
                                         <h4>Kogo Foods</h4>
                                         <motion.div 
                                             whileHover={{ scale: 1.06 }}
-                                            class="sectionimg">
+                                            className="sectionimg">
                                                 <Link to="/portfolio/kogo-foods"><div className="centered"> View Project</div></Link>
                                                 <Link to="/portfolio/kogo-foods"><Img fluid={data.kogoSite.childImageSharp.fluid} alt="Kogo Foods| Client Case" /></Link>
                                         </motion.div>
