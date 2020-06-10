@@ -1,5 +1,5 @@
 import React, { useEffect, useContext } from 'react';
-import Footer from '../Footer/Footer'
+import Footer from '../footer/Footer.component'
 import Nav from '../Navigation/Nav';
 import './global.styles.scss';
 import { Helmet } from 'react-helmet';
