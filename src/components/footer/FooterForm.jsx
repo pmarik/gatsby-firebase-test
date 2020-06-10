@@ -37,7 +37,7 @@ const FooterForm = () => {
     // }
 
     return (
-        <form name="Contact Form" method="POST" data-netlify="true" action="/thank-you" className="footer-form" onSubmit={handleSubmit}>
+        <form name="Contact Form" method="POST" data-netlify="true" action="/thank-you" className="footer-form" >
             <input type="hidden" name="form-name" value="Contact Form" />
             <input type="hidden" name="project-type" value={`${state.pricingText}`} />
             <div className="input-wrap">

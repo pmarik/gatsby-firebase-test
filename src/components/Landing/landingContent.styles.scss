@@ -2,7 +2,7 @@
 .home-section{
     min-height: 100vh;
     width: 100%;
-    padding-top: 3.25rem;
+    padding-top: 1rem;
     margin-bottom: 50px;
 
     &:last-of-type{
@@ -318,6 +318,9 @@
 }
 
 @media screen and (min-width: 972px){
+    .home-section{
+        padding-top: 3.25rem;
+    }
     .features{
         section{
             width: 50%;
