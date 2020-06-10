@@ -1,4 +1,4 @@
-import React, { useEffect, useContext } from 'react';
+import React, { useEffect, useContext, useState } from 'react';
 import Footer from '../footer/Footer.component'
 import Nav from '../Navigation/Nav';
 import './global.styles.scss';
@@ -11,6 +11,8 @@ import SEO from '../SEO.component'
 const LayoutPublic = ({ children }) => {
 
     const dispatch = useContext(GlobalDispatchContext);
+    const [windowAvail, setWindowAvail] = useState(null)
+
 
     useEffect(() => {
         if(typeof window !== 'undefined'){
@@ -18,9 +20,10 @@ const LayoutPublic = ({ children }) => {
                 dispatch({
                     type: 'RESET_PRICING',
                 })
+                setWindowAvail(window.location.hash);
             }
         }
-    }, [window.location.hash])
+    }, [windowAvail])
 
     return (
         <>
