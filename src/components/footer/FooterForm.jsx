@@ -31,14 +31,15 @@ const FooterForm = () => {
         }
     }
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log('footer form submitted')
-    }
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     console.log('footer form submitted')
+    // }
 
     return (
         <form name="Contact Form" method="POST" data-netlify="true" action="/thank-you" className="footer-form" onSubmit={handleSubmit}>
             <input type="hidden" name="form-name" value="Contact Form" />
+            <input type="hidden" name="project-type" value={`${state.pricingText}`} />
             <div className="input-wrap">
                 <label>
                     <span className="form-label-text">Name</span>
