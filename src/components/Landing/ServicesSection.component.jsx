@@ -76,9 +76,6 @@ const StyledSpan = styled.span`
 `;
 
 
-// const MyIcon = styled(motion.span)`
-
-// `
 
 const iconTestVariant = {
 	initial: {
@@ -90,6 +87,7 @@ const iconTestVariant = {
 		scale: 1,
 		transition: {
 			type: 'spring',
+			delay: 0.45,
 			stiffness: 80,
 			duration: 0.8,
 		}
@@ -132,7 +130,13 @@ const ServicesSection = () => {
 									partialVisibility
 							>
 								{({ isVisible }) => (
-									<StyledSpan className='icon icon-screen delay1' visibility={isVisible}></StyledSpan>
+									<motion.span 
+										variants={iconTestVariant}
+										initial='initial'
+										animate={isVisible ? 'end' : 'initial'}
+										className='icon icon-screen delay1' 
+									>
+									</motion.span>
 								)}
 							</VisibilitySensor>
 							<h4>Design and Identity</h4>
@@ -144,7 +148,12 @@ const ServicesSection = () => {
 									partialVisibility
 							>
 								{({ isVisible }) => (
-									<StyledSpan className="icon icon-link delay2" visibility={isVisible}></StyledSpan>
+									<motion.span 
+										variants={iconTestVariant}
+										initial='initial'
+										animate={isVisible ? 'end' : 'initial'}
+										className="icon icon-link delay2" 
+									></motion.span>
 								)}
 							</VisibilitySensor>
 							<h4>SEO and Marketing</h4>
@@ -156,7 +165,12 @@ const ServicesSection = () => {
 										partialVisibility
 							>
 								{({ isVisible }) => (
-									<StyledSpan className="icon icon-settings delay3" visibility={isVisible}></StyledSpan>
+									<motion.span 
+									variants={iconTestVariant}
+										initial='initial'
+										animate={isVisible ? 'end' : 'initial'}
+										className="icon icon-settings delay3"
+									></motion.span>
 								)}
 							</VisibilitySensor>
 							<h4>Site Performance and Speed</h4>
