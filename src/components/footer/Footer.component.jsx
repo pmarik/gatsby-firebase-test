@@ -7,7 +7,7 @@ const Footer = () => {
 
     return (
         <footer className="footer">
-            <a class="anchor" id="contact"></a>
+            <a class="anchorFooter" id="contact"></a>
             <div className="footer-content">
                 <section className='footer-main'>
                     <h2>Get in touch</h2>

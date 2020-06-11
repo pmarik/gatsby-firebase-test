@@ -87,7 +87,7 @@ const iconTestVariant = {
 		scale: 1,
 		transition: {
 			type: 'spring',
-			delay: 0.45,
+			delay: 0.25,
 			stiffness: 80,
 			duration: 0.8,
 		}

@@ -181,12 +181,21 @@ a.highlight{
 }
 
 
-a.anchor{
+a.anchorFooter{
   display: block;
   position: relative;
   top: -6.25rem;
   visibility: hidden;
 }
+
+a.anchor{
+  display: block;
+  position: relative;
+  top: 20px;
+  visibility: hidden;
+}
+
+
 
 /** terms of service and privacy policy styles **/ 
 .terms-policy{
