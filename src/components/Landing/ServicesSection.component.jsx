@@ -96,8 +96,9 @@ const iconTestVariant = {
 
 const ServicesSection = () => {
     return (
-        <section  id="services" className="home-section services">
+        <section className="home-section services">
 				<div class="content-container">
+					<a class="anchor" id="services"></a>
 					<h2>Services</h2> 
 
 					<div class="service-description">

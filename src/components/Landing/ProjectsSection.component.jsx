@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'; 
 import Img from 'gatsby-image';
 import { motion } from 'framer-motion';
@@ -32,8 +32,23 @@ const ProjectsSection = () => {
         }
     `)
 
+    let isSmall = false;
+
+    useEffect(()=> {
+        if (window !== 'undefined'){
+            if (window.innerWidth <= 739){
+                isSmall = true;
+            }
+            else{
+                isSmall = false;
+            }
+        }
+    })
+
+ 
     return (
-        <section id="projects" className="home-section featured-projects">
+        <section className="home-section featured-projects">
+                <a class="anchor" id="projects"></a>
                 <h2>Featured Projects</h2>
                 
                 <div className="project-wrap">
@@ -55,7 +70,7 @@ const ProjectsSection = () => {
                                         <motion.div 
                                             whileHover={{ scale: 1.06 }}
                                             className="sectionimg">
-                                                <Link to="/portfolio/unaffiliated-productions"><div class="centered"> View Project</div></Link>
+                                                <Link to="/portfolio/unaffiliated-productions"><div className="centered"> View Project</div></Link>
                                                 <Link to="/portfolio/unaffiliated-productions"><Img fluid={data.unaffiliatedSite.childImageSharp.fluid} alt="Unaffiliated Productions | Client Case" /></Link>	
                                         </motion.div> 
                                         <p><Link to="/portfolio/unaffiliated-productions" className="highlight">Live production site</Link> developed with accessibility and SEO in mind to drive views and establish credibility...</p>
@@ -73,7 +88,7 @@ const ProjectsSection = () => {
                                     className={`panel`}
                                     variants={containerVariants}
                                     initial='initial'
-                                    animate={isVisible ? 'end2' : 'initial'}
+                                    animate={isVisible ? (isSmall ? 'end' :  'end2') : 'initial'}
                                 >
                                     <div className="panel-content">
                                         <h4>Daymaker Touring</h4>
@@ -99,7 +114,7 @@ const ProjectsSection = () => {
                                    className={`panel`}
                                    variants={containerVariants}
                                    initial='initial'
-                                   animate={isVisible ? 'end3' : 'initial'}
+                                   animate={isVisible ? (isSmall ? 'end' :  'end3') : 'initial'}
                                 >
                                     <div className="panel-content">
                                         <h4>Kogo Foods</h4>
