@@ -1,6 +1,7 @@
 import React from 'react'
 import VisibilitySensor from '../animations/VisibilitySensor.component';
 import styled from 'styled-components'
+import { motion } from 'framer-motion';
 
 const StyledSpan = styled.span`
 @keyframes iconAnim{
@@ -75,6 +76,26 @@ const StyledSpan = styled.span`
 `;
 
 
+// const MyIcon = styled(motion.span)`
+
+// `
+
+const iconTestVariant = {
+	initial: {
+		opacity: 0,
+		scale: 0.1,
+	},
+	end: {
+		opacity: 1,
+		scale: 1,
+		transition: {
+			type: 'spring',
+			stiffness: 80,
+			duration: 0.8,
+		}
+	}
+}
+
 const ServicesSection = () => {
     return (
         <section  id="services" className="home-section services">
@@ -93,7 +114,13 @@ const ServicesSection = () => {
 							>
 								{({ isVisible }) => (
 									// <StyledSpan className='icon icon-code' visibility={isVisible}></StyledSpan>
-									<span className={`icon icon-code ${isVisible && 'animService1'}`}></span>
+									// <span className={`icon icon-code ${isVisible && 'animService1'}`}></span>
+									<motion.span 
+										variants={iconTestVariant}
+										initial='initial'
+										animate={isVisible ? 'end' : 'initial'}
+										className='icon icon-code'>
+									</motion.span>
 								)}
                         	</VisibilitySensor>
 							<h4>Web Development</h4>
