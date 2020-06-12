@@ -5,35 +5,35 @@ import Img from 'gatsby-image';
 const PortfolioGrid = () => {
     const data = useStaticQuery(graphql`
         query {
-            daymakerSite: file(relativePath: {eq: "assets/images/daymakerSite.png"}) {
+            daymakerSite: file(relativePath: {eq: "assets/images/daymakerSite-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 500) {
                     ...GatsbyImageSharpFluid
                     }
                 }
             }
-            unaffiliatedSite: file(relativePath: {eq: "assets/images/unaffiliatedSite.png"}) {
+            unaffiliatedSite: file(relativePath: {eq: "assets/images/unaffiliatedSite-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 500) {
                     ...GatsbyImageSharpFluid
                     }
                 }
             }
-            kogoSite: file(relativePath: {eq: "assets/images/kogoPerspective.png"}) {
+            kogoSite: file(relativePath: {eq: "assets/images/kogoPerspective-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 500) {
                     ...GatsbyImageSharpFluid
                     }
                 }
             }
-            viewer3d: file(relativePath: {eq: "assets/images/3d-viewer-site.png"}) {
+            viewer3d: file(relativePath: {eq: "assets/images/3d-viewer-site-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 500) {
                     ...GatsbyImageSharpFluid
                     }
                 }
             }
-            tradetrackerSite: file(relativePath: {eq: "assets/images/tradetrackerSite.png"}) {
+            tradetrackerSite: file(relativePath: {eq: "assets/images/tradetrackerSite-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 500) {
                     ...GatsbyImageSharpFluid

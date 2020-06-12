@@ -27,6 +27,24 @@
     }
 }
 
+.hero-content{
+    display: flex;
+    //justify-content: space-between;
+
+    // &.graphic{
+    //     padding: 2% 0 2% 10%;
+    // }
+
+    .scene-container{
+        padding-top: 1.7rem;
+    }
+}
+
+.hero-graphic-container{
+    width: 50%;
+    position: relative;
+}
+
 
 /**  Projects Section  **/
 .featured-projects {

@@ -1,20 +1,10 @@
-import React, { useContext} from 'react';
+import React from 'react';
 import LayoutPublic from '../components/layout/layout-public';
 import SEO from '../components/SEO.component';
 import { Link } from 'gatsby'
-import { GlobalDispatchContext } from '../context/GlobalContextProvider';
 
 
 const ThanksPage = () => {
-
-    const dispatch = useContext(GlobalDispatchContext);
-
-    const handleClick = () => {
-        dispatch({
-            type: 'TOGGLE_CONTACT',
-            payload: true
-        })
-    }
 
     return(
         <main className="page-container">

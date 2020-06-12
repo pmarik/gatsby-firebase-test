@@ -3,7 +3,7 @@ import './reviewQuote.styles.scss';
 
 const ReviewQuote = ({ children }) => {
     return (
-        <aside class="case-review">
+        <aside className="case-review">
             { children }
         </aside>
     )

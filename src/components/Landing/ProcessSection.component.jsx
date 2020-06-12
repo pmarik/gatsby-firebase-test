@@ -9,7 +9,7 @@ import { arrowVariant1, arrowVariant2 } from '../animations/animate.utils';
 const ProcessSection = () => {
     return (
         <section  id="process" className=" process">
-				<div class="content-container">
+				<div className="content-container">
                     <div className="process-text">
                         <div className="process-header">
                             <h2 className="process-bubble">Design</h2> 

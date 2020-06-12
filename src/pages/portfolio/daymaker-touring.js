@@ -10,7 +10,7 @@ import SEO from '../../components/SEO.component';
 const ProjectPage = () => {
     const data = useStaticQuery(graphql`
         query {
-            daymakerTemplate: file(relativePath: {eq: "assets/images/daymakerTemplate.png"}) {
+            daymakerTemplate: file(relativePath: {eq: "assets/images/daymakerTemplate-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 776) {
                     ...GatsbyImageSharpFluid

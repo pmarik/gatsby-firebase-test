@@ -10,7 +10,7 @@ import SEO from '../../components/SEO.component';
 const ProjectPage = () => {
     const data = useStaticQuery(graphql`
         query {
-            unaffiliatedTemplate: file(relativePath: {eq: "assets/images/unaffiliatedTemplate.png"}) {
+            unaffiliatedTemplate: file(relativePath: {eq: "assets/images/unaffiliatedTemplate-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 776) {
                     ...GatsbyImageSharpFluid

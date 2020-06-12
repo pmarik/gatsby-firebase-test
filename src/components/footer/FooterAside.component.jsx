@@ -47,7 +47,7 @@ const FooterAside = () => {
             </div>
 
             <div className="legal-info">
-                <p><Link to="/terms-of-service">Terms of Service</Link> |  <Link to="privacy-policy">Privacy Policy</Link></p>
+                <p><Link to="/terms-of-service">Terms of Service</Link> |  <Link to="/privacy-policy">Privacy Policy</Link></p>
                 <p> © 2020 Marik Tech, LLC</p>
             </div>
            

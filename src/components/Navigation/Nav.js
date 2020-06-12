@@ -11,7 +11,7 @@ const Nav = () => {
     const [contactIsActive, toggleContactIsActive] = useState(false)
 
     useEffect(() => {
-        if (window.location.hash == '#contact') toggleContactIsActive(true);
+        if (window.location.hash === '#contact') toggleContactIsActive(true);
     }, []);
 
     const toggleContact = (toggleValue) => {

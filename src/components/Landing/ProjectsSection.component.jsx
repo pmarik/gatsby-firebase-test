@@ -8,21 +8,21 @@ import { containerVariants } from '../animations/animate.utils';
 const ProjectsSection = () => {
     const data = useStaticQuery(graphql`
         query {
-            unaffiliatedSite: file(relativePath: {eq: "assets/images/unaffiliatedSite.png"}) {
+            unaffiliatedSite: file(relativePath: {eq: "assets/images/unaffiliatedSite-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 800) {
                     ...GatsbyImageSharpFluid
                     }
                 }
             }
-            daymakerSite: file(relativePath: {eq: "assets/images/daymakerSite.png"}) {
+            daymakerSite: file(relativePath: {eq: "assets/images/daymakerSite-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 800) {
                     ...GatsbyImageSharpFluid
                     }
                 }
             }
-            kogoSite: file(relativePath: {eq: "assets/images/kogoPerspective.png"}) {
+            kogoSite: file(relativePath: {eq: "assets/images/kogoPerspective-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 800) {
                     ...GatsbyImageSharpFluid
@@ -43,12 +43,12 @@ const ProjectsSection = () => {
                 isSmall = false;
             }
         }
-    })
+    }, [])
 
  
     return (
         <section className="home-section featured-projects">
-                <a class="anchor" id="projects"></a>
+                <a className="anchor" id="projects"></a>
                 <h2>Featured Projects</h2>
                 
                 <div className="project-wrap">

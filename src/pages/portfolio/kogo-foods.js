@@ -12,7 +12,7 @@ import SEO from '../../components/SEO.component';
 const ProjectPage = () => {
     const data = useStaticQuery(graphql`
         query {
-            kogoSite: file(relativePath: {eq: "assets/images/kogoPerspective.png"}) {
+            kogoSite: file(relativePath: {eq: "assets/images/kogoPerspective-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 500) {
                     ...GatsbyImageSharpFluid

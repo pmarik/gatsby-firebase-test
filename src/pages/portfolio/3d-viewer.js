@@ -9,7 +9,7 @@ import SEO from '../../components/SEO.component';
 const ProjectPage = () => {
     const data = useStaticQuery(graphql`
         query {
-            viewer3d: file(relativePath: {eq: "assets/images/3d-viewer-site.png"}) {
+            viewer3d: file(relativePath: {eq: "assets/images/3d-viewer-site-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 500) {
                     ...GatsbyImageSharpFluid

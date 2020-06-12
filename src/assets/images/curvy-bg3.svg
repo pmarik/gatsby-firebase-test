@@ -1,95 +1,19 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="51.357803mm"
-   height="14.4258mm"
-   viewBox="0 0 51.357803 14.4258"
-   version="1.1"
-   id="svg8"
-   sodipodi:docname="curvy-bg3.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
-  <defs
-     id="defs2">
-    <linearGradient
-       inkscape:collect="always"
-       id="linearGradient881">
-      <stop
-         style="stop-color:#2193b0;stop-opacity:1"
-         offset="0"
-         id="stop877" />
-      <stop
-         style="stop-color:#6dd5ed;stop-opacity:1"
-         offset="1"
-         id="stop879" />
-    </linearGradient>
-    <linearGradient
-       inkscape:collect="always"
-       xlink:href="#linearGradient881"
-       id="linearGradient894"
-       gradientUnits="userSpaceOnUse"
-       gradientTransform="translate(-9.8221555,14.854538)"
-       x1="3.0234864"
-       y1="-12.224494"
-       x2="65.176643"
-       y2="-2.3021121" />
-    <linearGradient
-       y2="-5.9102507"
-       x2="57.960365"
-       y1="-12.224494"
-       x1="3.0234864"
-       gradientTransform="matrix(1,0,0,1.0475754,-9.8096273,19.601977)"
-       gradientUnits="userSpaceOnUse"
-       id="linearGradient894-7"
-       xlink:href="#linearGradient881"
-       inkscape:collect="always" />
-  </defs>
-  <sodipodi:namedview
-     id="base"
-     pagecolor="#ffffff"
-     bordercolor="#666666"
-     borderopacity="1.0"
-     inkscape:pageopacity="0.0"
-     inkscape:pageshadow="2"
-     inkscape:zoom="5.6"
-     inkscape:cx="98.846951"
-     inkscape:cy="10.741447"
-     inkscape:document-units="mm"
-     inkscape:current-layer="svg8"
-     showgrid="false"
-     fit-margin-top="0"
-     fit-margin-left="0"
-     fit-margin-right="0"
-     fit-margin-bottom="0"
-     inkscape:window-width="1920"
-     inkscape:window-height="1001"
-     inkscape:window-x="-9"
-     inkscape:window-y="-9"
-     inkscape:window-maximized="1" />
-  <metadata
-     id="metadata5">
-    <rdf:RDF>
-      <cc:Work
-         rdf:about="">
-        <dc:format>image/svg+xml</dc:format>
-        <dc:type
-           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
-      </cc:Work>
-    </rdf:RDF>
-  </metadata>
-  <path
-     sodipodi:nodetypes="csccsscc"
-     inkscape:connector-curvature="0"
-     id="path875-2"
-     d="m -0.12676597,14.384692 c 0,0 19.96070297,-0.706273 26.04939097,-0.663358 8.054676,0.05677 25.57692,0.659458 25.57692,0.659458 l -0.0059,-6.1812946 c 0,0 -10.456239,1.7872426 -17.738335,0.7215865 C 27.07325,7.943257 24.42472,6.4126177 14.110996,4.6513323 9.0758516,3.791475 -0.14174107,4.1677914 -0.14174107,4.1677914 Z"
-     style="fill:url(#linearGradient894-7);fill-opacity:1;stroke:none;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" />
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="51.358mm" height="14.426mm" version="1.1" viewBox="0 0 51.358 14.426" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<linearGradient id="a" x1="3.0235" x2="57.96" y1="-12.224" y2="-5.9103" gradientTransform="matrix(1 0 0 1.0476 -9.8096 19.602)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2193b0" offset="0"/>
+<stop stop-color="#6dd5ed" offset="1"/>
+</linearGradient>
+</defs>
+<metadata>
+<rdf:RDF>
+<cc:Work rdf:about="">
+<dc:format>image/svg+xml</dc:format>
+<dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+<dc:title/>
+</cc:Work>
+</rdf:RDF>
+</metadata>
+<path d="m-0.12677 14.385s19.961-0.70627 26.049-0.66336c8.0547 0.05677 25.577 0.65946 25.577 0.65946l-0.0059-6.1813s-10.456 1.7872-17.738 0.72159c-6.6821-0.97783-9.3306-2.5085-19.644-4.2698-5.0351-0.85986-14.253-0.48354-14.253-0.48354z" fill="url(#a)"/>
 </svg>

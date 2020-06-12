@@ -1,6 +1,8 @@
 import React from 'react'
 import Button from '../Button/Button.component';
 import { motion } from 'framer-motion';
+import HeroGraphic from '../../assets/images/heroGraphic.inline.svg';
+
 
 const containerVariants = {
     initial: {
@@ -26,37 +28,45 @@ const AboutSection = () => {
                       variants={containerVariants}
                       initial="initial"
                       animate="end"
-                      className="content-container">
+                      className="content-container hero-content graphic">
 
-                        <h1>Boost your online presence to the next level</h1>
-                        <p>
-                            I specialize in creating and enhancing websites and apps 
-                            to grow your business
-                        </p>
+                        <div>
+                            <h1>Boost your online presence to the next level</h1>
+                            <p>
+                                I specialize in creating and enhancing websites and apps 
+                                to grow your business
+                            </p>
 
-                        <Button 
-                            btnTarget="#projects" 
-                            textColor="#ffffff"
-                            outlineColor="#2193B0" 
-                            fillColor="#2193B0"
-                            hoverTextColor="#2193B0"
-                            hoverFillColor="#ffffff"
-                            direction='left'
-                                >
-                                SEE MY WORK
-                        </Button>
+                            <Button 
+                                btnTarget="#projects" 
+                                textColor="#ffffff"
+                                outlineColor="#2193B0" 
+                                fillColor="#2193B0"
+                                hoverTextColor="#2193B0"
+                                hoverFillColor="#ffffff"
+                                direction='left'
+                                    >
+                                    SEE MY WORK
+                            </Button>
 
-                        <Button 
-                            btnTarget="#services" 
-                            textColor="#2193B0"
-                            outlineColor="#2193B0" 
-                            fillColor="#ffffff"
-                            hoverTextColor="#ffffff"
-                            hoverFillColor="#2193B0"
-                                >
-                                SERVICES
-                        </Button>
+                            <Button 
+                                btnTarget="#services" 
+                                textColor="#2193B0"
+                                outlineColor="#2193B0" 
+                                fillColor="#ffffff"
+                                hoverTextColor="#ffffff"
+                                hoverFillColor="#2193B0"
+                                    >
+                                    SERVICES
+                            </Button>
+                        </div>
+
+                        <div className="hero-graphic-container">
+                            <HeroGraphic />
+                        </div>
+
                     </motion.div>
+
                 </section>
     )
 }

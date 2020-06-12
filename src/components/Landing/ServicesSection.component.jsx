@@ -97,15 +97,15 @@ const iconTestVariant = {
 const ServicesSection = () => {
     return (
         <section className="home-section services">
-				<div class="content-container">
-					<a class="anchor" id="services"></a>
+				<div className="content-container">
+					<a className="anchor" id="services"></a>
 					<h2>Services</h2> 
 
-					<div class="service-description">
+					<div className="service-description">
 						<p>Your site, your brand. Experience what a personalized online presence can do for your business. I make your ideas a reality with the following focus:</p>
 					</div>
 
-					<div class="features">
+					<div className="features">
 						<section>
 							<VisibilitySensor
 								once

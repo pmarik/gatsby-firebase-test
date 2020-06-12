@@ -9,21 +9,21 @@ import SEO from '../../components/SEO.component';
 const ProjectPage = () => {
     const data = useStaticQuery(graphql`
         query {
-            tradetrackerSite: file(relativePath: {eq: "assets/images/tradetrackerSite.png"}) {
+            tradetrackerSite: file(relativePath: {eq: "assets/images/tradetrackerSite-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 500) {
                     ...GatsbyImageSharpFluid
                     }
                 }
             }
-            tradeJournal: file(relativePath: {eq: "assets/images/tradeTracker_journal.JPG"}) {
+            tradeJournal: file(relativePath: {eq: "assets/images/tradeTracker_journal-min.jpg"}) {
                 childImageSharp {
                     fluid(maxWidth: 500) {
                     ...GatsbyImageSharpFluid
                     }
                 }
             }
-            tradeModal: file(relativePath: {eq: "assets/images/tradeTracker_prevModal.JPG"}) {
+            tradeModal: file(relativePath: {eq: "assets/images/tradeTracker_prevModal-min.jpg"}) {
                 childImageSharp {
                     fluid(maxWidth: 500) {
                     ...GatsbyImageSharpFluid

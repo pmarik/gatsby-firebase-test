@@ -2,9 +2,6 @@ import React, { useEffect, useContext, useState } from 'react';
 import Footer from '../footer/Footer.component'
 import Nav from '../Navigation/Nav';
 import './global.styles.scss';
-import { Helmet } from 'react-helmet';
-import { withPrefix } from 'gatsby';
-import favicon from '../../../static/images/favicon.ico';
 import { GlobalDispatchContext } from '../../context/GlobalContextProvider';
 import SEO from '../SEO.component'
 
