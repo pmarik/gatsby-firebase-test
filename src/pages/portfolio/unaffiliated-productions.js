@@ -1,27 +1,13 @@
 import React from 'react';
 import './portfolio.styles.scss';
 import LayoutPublic from '../../components/layout/layout-public';
-import { Link, useStaticQuery, graphql } from 'gatsby'; 
+import { Link, graphql } from 'gatsby'; 
 import Img from 'gatsby-image';
 import { NodeCard, HtmlCard, CssCard, JsCard, WebpackCard, GitCard } from '../../components/TechnologyCards/TechnologyCards';
 import ReviewQuote from '../../components/reviewQuote/ReviewQuote.component';
 import SEO from '../../components/SEO.component';
 
-const ProjectPage = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            unaffiliatedTemplate: file(relativePath: {eq: "assets/images/unaffiliatedTemplate-min.png"}) {
-                childImageSharp {
-                    fluid(maxWidth: 776) {
-                    ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-        }
-    `)
-
-
-    return (
+const ProjectUnaffiliated = ({ data }) => (
         <main className="page-container">
             <SEO title="Marik Tech | Portfolio - Unaffiliated Productions" />
             <div className="content-container anim-start-0 fadeIn">
@@ -57,11 +43,25 @@ const ProjectPage = () => {
 
             </div>
         </main>
-)};
+);
 
-export default () => (
+const ProjectPageUnaffiliated = ({ data }) => (
   <LayoutPublic>
-    <ProjectPage />
+    <ProjectUnaffiliated data={data} />
   </LayoutPublic>
 );
+
+export default ProjectPageUnaffiliated;
+
+export const query = graphql`
+    query ProjectPageUnaffiliated{
+        unaffiliatedTemplate: file(relativePath: {eq: "assets/images/unaffiliatedTemplate-min.png"}) {
+            childImageSharp {
+                fluid(maxWidth: 776) {
+                ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`
  

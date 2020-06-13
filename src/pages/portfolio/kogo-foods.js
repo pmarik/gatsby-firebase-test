@@ -1,7 +1,7 @@
 import React from 'react';
 import './portfolio.styles.scss';
 import LayoutPublic from '../../components/layout/layout-public';
-import { Link, useStaticQuery, graphql } from 'gatsby'; 
+import { Link, graphql } from 'gatsby'; 
 import Img from 'gatsby-image';
 import { GatsbyCard, ReactCard, SassCard, NetlifyCard, GitCard } from '../../components/TechnologyCards/TechnologyCards';
 import ReviewQuote from '../../components/reviewQuote/ReviewQuote.component';
@@ -9,21 +9,7 @@ import KogoScript from '../../assets/images/kogoScript.inline.svg';
 import SEO from '../../components/SEO.component';
 
 
-const ProjectPage = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            kogoSite: file(relativePath: {eq: "assets/images/kogoPerspective-min.png"}) {
-                childImageSharp {
-                    fluid(maxWidth: 500) {
-                    ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-        }
-    `)
-
-
-    return (
+const ProjectKogo = ({ data }) => (
         <main className="page-container">
             <SEO title="Marik Tech | Portfolio - Kogo Foods" />
             <div className="content-container anim-start-0 fadeIn">
@@ -58,11 +44,25 @@ const ProjectPage = () => {
 
             </div>
         </main>
-)};
+);
 
-export default () => (
+const ProjectPageKogo = ({ data}) => (
   <LayoutPublic>
-    <ProjectPage />
+    <ProjectKogo data={data} />
   </LayoutPublic>
 );
- 
+
+export default ProjectPageKogo
+
+
+export const query = graphql`
+    query ProjectPageKogo{
+        kogoSite: file(relativePath: {eq: "assets/images/kogoPerspective-min.png"}) {
+            childImageSharp {
+                fluid(maxWidth: 500) {
+                ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`

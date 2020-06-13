@@ -1,26 +1,12 @@
 import React from 'react';
 import './portfolio.styles.scss';
 import LayoutPublic from '../../components/layout/layout-public';
-import { Link, useStaticQuery, graphql } from 'gatsby'; 
+import { Link, graphql } from 'gatsby'; 
 import Img from 'gatsby-image';
 import { HtmlCard, CssCard, JsCard, ThreeCard } from '../../components/TechnologyCards/TechnologyCards';
 import SEO from '../../components/SEO.component';
 
-const ProjectPage = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            viewer3d: file(relativePath: {eq: "assets/images/3d-viewer-site-min.png"}) {
-                childImageSharp {
-                    fluid(maxWidth: 500) {
-                    ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-        }
-    `)
-
-
-    return (
+const ProjectViewer = ({ data }) => (
         <main className="page-container">
             <SEO title="Marik Tech | Portfolio - 3D Viewer" />
             <div className="content-container anim-start-0 fadeIn">
@@ -51,11 +37,25 @@ const ProjectPage = () => {
 
             </div>
         </main>
-)};
-
-export default () => (
-  <LayoutPublic>
-    <ProjectPage />
-  </LayoutPublic>
 );
- 
+
+const ProjectPageViewer = ({ data }) => (
+    <LayoutPublic>
+        <ProjectViewer data={data} />
+    </LayoutPublic>
+)
+
+export default ProjectPageViewer
+
+export const query = graphql`
+    query ProjectPageViewer{
+        viewer3d: file(relativePath: {eq: "assets/images/3d-viewer-site-min.png"}) {
+            childImageSharp {
+                fluid(maxWidth: 500) {
+                ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`
+

@@ -98,8 +98,7 @@ const iconTestVariant = {
 const ServicesSection = () => {
     return (
         <section className="home-section services" id="services">
-				<div className="content-container">
-					{/* <a className="anchor" id="services"></a> */}
+				{/* <div className="content-container"> */}
 					<h2>Services</h2> 
 
 					<div className="service-description">
@@ -179,7 +178,7 @@ const ServicesSection = () => {
 							<p>Don't lose potential customers due to a slow website. Increase the load speed of your site to prevent users from leaving prematurely.</p>
 						</section>
 					</div>
-				</div>
+				{/* </div> */}
         </section>
     )
 }

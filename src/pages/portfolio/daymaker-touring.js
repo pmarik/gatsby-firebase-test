@@ -1,27 +1,13 @@
 import React from 'react';
 import './portfolio.styles.scss';
 import LayoutPublic from '../../components/layout/layout-public';
-import { Link, useStaticQuery, graphql } from 'gatsby'; 
+import { Link, graphql } from 'gatsby'; 
 import Img from 'gatsby-image';
 import { ShopifyCard, HtmlCard, CssCard, JsCard } from '../../components/TechnologyCards/TechnologyCards';
 import ReviewQuote from '../../components/reviewQuote/ReviewQuote.component';
 import SEO from '../../components/SEO.component';
 
-const ProjectPage = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            daymakerTemplate: file(relativePath: {eq: "assets/images/daymakerTemplate-min.png"}) {
-                childImageSharp {
-                    fluid(maxWidth: 776) {
-                    ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-        }
-    `)
-
-
-    return (
+const ProjectDaymaker = ({ data }) => (
         <main className="page-container">
             <SEO title="Marik Tech | Portfolio - Daymaker Touring" />
             <div className="content-container anim-start-0 fadeIn">
@@ -56,11 +42,24 @@ const ProjectPage = () => {
 
             </div>
         </main>
-)};
-
-export default () => (
-  <LayoutPublic>
-    <ProjectPage />
-  </LayoutPublic>
 );
+
+const ProjectPageDaymaker = ({ data }) => (
+    <LayoutPublic>
+        <ProjectDaymaker data={data}/>
+    </LayoutPublic>
+)
+
+export default ProjectPageDaymaker
  
+export const query = graphql` 
+    query ProjectPageDaymaker{
+        daymakerTemplate: file(relativePath: {eq: "assets/images/daymakerTemplate-min.png"}) {
+            childImageSharp {
+                fluid(maxWidth: 776) {
+                ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`

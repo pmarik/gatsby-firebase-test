@@ -45,6 +45,10 @@ const AboutSection = () => {
                                 hoverTextColor="#2193B0"
                                 hoverFillColor="#ffffff"
                                 direction='left'
+                                options={{
+                                    offset: -30,
+                                    duration: 600,
+                                }}
                                     >
                                     SEE MY WORK
                             </Button>
@@ -56,6 +60,10 @@ const AboutSection = () => {
                                 fillColor="#ffffff"
                                 hoverTextColor="#ffffff"
                                 hoverFillColor="#2193B0"
+                                options={{
+                                    offset: -30,
+                                    duration: 900
+                                }}
                                     >
                                     SERVICES
                             </Button>

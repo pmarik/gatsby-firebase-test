@@ -1,40 +1,12 @@
 import React from 'react';
 import './portfolio.styles.scss';
 import LayoutPublic from '../../components/layout/layout-public';
-import { Link, useStaticQuery, graphql } from 'gatsby'; 
+import { Link, graphql } from 'gatsby'; 
 import Img from 'gatsby-image';
 import { ReactCard, JsCard, SassCard, GitCard, NodeCard } from '../../components/TechnologyCards/TechnologyCards';
 import SEO from '../../components/SEO.component';
 
-const ProjectPage = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            tradetrackerSite: file(relativePath: {eq: "assets/images/tradetrackerSite-min.png"}) {
-                childImageSharp {
-                    fluid(maxWidth: 500) {
-                    ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-            tradeJournal: file(relativePath: {eq: "assets/images/tradeTracker_journal-min.jpg"}) {
-                childImageSharp {
-                    fluid(maxWidth: 500) {
-                    ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-            tradeModal: file(relativePath: {eq: "assets/images/tradeTracker_prevModal-min.jpg"}) {
-                childImageSharp {
-                    fluid(maxWidth: 500) {
-                    ...GatsbyImageSharpFluid
-                    }
-                }
-            }
-        }
-    `)
-
-
-    return (
+const ProjectTrade = ({ data }) => (
         <main className="page-container">
             <SEO title="Marik Tech | Portfolio - Trade Tracker" />
             <div className="content-container anim-start-0 fadeIn">
@@ -70,11 +42,39 @@ const ProjectPage = () => {
 
             </div>
         </main>
-)};
+);
 
-export default () => (
+const ProjectPageTrade = ({ data }) => (
   <LayoutPublic>
-    <ProjectPage />
+    <ProjectTrade data={data} />
   </LayoutPublic>
 );
+
+export default ProjectPageTrade;
+
+export const query = graphql`
+    query ProjectPageTrade{
+        tradetrackerSite: file(relativePath: {eq: "assets/images/tradetrackerSite-min.png"}) {
+            childImageSharp {
+                fluid(maxWidth: 500) {
+                ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        tradeJournal: file(relativePath: {eq: "assets/images/tradeTracker_journal-min.jpg"}) {
+            childImageSharp {
+                fluid(maxWidth: 500) {
+                ...GatsbyImageSharpFluid
+                }
+            }
+        }
+        tradeModal: file(relativePath: {eq: "assets/images/tradeTracker_prevModal-min.jpg"}) {
+            childImageSharp {
+                fluid(maxWidth: 500) {
+                ...GatsbyImageSharpFluid
+                }
+            }
+        }
+    }
+`
  

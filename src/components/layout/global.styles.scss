@@ -47,10 +47,14 @@ h1, h2, h3, h4, h5, h6, label {
     color: #354762;
 }
 
-p, a, input, textarea, q{
+p, a, input, textarea, q, .jump-txt {
     font-family: 'Nunito', sans-serif;
     color: #524D4D;
     font-size: 1.17rem;
+}
+
+.jump-txt:hover{
+  cursor: pointer;
 }
 
 p, q{
@@ -163,8 +167,8 @@ li {
   }
 }
 
-//a tag highlighting 
-a.highlight{
+//link highlighting 
+.highlight{
   box-shadow: inset 0 -15px 0px -6px #79F7FF;
   transition: 500ms;
 
@@ -179,22 +183,6 @@ a.highlight{
   font-weight: bold;
   color: #2193B0;
 }
-
-
-a.anchorFooter{
-  display: block;
-  position: relative;
-  top: -6.25rem;
-  visibility: hidden;
-}
-
-a.anchor{
-  display: block;
-  position: relative;
-  top: -3.25rem;
-  visibility: hidden;
-}
-
 
 
 /** terms of service and privacy policy styles **/ 

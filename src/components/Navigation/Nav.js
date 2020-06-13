@@ -49,10 +49,7 @@ const Nav = () => {
                         <Link to='/portfolio' activeClassName='active' partiallyActive className={`${contactIsActive && 'hideActive'}`} onClick={navClick}>Portfolio</Link>
                     </li>
                     <li>
-                        {/* <a href="#contact" className={`${contactIsActive && "active"}`} onClick={contactClick}>
-                            Contact
-                        </a> */}
-                        <Jump target={'#contact'} ><span className={`${contactIsActive && "active"}`} onClick={contactClick}>Contact</span></Jump>
+                        <Jump target={'#contact'} options={{offset:-60, duration: 1200}}><span className={`${contactIsActive && "active"} jump-txt`} onClick={contactClick}>Contact</span></Jump>
                     </li>
                 </ul>
             </nav> 
