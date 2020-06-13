@@ -30,7 +30,7 @@ const AboutSection = () => {
                       animate="end"
                       className="content-container hero-content graphic">
 
-                        <div>
+                        <div className="hero-text">
                             <h1>Boost your online presence to the next level</h1>
                             <p>
                                 I specialize in creating and enhancing websites and apps 
@@ -61,9 +61,7 @@ const AboutSection = () => {
                             </Button>
                         </div>
 
-                        <div className="hero-graphic-container">
-                            <HeroGraphic />
-                        </div>
+                        <HeroGraphic />
 
                     </motion.div>
 

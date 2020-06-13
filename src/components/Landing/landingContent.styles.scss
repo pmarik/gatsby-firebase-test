@@ -30,7 +30,6 @@
 .hero-content{
     display: flex;
     //justify-content: space-between;
-
     // &.graphic{
     //     padding: 2% 0 2% 10%;
     // }
@@ -40,9 +39,16 @@
     }
 }
 
-.hero-graphic-container{
-    width: 50%;
-    position: relative;
+.hero-graphic{
+    //width: 50%;
+    //width: 100%;
+    display: none;
+   // position: relative;
+   // margin-top: 55px;
+}
+
+.hero-text{
+    min-height: 400px;
 }
 
 
@@ -409,6 +415,15 @@
         }
     }
 
+}
+
+@media screen and (min-width: 1044px){
+    .hero-graphic{
+        width: 50%;
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 @media screen and (min-width: 1169px){
