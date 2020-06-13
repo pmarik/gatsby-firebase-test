@@ -10,7 +10,6 @@
     }
 
     &.hero{
-        padding-top: 3.25rem;
         height: 43vh;
         min-height: 750px;
         background-image: url('../../assets/images/curvy-bg3.svg');
@@ -142,7 +141,7 @@
 
 
     h2, .service-description{
-        margin: 25px;
+        margin: 25px auto 25px auto;
     }
 
     p{
@@ -351,6 +350,9 @@
 @media screen and (min-width: 972px){
     .home-section{
         //padding-top: 3.25rem;
+        &.hero{
+            padding-top: 3.25rem;
+        }
     }
     .features{
         section{
