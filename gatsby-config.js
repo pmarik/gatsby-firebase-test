@@ -11,6 +11,7 @@ module.exports = {
     keywords: "web development, web design, website developer near me, website developer, website developer for hire, website developer Salt Lake City UT, website developer for small business, online marketing, website help, freelance web developer, website consultation",
   },
   plugins: [
+    `gatsby-plugin-preact`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -39,6 +40,6 @@ module.exports = {
           include: /\.inline\.svg$/
         }
       }
-    }
+    },
   ],
 }

@@ -2,8 +2,8 @@ import React from 'react'
 import PhoneGraphic from '../../assets/images/phoneProcess.inline.svg';
 import Button from '../Button/Button.component';
 import VisibilitySensor from '../animations/VisibilitySensor.component';
-import { motion } from 'framer-motion';
-import { arrowVariant1, arrowVariant2 } from '../animations/animate.utils';
+//import { motion } from 'framer-motion';
+//import { arrowVariant1, arrowVariant2 } from '../animations/animate.utils';
 
 
 const ProcessSection = () => {
@@ -18,14 +18,7 @@ const ProcessSection = () => {
 								partialVisibility
 							>
                                 {({ isVisible }) => (
-                                // <span className={`arrow ${isVisible && ('arrowAnim')}`}></span>
-                                <motion.span 
-                                    variants={arrowVariant1}
-                                    initial="initial"
-                                    animate={isVisible ? 'end' : 'initial'}
-                                    className='arrow'>
-                                    </motion.span>
-
+                                    <span className={`arrow ${isVisible && ('arrowAnim')}`}></span>
                                 )}
                             </VisibilitySensor>
                             <h2 className="process-bubble">Develop</h2> 
@@ -34,12 +27,7 @@ const ProcessSection = () => {
 								partialVisibility
 							>
                                 {({ isVisible }) => (
-                                 <motion.span 
-                                 variants={arrowVariant2}
-                                 initial="initial"
-                                 animate={isVisible ? 'end' : 'initial'}
-                                 className='arrow'>
-                                 </motion.span>
+                                    <span className={`arrow ${isVisible && ('arrowAnim')}`}></span>
                                 )}
                             </VisibilitySensor>
                             <h2 className="process-bubble">Deploy</h2>

@@ -1,8 +1,6 @@
 import React from 'react'
 import VisibilitySensor from '../animations/VisibilitySensor.component';
 import styled from 'styled-components'
-import { motion } from 'framer-motion';
-import Jump from '../Jump.component';
 
 const StyledSpan = styled.span`
 @keyframes iconAnim{
@@ -30,7 +28,7 @@ const StyledSpan = styled.span`
 	}
   }
 
-	${props => props.visibility &&
+	${props => props.visibility === 'true' &&
 		(
 			`animation-name: iconAnim;
 			 animation-duration: 0.8s;
@@ -44,7 +42,7 @@ const StyledSpan = styled.span`
 	}
 
 	@media screen and (max-width: 972px){
-		${props => props.visibility &&
+		${props => props.visibility === 'true' &&
 			(
 				`animation-name: iconAnim;
 				 animation-duration: 0.8s;
@@ -77,28 +75,8 @@ const StyledSpan = styled.span`
 `;
 
 
-
-const iconTestVariant = {
-	initial: {
-		opacity: 0,
-		scale: 0.1,
-	},
-	end: {
-		opacity: 1,
-		scale: 1,
-		transition: {
-			type: 'spring',
-			delay: 0.25,
-			stiffness: 80,
-			duration: 0.8,
-		}
-	}
-}
-
-const ServicesSection = () => {
-    return (
+const ServicesSection = () => (
         <section className="home-section services" id="services">
-				{/* <div className="content-container"> */}
 					<h2>Services</h2> 
 
 					<div className="service-description">
@@ -112,14 +90,8 @@ const ServicesSection = () => {
 								partialVisibility
 							>
 								{({ isVisible }) => (
-									// <StyledSpan className='icon icon-code' visibility={isVisible}></StyledSpan>
+									<StyledSpan className='icon icon-code' visibility={isVisible ? 'true' : 'false'}></StyledSpan>
 									// <span className={`icon icon-code ${isVisible && 'animService1'}`}></span>
-									<motion.span 
-										variants={iconTestVariant}
-										initial='initial'
-										animate={isVisible ? 'end' : 'initial'}
-										className='icon icon-code'>
-									</motion.span>
 								)}
                         	</VisibilitySensor>
 							<h4>Web Development</h4>
@@ -131,13 +103,7 @@ const ServicesSection = () => {
 									partialVisibility
 							>
 								{({ isVisible }) => (
-									<motion.span 
-										variants={iconTestVariant}
-										initial='initial'
-										animate={isVisible ? 'end' : 'initial'}
-										className='icon icon-screen delay1' 
-									>
-									</motion.span>
+									<StyledSpan className='icon icon-screen delay1' visibility={isVisible ? 'true' : 'false'}></StyledSpan>
 								)}
 							</VisibilitySensor>
 							<h4>Design and Identity</h4>
@@ -149,12 +115,7 @@ const ServicesSection = () => {
 									partialVisibility
 							>
 								{({ isVisible }) => (
-									<motion.span 
-										variants={iconTestVariant}
-										initial='initial'
-										animate={isVisible ? 'end' : 'initial'}
-										className="icon icon-link delay2" 
-									></motion.span>
+									<StyledSpan className='icon icon-link delay2' visibility={isVisible ? 'true' : 'false'}></StyledSpan>
 								)}
 							</VisibilitySensor>
 							<h4>SEO and Marketing</h4>
@@ -166,21 +127,15 @@ const ServicesSection = () => {
 										partialVisibility
 							>
 								{({ isVisible }) => (
-									<motion.span 
-									variants={iconTestVariant}
-										initial='initial'
-										animate={isVisible ? 'end' : 'initial'}
-										className="icon icon-settings delay3"
-									></motion.span>
+									<StyledSpan className='icon icon-settings delay3' visibility={isVisible ? 'true' : 'false'}></StyledSpan>
 								)}
 							</VisibilitySensor>
 							<h4>Site Performance and Speed</h4>
 							<p>Don't lose potential customers due to a slow website. Increase the load speed of your site to prevent users from leaving prematurely.</p>
 						</section>
 					</div>
-				{/* </div> */}
         </section>
-    )
-}
+)
+
 
 export default ServicesSection;

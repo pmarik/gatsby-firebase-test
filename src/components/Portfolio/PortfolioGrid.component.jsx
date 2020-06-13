@@ -8,35 +8,35 @@ const PortfolioGrid = () => {
             daymakerSite: file(relativePath: {eq: "assets/images/daymakerSite-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 500) {
-                    ...GatsbyImageSharpFluid
+                        ...GatsbyImageSharpFluid_tracedSVG
                     }
                 }
             }
             unaffiliatedSite: file(relativePath: {eq: "assets/images/unaffiliatedSite-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 500) {
-                    ...GatsbyImageSharpFluid
+                        ...GatsbyImageSharpFluid_tracedSVG
                     }
                 }
             }
             kogoSite: file(relativePath: {eq: "assets/images/kogoPerspective-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 500) {
-                    ...GatsbyImageSharpFluid
+                        ...GatsbyImageSharpFluid_tracedSVG
                     }
                 }
             }
             viewer3d: file(relativePath: {eq: "assets/images/3d-viewer-site-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 500) {
-                    ...GatsbyImageSharpFluid
+                        ...GatsbyImageSharpFluid_tracedSVG
                     }
                 }
             }
             tradetrackerSite: file(relativePath: {eq: "assets/images/tradetrackerSite-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 500) {
-                    ...GatsbyImageSharpFluid
+                        ...GatsbyImageSharpFluid_tracedSVG
                     }
                 }
             }

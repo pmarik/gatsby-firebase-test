@@ -1,35 +1,10 @@
 import React from 'react'
 import Button from '../Button/Button.component';
-import { motion } from 'framer-motion';
 import HeroGraphic from '../../assets/images/heroGraphic.inline.svg';
 
-
-const containerVariants = {
-    initial: {
-        opacity: 0,
-        y: 25,
-    },
-    end: {
-        opacity: 1,
-        y: 0,
-        transition: {
-            type: 'tween', 
-            delay: 0.3,
-            duration: 0.8,
-        }
-    }
-}
-
-
-const AboutSection = () => {
-    return (
+const AboutSection = () => (
         <section className="home-section hero">
-                    <motion.div 
-                      variants={containerVariants}
-                      initial="initial"
-                      animate="end"
-                      className="content-container hero-content graphic">
-
+                    <div className="content-container hero-content graphic  anim-start-0 fadeIn">
                         <div className="hero-text">
                             <h1>Boost your online presence to the next level</h1>
                             <p>
@@ -70,11 +45,8 @@ const AboutSection = () => {
                         </div>
 
                         <HeroGraphic />
-
-                    </motion.div>
-
+                    </div>
                 </section>
-    )
-}
+)
 
 export default AboutSection;

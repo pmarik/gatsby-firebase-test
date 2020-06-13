@@ -13,7 +13,12 @@ const ProjectTrade = ({ data }) => (
                 <section className='portfolio-section'>
                     <h1>Trade Tracker</h1>
                     <div className="case-container">
-                        <Img className="project-img" fluid={data.tradetrackerSite.childImageSharp.fluid} alt="Trade Tracker | Project" />
+                        <Img 
+                            className="project-img" 
+                            fluid={data.tradetrackerSite.childImageSharp.fluid}
+                            loading="eager"
+                            fadeIn={false} 
+                            alt="Trade Tracker | Project" />
                         <h2>MERN stack application</h2>
                         <p>(<i>To view demo account use email: <b>demo@marik.tech</b> password: <b>Tradedemo1</b></i>) <a href="https://boiling-refuge-41373.herokuapp.com/home" target="_blank" rel="noreferrer">Trade Tracker</a> is an investment journal and calculator for beginners starting out in the stock market. It provides the authentication for a user to journal their investments, calculate how much their investments will cost, and visualize their progress. This personal project uses React on the frontend with Redux to manage state between the different components. The backend is built using Node with MongoDB to store a user's data, and is authenticated using JSON Web Tokens.</p>
 						<p>Starting this project from the base-up allowed me to explore a variety of technologys and to iterate on ideas through out the process. I began by using <a href="https://www.figma.com/" target="_blank" rel="noreferrer">Figma</a> to come up with wireframes to visualize both the UI and UX of the app.</p>
@@ -57,21 +62,21 @@ export const query = graphql`
         tradetrackerSite: file(relativePath: {eq: "assets/images/tradetrackerSite-min.png"}) {
             childImageSharp {
                 fluid(maxWidth: 500) {
-                ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_tracedSVG
                 }
             }
         }
         tradeJournal: file(relativePath: {eq: "assets/images/tradeTracker_journal-min.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 500) {
-                ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_tracedSVG
                 }
             }
         }
         tradeModal: file(relativePath: {eq: "assets/images/tradeTracker_prevModal-min.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 500) {
-                ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_tracedSVG
                 }
             }
         }

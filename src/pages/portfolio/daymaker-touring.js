@@ -14,7 +14,12 @@ const ProjectDaymaker = ({ data }) => (
                 <section className='portfolio-section'>
                     <h1>Client Case: Daymaker Touring</h1>
                     <div className="case-container">
-                        <Img className="project-img" fluid={data.daymakerTemplate.childImageSharp.fluid} alt="Daymaker Touring | Client Case" />
+                        <Img 
+                            className="project-img" 
+                            fluid={data.daymakerTemplate.childImageSharp.fluid} 
+                            loading="eager"
+                            fadeIn={false}
+                            alt="Daymaker Touring | Client Case" />
                         <h2>Shopify consultation</h2>
                         <p><a className="highlight" href="https://www.daymakertouring.com/collections/store/products/alpine-touring-adapters" target="_blank" rel="noreferrer noopener" >Daymaker Touring</a> required updates to their product page, added functionality to their cart page, and design changes on their Shopify store. This required understanding of the Shopify Liquid template language and content management systems. </p>
                         <p>First, a consulation was made with the client to understand what problems they were having. Since this client is local I was able to meet with them in person and establish trust in the work. We reviewed their goals and what would be the best way to accomplish them.</p>
@@ -57,7 +62,7 @@ export const query = graphql`
         daymakerTemplate: file(relativePath: {eq: "assets/images/daymakerTemplate-min.png"}) {
             childImageSharp {
                 fluid(maxWidth: 776) {
-                ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_tracedSVG
                 }
             }
         }

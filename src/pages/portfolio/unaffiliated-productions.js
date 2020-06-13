@@ -14,7 +14,13 @@ const ProjectUnaffiliated = ({ data }) => (
                 <section className='portfolio-section'>
                     <h1>Client Case: Unaffiliated Productions</h1>
                     <div className="case-container">
-                        <Img className="project-img" fluid={data.unaffiliatedTemplate.childImageSharp.fluid} alt="Daymaker Touring | Client Case" />
+                        <Img 
+                            className="project-img" 
+                            fluid={data.unaffiliatedTemplate.childImageSharp.fluid} 
+                            loading="eager"
+                            fadeIn={false}
+                            alt="Unaffiliated Productions | Client Case" 
+                        />
                         <h2>Creating a site from the ground up</h2>
                         <p>As web developer for <a className="highlight" href="https://unaffiliatedproductions.com/" target="_blank" rel="noreferrer noopener"  title="Visit Site">Unaffiliated Productions</a> I was hired to implement a site that portrayed the brand and emphasized the videos they produce. A total design of the site began by asking the client the goals of their site. Armed with this information, wireframes were created and iterated upon until a final design was approved by the client.</p>
 						<p>This static site was built using a mobile first approach, using semantic HTML, modern CSS practices, and Javascript for interactivity. I was able to quickly execute the design using Node and Webpack to get the development started, and all iterations were stored via GitHub.</p> 
@@ -58,7 +64,7 @@ export const query = graphql`
         unaffiliatedTemplate: file(relativePath: {eq: "assets/images/unaffiliatedTemplate-min.png"}) {
             childImageSharp {
                 fluid(maxWidth: 776) {
-                ...GatsbyImageSharpFluid
+                    ...GatsbyImageSharpFluid_tracedSVG
                 }
             }
         }
