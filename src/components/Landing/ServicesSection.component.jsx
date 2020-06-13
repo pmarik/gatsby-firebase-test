@@ -1,6 +1,6 @@
 import React from 'react'
-import VisibilitySensor from '../animations/VisibilitySensor.component';
 import styled from 'styled-components'
+import { InView } from 'react-intersection-observer'
 
 const StyledSpan = styled.span`
 @keyframes iconAnim{
@@ -84,52 +84,42 @@ const ServicesSection = () => (
 					</div>
 
 					<div className="features">
+
 						<section>
-							<VisibilitySensor
-								once
-								partialVisibility
-							>
-								{({ isVisible }) => (
-									<StyledSpan className='icon icon-code' visibility={isVisible ? 'true' : 'false'}></StyledSpan>
+							<InView triggerOnce rootMargin={'15%'}>
+								{({ inView, ref, entry }) => (
+									<StyledSpan ref={ref} className='icon icon-code' visibility={inView ? 'true' : 'false'}></StyledSpan>
 									// <span className={`icon icon-code ${isVisible && 'animService1'}`}></span>
 								)}
-                        	</VisibilitySensor>
+                        	</InView>
 							<h4>Web Development</h4>
 							<p>Whether you are looking to create your own site from the ground-up, or improve the site you currently have, I will work with you to bring your ideas to life.</p>
 						</section>
+
                         <section>
-							<VisibilitySensor
-									once
-									partialVisibility
-							>
-								{({ isVisible }) => (
-									<StyledSpan className='icon icon-screen delay1' visibility={isVisible ? 'true' : 'false'}></StyledSpan>
+							<InView triggerOnce rootMargin={'15%'}>
+								{({ inView, ref, entry }) => (
+									<StyledSpan ref={ref} className='icon icon-screen delay1' visibility={inView ? 'true' : 'false'}></StyledSpan>
 								)}
-							</VisibilitySensor>
+							</InView>
 							<h4>Design and Identity</h4>
 							<p>Update your site to a modern look and feel to gain additional exposure with a powerful brand identity and online experience. </p>
 						</section>
                         <section>
-							<VisibilitySensor
-									once
-									partialVisibility
-							>
-								{({ isVisible }) => (
-									<StyledSpan className='icon icon-link delay2' visibility={isVisible ? 'true' : 'false'}></StyledSpan>
+							<InView triggerOnce rootMargin={'15%'}>
+								{({ inView, ref, entry }) => (			
+									<StyledSpan ref={ref} className='icon icon-link delay2' visibility={inView ? 'true' : 'false'}></StyledSpan>
 								)}
-							</VisibilitySensor>
+							</InView>
 							<h4>SEO and Marketing</h4>
 							<p>Semantic HTML with the latest tools to improve your site rank. Get consultation on design and how to better improve your sales copy.</p>
 						</section>
 						<section>
-							<VisibilitySensor
-										once
-										partialVisibility
-							>
-								{({ isVisible }) => (
-									<StyledSpan className='icon icon-settings delay3' visibility={isVisible ? 'true' : 'false'}></StyledSpan>
+							<InView triggerOnce rootMargin={'15%'}>
+								{({ inView, ref, entry }) => (
+									<StyledSpan ref={ref} className='icon icon-settings delay3' visibility={inView ? 'true' : 'false'}></StyledSpan>
 								)}
-							</VisibilitySensor>
+							</InView>
 							<h4>Site Performance and Speed</h4>
 							<p>Don't lose potential customers due to a slow website. Increase the load speed of your site to prevent users from leaving prematurely.</p>
 						</section>

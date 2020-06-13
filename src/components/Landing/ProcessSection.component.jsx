@@ -1,10 +1,7 @@
 import React from 'react'
 import PhoneGraphic from '../../assets/images/phoneProcess.inline.svg';
 import Button from '../Button/Button.component';
-import VisibilitySensor from '../animations/VisibilitySensor.component';
-//import { motion } from 'framer-motion';
-//import { arrowVariant1, arrowVariant2 } from '../animations/animate.utils';
-
+import { InView } from 'react-intersection-observer';
 
 const ProcessSection = () => {
     return (
@@ -13,23 +10,18 @@ const ProcessSection = () => {
                     <div className="process-text">
                         <div className="process-header">
                             <h2 className="process-bubble">Design</h2> 
-                            <VisibilitySensor
-								once
-								partialVisibility
-							>
-                                {({ isVisible }) => (
-                                    <span className={`arrow ${isVisible && ('arrowAnim')}`}></span>
+                            <InView triggerOnce rootMargin={'15%'}>
+                                {({ inView, ref, entry }) => (
+                                    <span ref={ref} className={`arrow ${inView && ('arrowAnim')}`}></span>
                                 )}
-                            </VisibilitySensor>
+                            </InView>
+
                             <h2 className="process-bubble">Develop</h2> 
-                            <VisibilitySensor
-								once
-								partialVisibility
-							>
-                                {({ isVisible }) => (
-                                    <span className={`arrow ${isVisible && ('arrowAnim')}`}></span>
+                            <InView triggerOnce rootMargin={'15%'}>
+                                {({ inView, ref, entry }) => (
+                                    <span ref={ref} className={`arrow ${inView && ('arrowAnim')}`}></span>
                                 )}
-                            </VisibilitySensor>
+                            </InView>
                             <h2 className="process-bubble">Deploy</h2>
                         </div>
                         <p>Get a guided process from idea to reality. Full design ideation, custom development, and tailored deployment for your online needs. I create pixel perfect designs and engaging experiences to help tell your story in an impactful way. Solidify your brand and sell your services and products online now. </p>

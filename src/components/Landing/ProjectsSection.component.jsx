@@ -1,9 +1,7 @@
 import React, {useEffect} from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'; 
 import Img from 'gatsby-image';
-//import { motion } from 'framer-motion';
-import VisibilitySensor from '../animations/VisibilitySensor.component';
-//import { containerVariants } from '../animations/animate.utils';
+import { InView } from 'react-intersection-observer';
 
 const ProjectsSection = () => {
     const data = useStaticQuery(graphql`
@@ -53,12 +51,9 @@ const ProjectsSection = () => {
                 <div className="project-wrap">
                     <div className="project-panels">
 
-                        <VisibilitySensor
-                            once
-                            partialVisibility
-                        >
-                            {({ isVisible }) => (
-                                <section className={`panel anim-start-0 ${isVisible && 'fadeIn'}`}>
+                        <InView triggerOnce rootMargin={'15%'}>
+                            {({ inView, ref, entry }) => (
+                                <section ref={ref} className={`panel anim-start-0 ${inView && 'fadeIn'}`}>
                                     <div className="panel-content">
                                         <h4>Unaffiliated Productions</h4>
                                         <div  className="sectionimg">                                           
@@ -69,14 +64,13 @@ const ProjectsSection = () => {
                                     </div>
                                 </section>
                             )}
-                        </VisibilitySensor>
+                        </InView>
+                               
+                           
 
-                        <VisibilitySensor
-                            once
-                            partialVisibility
-                        >
-                            {({ isVisible }) => (
-                                <section className={`panel anim-start-0 ${isVisible && 'fadeIn'}`}>
+                        <InView triggerOnce rootMargin={'15%'}>
+                            {({ inView, ref, entry }) => (
+                                <section ref={ref} className={`panel anim-start-0 ${inView && 'fadeIn'}`}>
                                     <div className="panel-content">
                                         <h4>Daymaker Touring</h4>
                                         <div className="sectionimg">
@@ -87,14 +81,12 @@ const ProjectsSection = () => {
                                     </div>
                                 </section>
                             )}
-                        </VisibilitySensor>
+                        </InView>
 
-                        <VisibilitySensor
-                            once
-                            partialVisibility
-                        >
-                            {({ isVisible }) => (
-                                <section className={`panel anim-start-0 ${isVisible && 'fadeIn'}`}>
+                        
+                        <InView triggerOnce rootMargin={'15%'}>
+                            {({ inView, ref, entry }) => (
+                                <section ref={ref} className={`panel anim-start-0 ${inView && 'fadeIn'}`}>
                                     <div className="panel-content">
                                         <h4>Kogo Foods</h4>
                                         <div className="sectionimg">
@@ -105,7 +97,7 @@ const ProjectsSection = () => {
                                     </div>   
                                 </section>
                             )}
-                        </VisibilitySensor>
+                        </InView>
                     
                     </div>
                 </div>
