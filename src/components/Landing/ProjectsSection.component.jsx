@@ -47,8 +47,7 @@ const ProjectsSection = () => {
 
  
     return (
-        <section className="home-section featured-projects">
-                <a className="anchor" id="projects"></a>
+        <section className="home-section featured-projects" id="projects">
                 <h2>Featured Projects</h2>
                 
                 <div className="project-wrap">

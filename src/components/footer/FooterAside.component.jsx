@@ -35,13 +35,13 @@ const FooterAside = () => {
             </div>
 
             <div className="social-icons">
-                <a href="https://www.linkedin.com/in/paul-marik-web-developer/" target="_blank" rel="noopener" rel="noreferrer">
+                <a href="https://www.linkedin.com/in/paul-marik-web-developer/" target="_blank" rel="noreferrer noopener" >
                     <LinkedinIcon />
                 </a>
-                <a href="https://github.com/pmarik" target="_blank" rel="noopener" rel="noreferrer">
+                <a href="https://github.com/pmarik" target="_blank" rel="noreferrer noopener" >
                     <GithubIcon />
                 </a>
-                <a href="https://codepen.io/codingforthefuture" target="_blank" rel="noopener" rel="noreferrer">
+                <a href="https://codepen.io/codingforthefuture" target="_blank" rel="noreferrer noopener" >
                     <CodepenIcon />
                 </a>
             </div>

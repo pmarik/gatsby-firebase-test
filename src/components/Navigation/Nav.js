@@ -4,6 +4,7 @@ import { GlobalDispatchContext } from '../../context/GlobalContextProvider';
 import './nav.styles.scss';
 import logo from '../../assets/images/logo-script.svg';
 import logoSmall from '../../assets/images/logoSmall.svg';
+import Jump from '../Jump.component';
 
 const Nav = () => {
 
@@ -48,9 +49,10 @@ const Nav = () => {
                         <Link to='/portfolio' activeClassName='active' partiallyActive className={`${contactIsActive && 'hideActive'}`} onClick={navClick}>Portfolio</Link>
                     </li>
                     <li>
-                        <a href="#contact" className={`${contactIsActive && "active"}`} onClick={contactClick}>
+                        {/* <a href="#contact" className={`${contactIsActive && "active"}`} onClick={contactClick}>
                             Contact
-                        </a>
+                        </a> */}
+                        <Jump target={'#contact'} ><span className={`${contactIsActive && "active"}`} onClick={contactClick}>Contact</span></Jump>
                     </li>
                 </ul>
             </nav> 

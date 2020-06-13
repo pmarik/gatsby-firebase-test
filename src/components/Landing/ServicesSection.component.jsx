@@ -2,6 +2,7 @@ import React from 'react'
 import VisibilitySensor from '../animations/VisibilitySensor.component';
 import styled from 'styled-components'
 import { motion } from 'framer-motion';
+import Jump from '../Jump.component';
 
 const StyledSpan = styled.span`
 @keyframes iconAnim{
@@ -96,9 +97,9 @@ const iconTestVariant = {
 
 const ServicesSection = () => {
     return (
-        <section className="home-section services">
+        <section className="home-section services" id="services">
 				<div className="content-container">
-					<a className="anchor" id="services"></a>
+					{/* <a className="anchor" id="services"></a> */}
 					<h2>Services</h2> 
 
 					<div className="service-description">

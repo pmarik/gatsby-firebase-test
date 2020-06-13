@@ -15,7 +15,7 @@ const FooterForm = () => {
      * of contact form, will also focus if clicking on contact nav link 
      **/
     useEffect(() => {
-        if(window.location.hash == "#contact" || state.contactActive) nameRef.current.focus();
+        if(window.location.hash === "#contact" || state.contactActive) nameRef.current.focus();
     });
 
     // press enter from name input will focus next ref (the email input)
@@ -30,11 +30,6 @@ const FooterForm = () => {
             messageRef.current.focus();
         }
     }
-
-    // const handleSubmit = (e) => {
-    //     e.preventDefault();
-    //     console.log('footer form submitted')
-    // }
 
     return (
         <form name="Contact Form" method="POST" data-netlify="true" action="/thank-you" className="footer-form" >

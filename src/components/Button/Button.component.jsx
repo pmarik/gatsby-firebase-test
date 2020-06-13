@@ -2,6 +2,7 @@ import React from 'react';
 import FlagBtn from '../../assets/images/flagButton.inline.svg'
 import './button.styles.scss';
 import styled from 'styled-components';
+import Jump from '../Jump.component';
 
 const StyledA = styled.a`
     span{
@@ -71,17 +72,20 @@ const StyledButton = styled.button`
 
 const Button = ({ children, btnTarget, direction, outlineColor, fillColor, textColor, hoverFillColor, hoverTextColor }) => {
     return (
-        <StyledA href={`${btnTarget}`} className="flag-btn-container" 
-            textColor={textColor}
-            outlineColor={outlineColor} 
-            fillColor={fillColor} 
-            hoverFillColor={hoverFillColor} 
-            hoverTextColor={hoverTextColor}
-            direction={direction}
-        >
-            <span className="flag-btn btn-text"> {children} </span>
-            <FlagBtn/>
-        </StyledA>
+        <Jump target={`${btnTarget}`} options={{offset: -10}}>
+            <StyledA  className="flag-btn-container" 
+                        textColor={textColor}
+                        outlineColor={outlineColor} 
+                        fillColor={fillColor} 
+                        hoverFillColor={hoverFillColor} 
+                        hoverTextColor={hoverTextColor}
+                        direction={direction}
+                    >
+                        <span className="flag-btn btn-text"> {children} </span>
+                        <FlagBtn/>
+            </StyledA>
+        </Jump>
+        
     )
 }
 

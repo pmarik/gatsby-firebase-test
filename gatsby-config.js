@@ -25,6 +25,14 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     {
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true,
+        develop: true,
+        ignore: ['/landingContent.styles.scss', '/button.styles.scss']
+      }
+    },
+    {
       resolve: `gatsby-plugin-react-svg`,
       options: {
         rule: {

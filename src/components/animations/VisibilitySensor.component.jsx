@@ -22,11 +22,6 @@ class VisibilitySensor extends Component {
                     active: false
                 })
             }
-            //   once &&
-        //   isVisible &&
-        //   this.setState({ active: false }, () =>
-        //     console.log("turned the thing off!")
-        //   )
             }
         }
         {...theRest}
