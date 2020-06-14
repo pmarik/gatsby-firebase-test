@@ -25,6 +25,21 @@ module.exports = {
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Nunito`,
+            variants: [`400`],
+          },
+          {
+            family: `Roboto`,
+            variants: [`700`]
+          },
+        ],
+      },
+    },
+    {
       resolve: `gatsby-plugin-purgecss`,
       options: {
         printRejected: true,
@@ -41,7 +56,7 @@ module.exports = {
       }
     },
     `gatsby-plugin-netlify-cache`,
-    `gatsby-plugin-preact`,
     `gatsby-plugin-netlify-headers`, // make sure to put last in the array
+    `gatsby-plugin-preact`,
   ],
 }
