@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'gatsby';
-import MailIcon from '../../assets/images/mail.inline.svg'
-import LocationIcon from '../../assets/images/location.inline.svg'
-import PhoneIcon from '../../assets/images/phone.inline.svg'
-import LinkedinIcon from '../../assets/images/linkedin.inline.svg';
-import GithubIcon from '../../assets/images/github.inline.svg';
-import CodepenIcon from '../../assets/images/codepen.inline.svg';
+import MailIcon from '../../../static/img/mail.inline.svg'
+import LocationIcon from '../../../static/img/location.inline.svg'
+import PhoneIcon from '../../../static/img/phone.inline.svg'
+import LinkedinIcon from '../../../static/img/linkedin.inline.svg';
+import GithubIcon from '../../../static/img/github.inline.svg';
+import CodepenIcon from '../../../static/img/codepen.inline.svg';
 
 const FooterAside = () => {
     return (

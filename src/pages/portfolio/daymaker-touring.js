@@ -59,7 +59,7 @@ export default ProjectPageDaymaker
  
 export const query = graphql` 
     query ProjectPageDaymaker{
-        daymakerTemplate: file(relativePath: {eq: "assets/images/daymakerTemplate-min.png"}) {
+        daymakerTemplate: file(relativePath: {eq: "daymakerTemplate-min.png"}) {
             childImageSharp {
                 fluid(maxWidth: 776) {
                     ...GatsbyImageSharpFluid_tracedSVG

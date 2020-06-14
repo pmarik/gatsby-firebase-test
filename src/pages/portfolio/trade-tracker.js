@@ -59,21 +59,21 @@ export default ProjectPageTrade;
 
 export const query = graphql`
     query ProjectPageTrade{
-        tradetrackerSite: file(relativePath: {eq: "assets/images/tradetrackerSite-min.png"}) {
+        tradetrackerSite: file(relativePath: {eq: "tradetrackerSite-min.png"}) {
             childImageSharp {
                 fluid(maxWidth: 500) {
                     ...GatsbyImageSharpFluid_tracedSVG
                 }
             }
         }
-        tradeJournal: file(relativePath: {eq: "assets/images/tradeTracker_journal-min.jpg"}) {
+        tradeJournal: file(relativePath: {eq: "tradeTracker_journal-min.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 500) {
                     ...GatsbyImageSharpFluid_tracedSVG
                 }
             }
         }
-        tradeModal: file(relativePath: {eq: "assets/images/tradeTracker_prevModal-min.jpg"}) {
+        tradeModal: file(relativePath: {eq: "tradeTracker_prevModal-min.jpg"}) {
             childImageSharp {
                 fluid(maxWidth: 500) {
                     ...GatsbyImageSharpFluid_tracedSVG

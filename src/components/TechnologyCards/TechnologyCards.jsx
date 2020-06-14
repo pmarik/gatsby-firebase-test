@@ -1,18 +1,18 @@
 import React from 'react';
 import styled from 'styled-components';
 import './technologyCards.styles.scss'
-import shopify from '../../assets/images/shopifyLogo.svg';
-import htmlLogo from '../../assets/images/htmlLogo.svg';
-import cssLogo from '../../assets/images/cssLogo.svg';
-import jsLogo from '../../assets/images/jsLogo.svg';
-import nodeLogo from '../../assets/images/nodejsLogo.svg';
-import webpackLogo from '../../assets/images/webpackLogo.svg';
-import gitLogo from '../../assets/images/gitLogo.svg';
-import gatsbyLogo from '../../assets/images/gatsbyLogo.svg';
-import reactLogo from '../../assets/images/ReactLogo.svg';
-import netlifyLogo from '../../assets/images/netlifyLogo.svg'
-import sassLogo from '../../assets/images/sassLogo.svg';
-import threeLogo from '../../assets/images/threeLogo.svg';
+import shopify from '../../../static/img/shopifyLogo.svg';
+import htmlLogo from '../../../static/img/htmlLogo.svg';
+import cssLogo from '../../../static/img/cssLogo.svg';
+import jsLogo from '../../../static/img/jsLogo.svg';
+import nodeLogo from '../../../static/img/nodejsLogo.svg';
+import webpackLogo from '../../../static/img/webpackLogo.svg';
+import gitLogo from '../../../static/img/gitLogo.svg';
+import gatsbyLogo from '../../../static/img/gatsbyLogo.svg';
+import reactLogo from '../../../static/img/ReactLogo.svg';
+import netlifyLogo from '../../../static/img/netlifyLogo.svg'
+import sassLogo from '../../../static/img/sassLogo.svg';
+import threeLogo from '../../../static/img/threeLogo.svg';
 
 const StyledDiv = styled.div`
     .flip-card-inner{

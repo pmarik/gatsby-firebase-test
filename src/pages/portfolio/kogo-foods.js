@@ -5,7 +5,7 @@ import { Link, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 import { GatsbyCard, ReactCard, SassCard, NetlifyCard, GitCard } from '../../components/TechnologyCards/TechnologyCards';
 import ReviewQuote from '../../components/reviewQuote/ReviewQuote.component';
-import KogoScript from '../../assets/images/kogoScript.inline.svg';
+import KogoScript from '../../../static/img/kogoScript.inline.svg';
 import SEO from '../../components/SEO.component';
 
 
@@ -62,7 +62,7 @@ export default ProjectPageKogo
 
 export const query = graphql`
     query ProjectPageKogo{
-        kogoSite: file(relativePath: {eq: "assets/images/kogoPerspective-min.png"}) {
+        kogoSite: file(relativePath: {eq: "kogoPerspective-min.png"}) {
             childImageSharp {
                 fluid(maxWidth: 500) {
                     ...GatsbyImageSharpFluid_tracedSVG

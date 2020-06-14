@@ -1,5 +1,5 @@
 import React from 'react';
-import FlagBtn from '../../assets/images/flagButton.inline.svg'
+import FlagBtn from '../../../static/img/flagButton.inline.svg'
 import './button.styles.scss';
 import styled from 'styled-components';
 import Jump from '../Jump.component';

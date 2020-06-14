@@ -61,7 +61,7 @@ export default ProjectPageUnaffiliated;
 
 export const query = graphql`
     query ProjectPageUnaffiliated{
-        unaffiliatedTemplate: file(relativePath: {eq: "assets/images/unaffiliatedTemplate-min.png"}) {
+        unaffiliatedTemplate: file(relativePath: {eq: "unaffiliatedTemplate-min.png"}) {
             childImageSharp {
                 fluid(maxWidth: 776) {
                     ...GatsbyImageSharpFluid_tracedSVG

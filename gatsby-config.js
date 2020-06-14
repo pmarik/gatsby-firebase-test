@@ -7,21 +7,36 @@ module.exports = {
     title: `Marik Tech | Web Development`,
     description: `Boost your business with enhanced web development and design solutions from Marik Tech.`,
     url: "https://www.marik.tech",
-    image: "/images/ogDefaultImage.JPG",
+    image: "/img/ogDefaultImage.JPG",
     keywords: "web development, web design, website developer near me, website developer, website developer for hire, website developer Salt Lake City UT, website developer for small business, online marketing, website help, freelance web developer, website consultation",
   },
   plugins: [
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-svg`,
+      options: {
+        rule: {
+          include: /\.inline\.svg$/
+        }
+      }
+    },
+    {
+      // keep as first gatsby-source-filesystem plugin for gatsby image support
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        path: `${__dirname}/static/img`,
+        name: `images`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `src`,
         path: `${__dirname}/src`,
+        name: `src`,
       },
     },
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
     {
@@ -40,23 +55,15 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-purgecss`,
+      resolve: `gatsby-plugin-purgecss`, 
       options: {
         printRejected: true,
         develop: true,
         ignore: ['/landingContent.styles.scss', '/button.styles.scss']
       }
-    },
-    {
-      resolve: `gatsby-plugin-react-svg`,
-      options: {
-        rule: {
-          include: /\.inline\.svg$/
-        }
-      }
-    },
+    }, // must be after other CSS plugins
     `gatsby-plugin-netlify-cache`,
-    `gatsby-plugin-netlify-headers`, // make sure to put last in the array
     `gatsby-plugin-preact`,
+    `gatsby-plugin-netlify`, // make sure to put last in the array
   ],
 }

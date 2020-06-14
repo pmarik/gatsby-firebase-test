@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react'
+import React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'; 
 import Img from 'gatsby-image';
 import { InView } from 'react-intersection-observer';
@@ -6,21 +6,21 @@ import { InView } from 'react-intersection-observer';
 const ProjectsSection = () => {
     const data = useStaticQuery(graphql`
         query {
-            unaffiliatedSite: file(relativePath: {eq: "assets/images/unaffiliatedSite-min.png"}) {
+            unaffiliatedSite: file(relativePath: {eq: "unaffiliatedSite-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 800) {
                         ...GatsbyImageSharpFluid_tracedSVG
                     }
                 }
             }
-            daymakerSite: file(relativePath: {eq: "assets/images/daymakerSite-min.png"}) {
+            daymakerSite: file(relativePath: {eq: "daymakerSite-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 800) {
                         ...GatsbyImageSharpFluid_tracedSVG
                     }
                 }
             }
-            kogoSite: file(relativePath: {eq: "assets/images/kogoPerspective-min.png"}) {
+            kogoSite: file(relativePath: {eq: "kogoPerspective-min.png"}) {
                 childImageSharp {
                     fluid(maxWidth: 800) {
                         ...GatsbyImageSharpFluid_tracedSVG
@@ -30,18 +30,18 @@ const ProjectsSection = () => {
         }
     `)
 
-    let isSmall = false;
+    // let isSmall = false;
 
-    useEffect(()=> {
-        if (window !== 'undefined'){
-            if (window.innerWidth <= 739){
-                isSmall = true;
-            }
-            else{
-                isSmall = false;
-            }
-        }
-    }, [])
+    // useEffect(()=> {
+    //     if (window !== 'undefined'){
+    //         if (window.innerWidth <= 739){
+    //             isSmall = true;
+    //         }
+    //         else{
+    //             isSmall = false;
+    //         }
+    //     }
+    // }, [])
 
  
     return (
@@ -66,7 +66,6 @@ const ProjectsSection = () => {
                             )}
                         </InView>
                                
-                           
 
                         <InView triggerOnce rootMargin={'15%'}>
                             {({ inView, ref, entry }) => (

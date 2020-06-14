@@ -12,7 +12,7 @@
     &.hero{
         height: 43vh;
         min-height: 750px;
-        background-image: url('../../assets/images/curvy-bg3.svg');
+        background-image: url('../../../static/img/curvy-bg3.svg');
         background-repeat: no-repeat;  
         background-size: 200vw;
         background-position: bottom center;
@@ -190,16 +190,16 @@
 }
 
 .icon-code::before{
-    content: url('../../assets/images/icon-code.svg');
+    content: url('../../../static/img/icon-code.svg');
 }
 .icon-screen::before{
-    content: url('../../assets/images/icon-screen.svg');
+    content: url('../../../static/img/icon-screen.svg');
 }
 .icon-link::before{
-    content: url('../../assets/images/icon-link.svg');
+    content: url('../../../static/img/icon-link.svg');
 }
 .icon-settings::before{
-    content: url('../../assets/images/icon-settings.svg');
+    content: url('../../../static/img/icon-settings.svg');
 }
 
 
@@ -240,7 +240,7 @@
         }
 
         &::before{
-            content: url('../../assets/images/processBubble.svg');
+            content: url('../../../static/img/processBubble.svg');
             position: absolute;
             left: 50%;
             transform: translate(-50%);
@@ -255,7 +255,7 @@
         position: relative;
 
         &::after{
-            content: url('../../assets/images/arrow.svg');
+            content: url('../../../static/img/arrow.svg');
             position: absolute;
             width: 100%;
             top: 50%;

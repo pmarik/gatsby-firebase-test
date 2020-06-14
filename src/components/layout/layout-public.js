@@ -20,7 +20,7 @@ const LayoutPublic = ({ children }) => {
                 setWindowAvail(window.location.hash);
             }
         }
-    }, [windowAvail])
+    }, [windowAvail, dispatch])
 
     return (
         <>

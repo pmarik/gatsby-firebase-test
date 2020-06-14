@@ -2,8 +2,8 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Link, navigate } from 'gatsby';
 import { GlobalDispatchContext } from '../../context/GlobalContextProvider';
 import './nav.styles.scss';
-import logo from '../../assets/images/logo-script.svg';
-import logoSmall from '../../assets/images/logoSmall.svg';
+import logo from '../../../static/img/logo-script.svg';
+import logoSmall from '../../../static/img/logoSmall.svg';
 import Jump from '../Jump.component';
 
 const Nav = () => {

@@ -1,6 +1,6 @@
 import React from 'react'
 import Button from '../Button/Button.component';
-import HeroGraphic from '../../assets/images/heroGraphic.inline.svg';
+import HeroGraphic from '../../../static/img/heroGraphic.inline.svg';
 
 const AboutSection = () => (
         <section className="home-section hero">

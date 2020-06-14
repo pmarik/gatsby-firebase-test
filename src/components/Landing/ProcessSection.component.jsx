@@ -1,5 +1,5 @@
 import React from 'react'
-import PhoneGraphic from '../../assets/images/phoneProcess.inline.svg';
+import PhoneGraphic from '../../../static/img/phoneProcess.inline.svg';
 import Button from '../Button/Button.component';
 import { InView } from 'react-intersection-observer';
 
