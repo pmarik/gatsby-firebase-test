@@ -41,6 +41,7 @@ module.exports = {
         }
       }
     },
+    `gatsby-plugin-netlify-cache`,
     `gatsby-plugin-netlify-headers`, // make sure to put last in the array
   ],
 }
