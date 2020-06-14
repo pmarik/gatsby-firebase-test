@@ -41,6 +41,6 @@ module.exports = {
         }
       }
     },
-    ` gatsby-plugin-netlify-headers`, // make sure to put last in the array
+    `gatsby-plugin-netlify-headers`, // make sure to put last in the array
   ],
 }
