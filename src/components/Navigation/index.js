@@ -4,7 +4,7 @@ import { Link } from 'gatsby';
 import { AuthUserContext } from '../Auth/Session';
 import SignOutButton from '../Auth/SignOut';
 import * as ROUTES from '../../constants/routes';
-import * as ROLES from '../../constants/roles';
+//import * as ROLES from '../../constants/roles';
 
 const Navigation = () => (
   <AuthUserContext.Consumer>

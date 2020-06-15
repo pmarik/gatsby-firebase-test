@@ -57,7 +57,8 @@ export const query = graphql`
     query ProjectPageViewer{
         viewer3d: file(relativePath: {eq: "3d-viewer-site-min.png"}) {
             childImageSharp {
-                fluid(maxWidth: 500) {
+                fluid(
+                    maxWidth: 500) {
                     ...GatsbyImageSharpFluid_tracedSVG
                 }
             }

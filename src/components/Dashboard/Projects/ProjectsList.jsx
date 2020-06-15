@@ -100,11 +100,11 @@ class ProjectsList extends Component {
         <form onSubmit={this.addProject}>
             <label>
                 Project Name
-                <input type='text' name='projectName' value={this.state.projectName} onChange={this.onChange}/>
+                <input type='text' name='projectName' value={this.state.projectName} onChange={this.onChange} aria-label="Project Name"/>
             </label>
             <label>
                 Project Type
-                <input type='text' name='projectType' value={this.state.projectType} onChange={this.onChange}/>
+                <input type='text' name='projectType' value={this.state.projectType} onChange={this.onChange} aria-label="Project Type"/>
             </label>
             <button type="submit">add Project</button>
         </form>

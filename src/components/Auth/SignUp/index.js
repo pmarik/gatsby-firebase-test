@@ -104,6 +104,7 @@ class SignUpFormBase extends Component {
           onChange={this.onChange}
           type="text"
           placeholder="Full Name"
+          aria-label="Name"
         />
         <input
           name="email"
@@ -111,6 +112,7 @@ class SignUpFormBase extends Component {
           onChange={this.onChange}
           type="text"
           placeholder="Email Address"
+          aria-label="Email"
         />
         <input
           name="passwordOne"
@@ -118,6 +120,7 @@ class SignUpFormBase extends Component {
           onChange={this.onChange}
           type="password"
           placeholder="Password"
+          aria-label="Password"
         />
         <input
           name="passwordTwo"
@@ -125,6 +128,7 @@ class SignUpFormBase extends Component {
           onChange={this.onChange}
           type="password"
           placeholder="Confirm Password"
+          aria-label="Confirm Password"
         />
         <label>
           Admin:
@@ -133,6 +137,7 @@ class SignUpFormBase extends Component {
             type="checkbox"
             checked={isAdmin}
             onChange={this.onChangeCheckbox}
+            aria-label="Admin User"
           />
         </label>
         <button disabled={isInvalid} type="submit">

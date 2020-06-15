@@ -7,35 +7,54 @@ const PortfolioGrid = () => {
         query {
             daymakerSite: file(relativePath: {eq: "daymakerSite-min.png"}) {
                 childImageSharp {
-                    fluid(maxWidth: 500) {
+                    fluid(
+                        maxWidth: 500,
+                        srcSetBreakpoints: [350, 700, 1050, 1400],
+                        traceSVG: {background: "#F9BD74", color: "#FE9026"}
+                        ) {
                         ...GatsbyImageSharpFluid_tracedSVG
                     }
                 }
             }
             unaffiliatedSite: file(relativePath: {eq: "unaffiliatedSite-min.png"}) {
                 childImageSharp {
-                    fluid(maxWidth: 500) {
+                    fluid(
+                        maxWidth: 500,
+                        srcSetBreakpoints: [350, 700, 1050, 1400],
+                        traceSVG: {background: "#88ECC9", color: "#669AA2"}
+                        ) {
                         ...GatsbyImageSharpFluid_tracedSVG
                     }
                 }
             }
             kogoSite: file(relativePath: {eq: "kogoPerspective-min.png"}) {
                 childImageSharp {
-                    fluid(maxWidth: 500) {
+                    fluid(
+                        maxWidth: 500,
+                        srcSetBreakpoints: [350, 700, 1050, 1400],
+                        traceSVG: {background: "#FCA6A4", color: "#D9695F"}
+                        ) {
                         ...GatsbyImageSharpFluid_tracedSVG
                     }
                 }
             }
             viewer3d: file(relativePath: {eq: "3d-viewer-site-min.png"}) {
                 childImageSharp {
-                    fluid(maxWidth: 500) {
+                    fluid(
+                        maxWidth: 500,
+                        srcSetBreakpoints: [350, 700, 1050, 1400],
+                        traceSVG: {background: "#F27CC3", color: "#99edd6"}
+                        ) {
                         ...GatsbyImageSharpFluid_tracedSVG
                     }
                 }
             }
             tradetrackerSite: file(relativePath: {eq: "tradetrackerSite-min.png"}) {
                 childImageSharp {
-                    fluid(maxWidth: 500) {
+                    fluid(
+                        maxWidth: 500,
+                        srcSetBreakpoints: [350, 700, 1050, 1400],
+                        traceSVG: {background: "#3aC8EC", color: "#3A3E4D"}) {
                         ...GatsbyImageSharpFluid_tracedSVG
                     }
                 }

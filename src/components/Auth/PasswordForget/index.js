@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'gatsby';
+//import { Link } from 'gatsby';
 
 import { withFirebase } from '../../Firebase/context';
-import * as ROUTES from '../../../constants/routes';
+//import * as ROUTES from '../../../constants/routes';
 
 const INITIAL_STATE = {
   email: '',
@@ -50,6 +50,7 @@ class PasswordForgetForm extends Component {
           onChange={this.onChange}
           type="text"
           placeholder="Email Address"
+          aria-label="Email"
         />
         <button disabled={isInvalid} type="submit">
           Reset My Password

@@ -10,15 +10,15 @@ const INITIAL_STATE = {
   error: null,
 };
 
-const ERROR_CODE_ACCOUNT_EXISTS =
-  'auth/account-exists-with-different-credential';
+// const ERROR_CODE_ACCOUNT_EXISTS =
+//   'auth/account-exists-with-different-credential';
 
-const ERROR_MSG_ACCOUNT_EXISTS = `
-  An account with an E-Mail address to
-  this social account already exists. Try to login from
-  this account instead and associate your social accounts on
-  your personal account page.
-`;
+// const ERROR_MSG_ACCOUNT_EXISTS = `
+//   An account with an E-Mail address to
+//   this social account already exists. Try to login from
+//   this account instead and associate your social accounts on
+//   your personal account page.
+// `;
 
 class SignInFormBase extends Component {
   constructor(props) {
@@ -60,6 +60,7 @@ class SignInFormBase extends Component {
           onChange={this.onChange}
           type="text"
           placeholder="Email Address"
+          aria-label="Email"
         />
         <input
           name="password"
@@ -67,6 +68,7 @@ class SignInFormBase extends Component {
           onChange={this.onChange}
           type="password"
           placeholder="Password"
+          aria-label="Password"
         />
         <button disabled={isInvalid} type="submit">
           Sign In

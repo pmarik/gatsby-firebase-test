@@ -8,21 +8,33 @@ const ProjectsSection = () => {
         query {
             unaffiliatedSite: file(relativePath: {eq: "unaffiliatedSite-min.png"}) {
                 childImageSharp {
-                    fluid(maxWidth: 800) {
+                    fluid(
+                        maxWidth: 800, 
+                        srcSetBreakpoints: [350, 700, 1050, 1400],
+                        traceSVG: {background: "#f4f4f4", color: "#669AA2"}
+                        ) {
                         ...GatsbyImageSharpFluid_tracedSVG
                     }
                 }
             }
             daymakerSite: file(relativePath: {eq: "daymakerSite-min.png"}) {
                 childImageSharp {
-                    fluid(maxWidth: 800) {
+                    fluid(
+                        maxWidth: 800, 
+                        srcSetBreakpoints: [350, 700, 1050, 1400],
+                        traceSVG: {background: "#f4f4f4", color: "#FE9026"}
+                        ) {
                         ...GatsbyImageSharpFluid_tracedSVG
                     }
                 }
             }
             kogoSite: file(relativePath: {eq: "kogoPerspective-min.png"}) {
                 childImageSharp {
-                    fluid(maxWidth: 800) {
+                    fluid(
+                        maxWidth: 800, 
+                        srcSetBreakpoints: [350, 700, 1050, 1400],
+                        traceSVG: {background: "#f4f4f4", color: "#D9695F"}
+                        ) {
                         ...GatsbyImageSharpFluid_tracedSVG
                     }
                 }

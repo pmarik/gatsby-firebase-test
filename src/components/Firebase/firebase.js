@@ -63,9 +63,9 @@ class Firebase {
     })
     */
     this.auth.currentUser.sendEmailVerification()
-      .then(() => {{
+      .then(() => {
         console.log('email verification sent...')
-      }})
+      })
       .catch(err => console.log('email verification failed to send: ', err));
 
   doPasswordUpdate = password =>

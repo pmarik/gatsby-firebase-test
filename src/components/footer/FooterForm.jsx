@@ -37,23 +37,23 @@ const FooterForm = () => {
 
     return (
         <form name="Contact Form" method="POST" data-netlify="true" action="/thank-you" className="footer-form" >
-            <input type="hidden" name="form-name" value="Contact Form" />
-            <input type="hidden" name="project-type" value={`${state.pricingText}`} />
+            <input type="hidden" name="form-name" value="Contact Form" aria-label="Netlify form utility, please ignore" />
+            <input type="hidden" name="project-type" value={`${state.pricingText}`} aria-label="Project type"/>
             <div className="input-wrap">
                 <label>
                     <span className="form-label-text">Name</span>
-                    <input required name="name" type="text" ref={nameRef} onKeyDown={firstKeyDown} placeholder="enter your name"/>
+                    <input required name="name" type="text" ref={nameRef} onKeyDown={firstKeyDown} placeholder="enter your name" aria-label="Enter Name"/>
                 </label>
 
                 <label>
                     <span className="form-label-text">Email</span>
-                    <input required name="email" type="email" ref={emailRef} onKeyDown={secondKeyDown} placeholder="enter your email"/>
+                    <input required name="email" type="email" ref={emailRef} onKeyDown={secondKeyDown} placeholder="enter your email" aria-label="Enter Email"/>
                 </label>
             </div>
 
             <label className='textarea-wrap'>
                 <span className="form-label-text">Message {state.pricingText && (<span className="pricing-text"> ({state.pricingText})</span>)}</span>
-                <textarea required name="message" ref={messageRef}  placeholder="type your message"/>
+                <textarea required name="message" ref={messageRef}  placeholder="type your message" aria-label="Type Message"/>
             </label>
 
             <ButtonSubmit

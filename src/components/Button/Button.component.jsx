@@ -71,6 +71,7 @@ const StyledButton = styled.button`
 
 
 const Button = ({ children, btnTarget, direction, outlineColor, fillColor, textColor, hoverFillColor, hoverTextColor, options }) => {
+
     return (
         <Jump target={`${btnTarget}`} options={options}>
             <StyledA  className="flag-btn-container" 
