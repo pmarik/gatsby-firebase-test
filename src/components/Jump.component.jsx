@@ -11,7 +11,7 @@ const Jump = ({
     options,
     children,
     ...props
-    }) => (<span {...props} className={`jump`} onClick={() => handler(target, options)}>
+    }) => (<span role="button" {...props} className={`jump`} onClick={() => handler(target, options)}>
             {children}
            </span>)
 

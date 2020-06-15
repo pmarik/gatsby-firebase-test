@@ -12,6 +12,7 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-lodash`,
     {
       resolve: `gatsby-plugin-react-svg`,
       options: {
@@ -39,21 +40,6 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-styled-components`,
-    {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Nunito`,
-            variants: [`400`],
-          },
-          {
-            family: `Roboto`,
-            variants: [`700`]
-          },
-        ],
-      },
-    },
     {
       resolve: `gatsby-plugin-purgecss`, 
       options: {

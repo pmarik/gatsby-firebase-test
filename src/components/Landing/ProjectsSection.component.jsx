@@ -66,6 +66,7 @@ const ProjectsSection = () => {
                             )}
                         </InView>
                                
+                             
 
                         <InView triggerOnce rootMargin={'15%'}>
                             {({ inView, ref, entry }) => (
@@ -82,6 +83,7 @@ const ProjectsSection = () => {
                             )}
                         </InView>
 
+                          
                         
                         <InView triggerOnce rootMargin={'15%'}>
                             {({ inView, ref, entry }) => (

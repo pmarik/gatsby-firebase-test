@@ -10,6 +10,7 @@ const ProcessSection = () => {
                     <div className="process-text">
                         <div className="process-header">
                             <h2 className="process-bubble">Design</h2> 
+
                             <InView triggerOnce rootMargin={'15%'}>
                                 {({ inView, ref, entry }) => (
                                     <span ref={ref} className={`arrow ${inView && ('arrowAnim')}`}></span>
@@ -17,6 +18,7 @@ const ProcessSection = () => {
                             </InView>
 
                             <h2 className="process-bubble">Develop</h2> 
+
                             <InView triggerOnce rootMargin={'15%'}>
                                 {({ inView, ref, entry }) => (
                                     <span ref={ref} className={`arrow ${inView && ('arrowAnim')}`}></span>

@@ -4,8 +4,3 @@ import GlobalContextProvider from './src/context/GlobalContextProvider';
 export const wrapRootElement = ({ element }) => {
     return <GlobalContextProvider>{element}</GlobalContextProvider>
 }
-
-export const onRouteUpdate = ({ location }) => {
-    console.log('route updated', location)
-}
-
