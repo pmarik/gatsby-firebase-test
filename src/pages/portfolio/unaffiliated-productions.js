@@ -9,10 +9,10 @@ import SEO from '../../components/SEO.component';
 
 const ProjectUnaffiliated = ({ data }) => (
         <main className="page-container">
-            <SEO title="Marik Tech | Portfolio - Unaffiliated Productions" />
+            <SEO title="Test Site | Sub Page" />
             <div className="content-container anim-start-0 fadeIn">
                 <section className='portfolio-section'>
-                    <h1>Client Case: Unaffiliated Productions</h1>
+                    <h1>Sub Page Header Text</h1>
                     <div className="case-container">
                         <Img 
                             className="project-img" 
@@ -21,11 +21,11 @@ const ProjectUnaffiliated = ({ data }) => (
                             fadeIn={false}
                             alt="Unaffiliated Productions | Client Case" 
                         />
-                        <h2>Creating a site from the ground up</h2>
-                        <p>As web developer for <a className="highlight" href="https://unaffiliatedproductions.com/" target="_blank" rel="noreferrer noopener"  title="Visit Site">Unaffiliated Productions</a> I was hired to implement a site that portrayed the brand and emphasized the videos they produce. A total design of the site began by asking the client the goals of their site. Armed with this information, wireframes were created and iterated upon until a final design was approved by the client.</p>
-						<p>This static site was built using a mobile first approach, using semantic HTML, modern CSS practices, and Javascript for interactivity. I was able to quickly execute the design using Node and Webpack to get the development started, and all iterations were stored via GitHub.</p> 
-						<p>Speed and accessibility were priorities. Lazy-loading was used to increase the percieved load time of the page and only display videos and pictures when they are in the viewport. The content is built by using best practices for SEO provided by Google. Finally, after completion, the site was checked for performance using auditing tools to make final tweaks to the pages. </p>
-						<p>The final site was delivered to the client and quality was ensured by referencing any prior expectations set for the site. This site now serves as the main public stage for Unaffiliated and their customers and helps solidify their brand name.</p>
+                        <h2>Sub Header For Page</h2>
+                        <p>Lorem ispsum dolor sit amet <a className="highlight" href="https://unaffiliatedproductions.com/" target="_blank" rel="noreferrer noopener"  title="Visit Site">example external link</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute </p>
                     </div>
                 </section>
 
@@ -39,12 +39,12 @@ const ProjectUnaffiliated = ({ data }) => (
                 </div>
 
                 <ReviewQuote>
-                    <q>Paul was quick to understand what my needs and priorities were. He was detail oriented and worked quickly to make the changes that I was looking for.</q> 
-                    <p>Zach Lastrilla - <i>Unaffiliated Productions</i></p>
+                    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </q>
+                    <p>John Smith - <i>Example Company</i></p>
                 </ReviewQuote>
 
                 <span style={{display: 'flex', width: '100%', justifyContent: 'flex-end'}}>
-                    <Link to="/portfolio/kogo-foods" className="highlight">View Next Project</Link>
+                    <Link to="/portfolio/kogo-foods" className="highlight">View Next SubPage</Link>
                 </span>
 
             </div>

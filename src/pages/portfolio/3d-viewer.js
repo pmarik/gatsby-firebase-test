@@ -8,10 +8,10 @@ import SEO from '../../components/SEO.component';
 
 const ProjectViewer = ({ data }) => (
         <main className="page-container">
-            <SEO title="Marik Tech | Portfolio - 3D Viewer" />
+            <SEO title="Test Site | Sub Page" />
             <div className="content-container anim-start-0 fadeIn">
                 <section className='portfolio-section'>
-                    <h1>Project: 3D Viewer</h1>
+                    <h1>Sub Page Header Text</h1>
                     <div className="case-container">
                         <Img 
                             className="project-img" 
@@ -20,11 +20,11 @@ const ProjectViewer = ({ data }) => (
                             fadeIn={false}
                             alt="3D Viewer | Project" 
                         />
-                        <h2>3D Model viewing in your browser</h2>
-                        <p><a className="highlight" href="https://3d-viewer-demo.netlify.com/" target="_blank" rel="noreferrer noopener"  title="Visit Site">View the browser model viewer</a> for yourself!  This is a project to test out some of the capabilities of <a className="highlight" href="https://threejs.org/" target="_blank" rel="noreferrer noopener"  title="three js">Three.js</a>, a JavaScript framework for displaying 3D content on the web harnessing the power of WebGL. </p>
-						<p>This application allows you view a simple 3D laptop and to change various settings. Change the background of the canvas to transparent, black, or white using the toggle buttons next to the background controller. Change the controls from mouse tracking, rotate, to click and drag with the toggle buttons. Note that the mouse tracking controls are only available on desktop. Finally, switch between perspective and orthographic views using the toggle buttons next to the view controls.</p> 
-						<p>The laptop model was created in <a className="highlight" href="https://www.blender.org/" target="_blank"  rel="noreferrer noopener" title="Visit Site">Blender</a> and exported as a GLTF resource. This allows for fast loading on the web, even with textures and shading applied to an object.</p>
-						<p><a className="highlight" href="https://3d-viewer-demo.netlify.com/" target="_blank"  rel="noreferrer noopener" title="Visit Site">Visit 3D Viewer application here</a></p>
+                        <h2>Sub Header For Page</h2>
+                        <p><a className="highlight" href="https://3d-viewer-demo.netlify.com/" target="_blank" rel="noreferrer noopener"  title="Visit Site">External link example test</a> for yourself!  ullamco laboris nisi ut aliquip ex ea commodo consequat.<a className="highlight" href="https://threejs.org/" target="_blank" rel="noreferrer noopener"  title="three js">Three.js</a>,cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est  sunt in culpa </p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est  sunt in culpa qui officia deserunt mollit an.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur <a className="highlight" href="https://www.blender.org/" target="_blank"  rel="noreferrer noopener" title="Visit Site">External</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut</p>
+                        <p><a className="highlight" href="https://3d-viewer-demo.netlify.com/" target="_blank"  rel="noreferrer noopener" title="Visit Site">Visit external link example test</a></p>
 							
                     </div>
                 </section>
@@ -38,7 +38,7 @@ const ProjectViewer = ({ data }) => (
 
 
                 <span style={{display: 'flex', width: '100%', justifyContent: 'flex-end'}}>
-                    <Link to="/portfolio/daymaker-touring" className="highlight no-review">View Next Project</Link>
+                    <Link to="/portfolio/daymaker-touring" className="highlight no-review">View Next SubPage</Link>
                 </span>
 
             </div>

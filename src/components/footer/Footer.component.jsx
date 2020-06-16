@@ -7,8 +7,8 @@ const Footer = () => (
     <footer className="footer" id="contact">
         <div className="footer-content">
             <section className='footer-main'>
-                <h2>Get in touch</h2>
-                <p>Start the conversation to help improve your online presence to get real results for your business. Contact now for a free estimate.</p>
+                <h2>Footer Component</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim </p>
                 <FooterForm/>
             </section>
             <FooterAside />

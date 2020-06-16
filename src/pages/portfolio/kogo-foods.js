@@ -11,10 +11,10 @@ import SEO from '../../components/SEO.component';
 
 const ProjectKogo = ({ data }) => (
         <main className="page-container">
-            <SEO title="Marik Tech | Portfolio - Kogo Foods" />
+            <SEO title="Test Site | Sub Page" />
             <div className="content-container anim-start-0 fadeIn">
                 <section className='portfolio-section'>
-                    <h1>Client Case: Kogo Foods</h1>
+                    <h1>Sub Page Header Text</h1>
                     <div className="case-container">
                         <Img 
                             className="project-img" 
@@ -22,11 +22,11 @@ const ProjectKogo = ({ data }) => (
                             loading="eager"
                             fadeIn={false} 
                             alt="Kogo Foods | Client Case" />
-                        <h2>JAMstack Ecommerce</h2>
-                        <p><a className="highlight" href="https://kogofoods.com/" target="_blank" rel="noreferrer noopener"  title="Visit Site">Kogo Foods</a> needed a striking web presence as a platform to sell their products online. This unique opportunity allowed me to fully create the brand identity and develop the site to back it up. This full stack project entailed logo design, prototyping and mockups, and finally a full production ecommerce site.</p>
-						<p>I chose to create this site using Gatsby with Netlify CMS. This provided the client with the flexibility and power associated with React to have immersive and engaging interations throughout the site. Netlify CMS enabled the ability to easily create new blog posts, update page text, and create products while abstracting away the complexity of code. This combination provided the client with more functionality than traditional ecommerce platforms, while avoiding all the fees associated with those frameworks.</p> 
+                        <h2>Sub Header For Page</h2>
+                        <p><a className="highlight" href="https://kogofoods.com/" target="_blank" rel="noreferrer noopener"  title="Visit Site">Test name</a>ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non Lorem ipsum dolor sit amet, consectetur adipiscing elit, </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad min</p>
                         <KogoScript />
-                        <p>To integrate the final static files produced by Gatsby with the ability to accept payments required the use of lamda functions. These were hosted on Netlify and connected to the client's Stripe account to track orders and payments. Thanks to Stripe's React Elements I was able to create a custom checkout styled specifically for Kogo to better strengthen the brand. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupnon</p>
                     </div>
                 </section>
 
@@ -39,12 +39,12 @@ const ProjectKogo = ({ data }) => (
                 </div>
 
                 <ReviewQuote>
-                    <q>I recently contracted Paul at Marik Tech for website development and was thoroughly impressed with his ability to take an idea and translate it into a visually appealing and dynamic website. Mr. Marik was able to combine functionality with simplicity, especially when it came to setting up a CMS so I could manage my site. He made it effortless to edit content! In addition, he set me up with a secure way to accept payments through Stripe, so I was able to avoid the monthly costs associated with some other ecommerce platforms. I am extremely happy with his work and appreciate his professional etiquette and diligence.</q> 
-                    <p>Simon Roca - <i>Kogo Foods</i></p>
+                    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure </q>
+                    <p>Jan Doe - <i>Test Company</i></p>
                 </ReviewQuote>
 
                 <span style={{display: 'flex', width: '100%', justifyContent: 'flex-end'}}>
-                    <Link to="/portfolio/trade-tracker" className="highlight">View Next Project</Link>
+                    <Link to="/portfolio/trade-tracker" className="highlight">View Next SubPage</Link>
                 </span>
 
             </div>

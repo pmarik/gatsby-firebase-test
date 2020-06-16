@@ -9,10 +9,10 @@ import SEO from '../../components/SEO.component';
 
 const ProjectDaymaker = ({ data }) => (
         <main className="page-container">
-            <SEO title="Marik Tech | Portfolio - Daymaker Touring" />
+            <SEO title="Test Site | Sub Page" />
             <div className="content-container anim-start-0 fadeIn">
                 <section className='portfolio-section'>
-                    <h1>Client Case: Daymaker Touring</h1>
+                    <h1>Sub Page Header Text</h1>
                     <div className="case-container">
                         <Img 
                             className="project-img" 
@@ -20,12 +20,12 @@ const ProjectDaymaker = ({ data }) => (
                             loading="eager"
                             fadeIn={false}
                             alt="Daymaker Touring | Client Case" />
-                        <h2>Shopify consultation</h2>
-                        <p><a className="highlight" href="https://www.daymakertouring.com/collections/store/products/alpine-touring-adapters" target="_blank" rel="noreferrer noopener" >Daymaker Touring</a> required updates to their product page, added functionality to their cart page, and design changes on their Shopify store. This required understanding of the Shopify Liquid template language and content management systems. </p>
-                        <p>First, a consulation was made with the client to understand what problems they were having. Since this client is local I was able to meet with them in person and establish trust in the work. We reviewed their goals and what would be the best way to accomplish them.</p>
-                        <p>One of the first issues to resolve with the site was strictly structural and included a few tweaks to design. The HTML and CSS of the product page needed to be reformated to resize properly to the page. After that, functionality was improved to include clickable elements to redirect a user to certain information about a product on the page. This was done by emphasizing a call-to-action and following a user-centered approach to direct the user through the information on the page to lead to a purchase.</p>
-                        <p>The next task involved creating a deposit product that would automatically be added to the user's cart after buying a rental product. This critcal task protected the client from a user purchasing a rental without adding the deposit to the cart. This required making a AJAX request for each variant of a product and validating that it matched the correct quantity and type. Once the cart was updated, protections had to be made so a user couldn't alter the number of the deposit or delete it entirely from the cart. I added functionality to only remove this deposit after removing a rental product.</p>                            
-                        <p>This project gave me the opportunity to work with the Shopify content management system, and it exposed me to a new kind of development environment that I had to quickly learn. I set to work with milestones that were delivered to the client after each completion.</p>
+                        <h2>Sub Header for page</h2>
+                        <p><a className="highlight" href="https://www.daymakertouring.com/collections/store/products/alpine-touring-adapters" target="_blank" rel="noreferrer noopener" >External link example</a> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehen</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est. non proident, sunt in culpa qui officia deserunt mollit anim id es</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est. occaecat cupidatat non proident, sunt in culpa qui mollit anim. occaecat cupidatat non proident, sunt in culpa qui occaecat cupidatat non proident, sunt in cu.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh</p>
                     </div>
                 </section>
 
@@ -37,12 +37,12 @@ const ProjectDaymaker = ({ data }) => (
                 </div>
 
                 <ReviewQuote>
-                    <q>Working with Marik Tech was a perfect, easy solution for my small business. I built my own shopify website but certain items were very difficult to customize in the end. Paul was able to quickly diagnose web errors and within hours perform fixes that would have taken a full week of my time to research and implement. Marik Tech's professional services and flexibility has allowed me to focus on what I do best at Daymaker Touring rather than wasting countless hours in the rabit hole.</q> 
-                    <p>Giray Dadali - <i>Daymaker Touring LLC</i></p>
+                    <q>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est.  sunt in culpa qui officia deserunt molli lorem</q>
+                    <p>John Smith - <i>Example Company LLC</i></p>
                 </ReviewQuote>
 
                 <span style={{display: 'flex', width: '100%', justifyContent: 'flex-end'}}>
-                    <Link to="/portfolio/unaffiliated-productions" className="highlight">View Next Project</Link>
+                    <Link to="/portfolio/unaffiliated-productions" className="highlight">View Next SubPage</Link>
                 </span>
 
             </div>

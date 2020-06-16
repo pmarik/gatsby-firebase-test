@@ -46,10 +46,10 @@ const Nav = () => {
                         <Link to='/' activeClassName='active' className={`${contactIsActive && 'hideActive'}`} onClick={navClick}>Home</Link>
                     </li>
                     <li>
-                        <Link to='/portfolio' activeClassName='active' partiallyActive className={`${contactIsActive && 'hideActive'}`} onClick={navClick}>Portfolio</Link>
+                        <Link to='/portfolio' activeClassName='active' partiallyActive className={`${contactIsActive && 'hideActive'}`} onClick={navClick}>Page2</Link>
                     </li>
                     <li>
-                        <Jump target={'#contact'} options={{offset:-60, duration: 1200}}><span className={`${contactIsActive && "active"} jump-txt`} onClick={contactClick}>Contact</span></Jump>
+                        <Jump target={'#contact'} options={{offset:-60, duration: 1200}}><span className={`${contactIsActive && "active"} jump-txt`} onClick={contactClick}>ScrollToForm</span></Jump>
                     </li>
                 </ul>
             </nav> 

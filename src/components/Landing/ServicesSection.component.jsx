@@ -77,10 +77,10 @@ const StyledSpan = styled.span`
 
 const ServicesSection = () => (
         <section className="home-section services" id="services">
-					<h2>Services</h2> 
+					<h2>Section 3 Component</h2> 
 
 					<div className="service-description">
-						<p>Your site, your brand. Experience what a personalized online presence can do for your business. I make your ideas a reality with the following focus:</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
 					</div>
 
 					<div className="features">
@@ -94,8 +94,8 @@ const ServicesSection = () => (
 								)}
                         	</InView>
 
-							<h4>Web Development</h4>
-							<p>Whether you are looking to create your own site from the ground-up, or improve the site you currently have, I will work with you to bring your ideas to life.</p>
+							<h4>Description1</h4>
+						    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
 						</section>
 
                         <section>
@@ -107,8 +107,8 @@ const ServicesSection = () => (
 								)}
 							</InView>
 
-							<h4>Design and Identity</h4>
-							<p>Update your site to a modern look and feel to gain additional exposure with a powerful brand identity and online experience. </p>
+							<h4>Description2</h4>
+						    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 						</section>
                         <section>
 
@@ -119,8 +119,8 @@ const ServicesSection = () => (
 								)}
 							</InView>
 
-							<h4>SEO and Marketing</h4>
-							<p>Semantic HTML with the latest tools to improve your site rank. Get consultation on design and how to better improve your sales copy.</p>
+							<h4>Description3</h4>
+						    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim.</p>
 						</section>
 						<section>
 
@@ -130,8 +130,8 @@ const ServicesSection = () => (
 									<StyledSpan ref={ref} className='icon icon-settings delay3' visibility={inView ? 'true' : 'false'}></StyledSpan>
 								)}
 							</InView>
-							<h4>Site Performance and Speed</h4>
-							<p>Don't lose potential customers due to a slow website. Increase the load speed of your site to prevent users from leaving prematurely.</p>
+							<h4>Description4</h4>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad.</p>
 						</section>
 					</div>
         </section>

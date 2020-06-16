@@ -9,7 +9,7 @@ const ProcessSection = () => {
 				<div className="content-container">
                     <div className="process-text">
                         <div className="process-header">
-                            <h2 className="process-bubble">Design</h2> 
+                            <h2 className="process-bubble">Section</h2> 
 
                             <InView triggerOnce rootMargin={'15%'}>
                                 {({ inView, ref, entry }) => (
@@ -17,16 +17,16 @@ const ProcessSection = () => {
                                 )}
                             </InView>
 
-                            <h2 className="process-bubble">Develop</h2> 
+                            <h2 className="process-bubble">Four</h2> 
 
                             <InView triggerOnce rootMargin={'15%'}>
                                 {({ inView, ref, entry }) => (
                                     <span ref={ref} className={`arrow ${inView && ('arrowAnim')}`}></span>
                                 )}
                             </InView>
-                            <h2 className="process-bubble">Deploy</h2>
+                            <h2 className="process-bubble">Component</h2>
                         </div>
-                        <p>Get a guided process from idea to reality. Full design ideation, custom development, and tailored deployment for your online needs. I create pixel perfect designs and engaging experiences to help tell your story in an impactful way. Solidify your brand and sell your services and products online now. </p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillun</p>
                         <Button 
                             btnTarget="#contact" 
                             textColor="#2193B0"
@@ -35,7 +35,7 @@ const ProcessSection = () => {
                             hoverTextColor="#ffffff"
                             hoverFillColor="#2193B0"
                                 >
-                                CONTACT NOW
+                                Scroll to Form
                         </Button>
                     </div>
                     <div className="process-image">

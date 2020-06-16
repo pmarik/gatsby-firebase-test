@@ -6,10 +6,10 @@ const AboutSection = () => (
         <section className="home-section hero">
                     <div className="content-container hero-content graphic  anim-start-0 fadeIn">
                         <div className="hero-text">
-                            <h1>Boost your online presence to the next level</h1>
+                            <h1>Header Placeholder Text Lorem ipsum dolor sit amet</h1>
                             <p>
-                                I specialize in creating and enhancing websites and apps 
-                                to grow your business
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                                sed do eiusmod tempor 
                             </p>
 
                             <Button 
@@ -25,7 +25,7 @@ const AboutSection = () => (
                                     duration: 600,
                                 }}
                                     >
-                                    SEE MY WORK
+                                    Scroll Section2
                             </Button>
 
                             <Button 
@@ -40,7 +40,7 @@ const AboutSection = () => (
                                     duration: 900
                                 }}
                                     >
-                                    SERVICES
+                                    Scroll Section3
                             </Button>
                         </div>
 

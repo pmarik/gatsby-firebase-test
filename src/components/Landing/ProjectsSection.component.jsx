@@ -58,7 +58,7 @@ const ProjectsSection = () => {
  
     return (
         <section className="home-section featured-projects" id="projects">
-                <h2>Featured Projects</h2>
+                <h2>Section 2 Component</h2>
                 
                 <div className="project-wrap">
                     <div className="project-panels">
@@ -67,12 +67,12 @@ const ProjectsSection = () => {
                             {({ inView, ref, entry }) => (
                                 <section ref={ref} className={`panel anim-start-0 ${inView && 'fadeIn'}`}>
                                     <div className="panel-content">
-                                        <h4>Unaffiliated Productions</h4>
+                                        <h4>Sub Header 1</h4>
                                         <div  className="sectionimg">                                           
                                                 <Link to="/portfolio/unaffiliated-productions"><div className="centered"> View Project</div></Link>
                                                 <Link to="/portfolio/unaffiliated-productions"><Img fluid={data.unaffiliatedSite.childImageSharp.fluid} alt="Unaffiliated Productions | Client Case" /></Link>	
                                         </div> 
-                                        <p><Link to="/portfolio/unaffiliated-productions" className="highlight">Live production site</Link> developed with accessibility and SEO in mind to drive views and establish credibility...</p>
+                                        <p><Link to="/portfolio/unaffiliated-productions" className="highlight">Link1</Link> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
                                     </div>
                                 </section>
                             )}
@@ -84,12 +84,12 @@ const ProjectsSection = () => {
                             {({ inView, ref, entry }) => (
                                 <section ref={ref} className={`panel anim-start-0 ${inView && 'fadeIn'}`}>
                                     <div className="panel-content">
-                                        <h4>Daymaker Touring</h4>
+                                        <h4>Sub Header 2</h4>
                                         <div className="sectionimg">
                                                 <Link to="/portfolio/daymaker-touring"><div className="centered"> View Project</div></Link>
                                                 <Link to="/portfolio/daymaker-touring"><Img fluid={data.daymakerSite.childImageSharp.fluid} alt="Daymaker Touring | Client Case" /></Link>
                                         </div> 
-                                        <p><Link to="/portfolio/daymaker-touring" className="highlight">Ecommerce consultation</Link> to improve the design and functionality of a Shopify store to increase conversions... </p>
+                                        <p><Link to="/portfolio/daymaker-touring" className="highlight">Link2</Link> tdolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboriss... </p>
                                     </div>
                                 </section>
                             )}
@@ -101,12 +101,12 @@ const ProjectsSection = () => {
                             {({ inView, ref, entry }) => (
                                 <section ref={ref} className={`panel anim-start-0 ${inView && 'fadeIn'}`}>
                                     <div className="panel-content">
-                                        <h4>Kogo Foods</h4>
+                                        <h4>Sub Header 3</h4>
                                         <div className="sectionimg">
                                                 <Link to="/portfolio/kogo-foods"><div className="centered"> View Project</div></Link>
                                                 <Link to="/portfolio/kogo-foods"><Img fluid={data.kogoSite.childImageSharp.fluid} alt="Kogo Foods| Client Case" /></Link>
                                         </div>
-                                        <p><Link to="/portfolio/kogo-foods" className="highlight">Gatsby Ecommerce</Link> static site built for speed with Netlify CMS for easy content editing...</p> 
+                                        <p><Link to="/portfolio/kogo-foods" className="highlight">Link3</Link> dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p> 
                                     </div>   
                                 </section>
                             )}
@@ -115,7 +115,7 @@ const ProjectsSection = () => {
                     </div>
                 </div>
 
-                <Link to="/portfolio" className="highlight">View All Projects</Link>
+                <Link to="/portfolio" className="highlight">Page2 link</Link>
 
         </section>
     )

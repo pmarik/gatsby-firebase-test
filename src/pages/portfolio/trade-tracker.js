@@ -8,10 +8,10 @@ import SEO from '../../components/SEO.component';
 
 const ProjectTrade = ({ data }) => (
         <main className="page-container">
-            <SEO title="Marik Tech | Portfolio - Trade Tracker" />
+            <SEO title="Test Site | Sub Page" />
             <div className="content-container anim-start-0 fadeIn">
                 <section className='portfolio-section'>
-                    <h1>Trade Tracker</h1>
+                    <h1>Sub Page Header Text</h1>
                     <div className="case-container">
                         <Img 
                             className="project-img" 
@@ -19,17 +19,15 @@ const ProjectTrade = ({ data }) => (
                             loading="eager"
                             fadeIn={false} 
                             alt="Trade Tracker | Project" />
-                        <h2>MERN stack application</h2>
-                        <p>(<i>To view demo account use email: <b>demo@marik.tech</b> password: <b>Tradedemo1</b></i>) <a href="https://boiling-refuge-41373.herokuapp.com/home" target="_blank" rel="noreferrer">Trade Tracker</a> is an investment journal and calculator for beginners starting out in the stock market. It provides the authentication for a user to journal their investments, calculate how much their investments will cost, and visualize their progress. This personal project uses React on the frontend with Redux to manage state between the different components. The backend is built using Node with MongoDB to store a user's data, and is authenticated using JSON Web Tokens.</p>
-						<p>Starting this project from the base-up allowed me to explore a variety of technologys and to iterate on ideas through out the process. I began by using <a href="https://www.figma.com/" target="_blank" rel="noreferrer">Figma</a> to come up with wireframes to visualize both the UI and UX of the app.</p>
-						<p>Once I had a relative design and flow of the app planned, I began with the backend. I created models for users and their trades to be able to store them using mongoose and MongoDB. I built out API endpoints using axios to communicate with the database, with standard CRUD routes. I had to iterate a few times on the data models as more pieces of information became useful to add to a user's data.</p>
+                        <h2>Sub Header For Page</h2>
+						<p>(<i>Lorem ipsum dolor sit amet, <b>slkdjfk ckd </b> <b>Lorem ipsum</b></i>) <a href="https://boiling-refuge-41373.herokuapp.com/home" target="_blank" rel="noreferrer">Trade Tracker</a>  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non. eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non. eu fugiat nulla pariatur. Excepteur.</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cil</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non lorem nisi ut aliquipdk.</p>
                         <div className="project-inline-wrap">
                             <Img className="project-img-inline" fluid={data.tradeJournal.childImageSharp.fluid} alt="Trade Tracker | Client Case" />
                             <Img className="project-img-inline" fluid={data.tradeModal.childImageSharp.fluid} alt="Trade Tracker | Client Case" />
                         </div>
-                       
-                        <p>The next task involved creating the frontend with React. Having a state manager was essential to this project as I included different routes and components that relied on the same data. Redux made things easy with an overall store with reducers and action types to pull data to different parts. A feature I was excited about was created the modals which work both on the journal page to see the details of a trade, and on the watchlist. The watchlist allows a user to enter a trade they are thinking about making, and if they have previously traded that ticker, it will show up on the bottom of the page. A user can then click on that trade and a modal will open up with the last trade they made with that ticker. </p>
-                       
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Exce</p>
                     </div>
                 </section>
 

@@ -4,11 +4,11 @@ require("dotenv").config({
 
 module.exports = {
   siteMetadata: {
-    title: `Marik Tech | Web Development`,
-    description: `Boost your business with enhanced web development and design solutions from Marik Tech.`,
+    title: `Test Site | Home Page`,
+    description: `Lorem Ipsum test solor consetetur adipsciing elit sed do ut labore`,
     url: "https://www.marik.tech",
     image: "/img/ogDefaultImage.JPG",
-    keywords: "web development, web design, website developer near me, website developer, website developer for hire, website developer Salt Lake City UT, website developer for small business, online marketing, website help, freelance web developer, website consultation",
+    keywords: "test site",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -29,13 +29,6 @@ module.exports = {
         name: `images`,
       },
     },
-    // {
-    //   resolve: `gatsby-source-filesystem`,
-    //   options: {
-    //     path: `${__dirname}/src`,
-    //     name: `src`,
-    //   },
-    // },
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sass`,

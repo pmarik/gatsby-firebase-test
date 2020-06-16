@@ -6,10 +6,10 @@ import SEO from '../../components/SEO.component';
 
 const PortfolioPage = () => (
   <main className="page-container">
-    <SEO title="Marik Tech | Portfolio" />
+    <SEO title="Test Site | Page2" />
     <div className="content-container anim-start-0 fadeIn">
       <section className='portfolio-section'>
-        <h1>Portfolio</h1>
+        <h1>Page2 Header</h1>
         <PortfolioGrid />
       </section>
     </div>
