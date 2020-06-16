@@ -24,6 +24,7 @@
     "gatsby-plugin-sass": "^2.3.4",
     "gatsby-plugin-sharp": "^2.6.11",
     "gatsby-plugin-styled-components": "^3.3.4",
+    "gatsby-plugin-webpack-bundle-analyzer": "^1.0.5",
     "gatsby-source-filesystem": "^2.3.11",
     "gatsby-transformer-sharp": "^2.5.5",
     "jump.js": "^1.0.2",
@@ -37,5 +38,6 @@
     "react-intersection-observer": "^8.26.2",
     "recompose": "^0.30.0",
     "styled-components": "^5.1.1"
-  }
+  },
+  "devDependencies": {}
 }

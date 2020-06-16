@@ -25,3 +25,13 @@ exports.onCreatePage = async ({ page, actions }) => {
     createPage(page)
   }
 }
+
+
+// exports.onCreateWebpackConfig = ({ actions, getConfig }) => {
+//   // prevent gatsby build failing on eslint errors
+//   const defaultConfig = getConfig();
+//   defaultConfig.module.rules = defaultConfig.module.rules.filter(
+//     rule => rule.loader !== 'eslint-loader'
+//   );
+//   actions.replaceWebpackConfig(defaultConfig);
+// }

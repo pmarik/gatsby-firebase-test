@@ -41,6 +41,12 @@ module.exports = {
         ignore: ['/landingContent.styles.scss', '/button.styles.scss']
       }
     }, // must be after other CSS plugins
+    {
+      resolve: `gatsby-plugin-webpack-bundle-analyzer`,
+      options: {
+        production: true,
+      }
+    },
     `gatsby-plugin-netlify-cache`,
     `gatsby-plugin-preact`,
     `gatsby-plugin-netlify`, // make sure to put last in the array
